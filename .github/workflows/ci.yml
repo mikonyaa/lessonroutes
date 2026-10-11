@@ -1,0 +1,66 @@
+name: Verify LessonRoutes
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    name: Tests, standalone player and final ZIP
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Clean install
+        run: npm ci
+      - name: Install real browser binaries and OS prerequisites
+        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Typecheck and lint
+        run: |
+          npm run typecheck
+          npm run lint
+      - name: Graph, import, geometry, runtime and atomic storage tests
+        run: npm run test:unit
+      - name: Production build
+        run: npm run build
+      - name: Real browser authoring and file URL offline export tests
+        run: npm run test:e2e
+      - name: Package final web ZIP
+        run: npm run package:web
+      - name: Extract and verify the final consumer ZIP
+        run: npm run test:production
+      - name: Record build origin and tool versions
+        run: node scripts/ci-manifest.mjs
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: verified-web
+          path: |
+            artifacts/lessonroutes-0.1.0-web.zip
+            artifacts/ci-build.json
+          if-no-files-found: error
+          retention-days: 14
+      - name: Upload only synthetic verification evidence
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: synthetic-qa
+          path: |
+            output/playwright/e2e-results.json
+            output/playwright/production-results.json
+            output/playwright/editor-chromium-1440.png
+            output/playwright/editor-chromium-390.png
+            output/playwright/empty-chromium.png
+            output/playwright/import-error-chromium.png
+            output/playwright/feedback-chromium.png
+            output/playwright/finish-chromium-390-keyboard.png
+          if-no-files-found: error
+          retention-days: 7

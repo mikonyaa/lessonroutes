@@ -1,0 +1,444 @@
+{
+  "date": "2026-10-12",
+  "unitTests": 46,
+  "browserTests": 39,
+  "stats": {
+    "startTime": "2026-10-11T21:13:08.056Z",
+    "duration": 83303.06199999999,
+    "expected": 39,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "title": "graph problems block ready export while a draft backup remains available",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1092
+        }
+      ]
+    },
+    {
+      "title": "quota after a write request and a stalled commit cannot show saved; download still works",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 8101
+        }
+      ]
+    },
+    {
+      "title": "keyboard draw alternative, finish linking, live feedback, focus and outside click",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 459
+        }
+      ]
+    },
+    {
+      "title": "long labels and accessible controls remain usable on desktop and mobile",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 931
+        }
+      ]
+    },
+    {
+      "title": "graph problems block ready export while a draft backup remains available",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1556
+        }
+      ]
+    },
+    {
+      "title": "quota after a write request and a stalled commit cannot show saved; download still works",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 9251
+        }
+      ]
+    },
+    {
+      "title": "keyboard draw alternative, finish linking, live feedback, focus and outside click",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 393
+        }
+      ]
+    },
+    {
+      "title": "long labels and accessible controls remain usable on desktop and mobile",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 736
+        }
+      ]
+    },
+    {
+      "title": "graph problems block ready export while a draft backup remains available",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1291
+        }
+      ]
+    },
+    {
+      "title": "quota after a write request and a stalled commit cannot show saved; download still works",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 8474
+        }
+      ]
+    },
+    {
+      "title": "keyboard draw alternative, finish linking, live feedback, focus and outside click",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 696
+        }
+      ]
+    },
+    {
+      "title": "long labels and accessible controls remain usable on desktop and mobile",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1092
+        }
+      ]
+    },
+    {
+      "title": "empty state, batch of 20 same-name/Unicode images, order, dedup and atomic errors",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 584
+        }
+      ]
+    },
+    {
+      "title": "save, close, import preserves graph and IDs; deletion and move undo in one action",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1706
+        }
+      ]
+    },
+    {
+      "title": "numeric region editing, keyboard arrows and real contain geometry at 1440/1024/390 with zoom",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 688
+        }
+      ]
+    },
+    {
+      "title": "preview and independent file HTML share exact transitions, two errors, retry and finish",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2862
+        }
+      ]
+    },
+    {
+      "title": "safe strings, canary exclusion, restrictive CSP and double click",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 646
+        }
+      ]
+    },
+    {
+      "title": "autosave restores on reload, second tab conflicts and manual backup stays available",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 3876
+        }
+      ]
+    },
+    {
+      "title": "unavailable/quota storage stays visibly unsaved with working download",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1162
+        }
+      ]
+    },
+    {
+      "title": "EXIF-oriented JPEG displays identically in editor and exported player",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 565
+        }
+      ]
+    },
+    {
+      "title": "standalone image region clicks align at 1440, 1024 and 390 including letterboxing",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1896
+        }
+      ]
+    },
+    {
+      "title": "empty state, batch of 20 same-name/Unicode images, order, dedup and atomic errors",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 596
+        }
+      ]
+    },
+    {
+      "title": "save, close, import preserves graph and IDs; deletion and move undo in one action",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1747
+        }
+      ]
+    },
+    {
+      "title": "numeric region editing, keyboard arrows and real contain geometry at 1440/1024/390 with zoom",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 671
+        }
+      ]
+    },
+    {
+      "title": "preview and independent file HTML share exact transitions, two errors, retry and finish",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 3357
+        }
+      ]
+    },
+    {
+      "title": "safe strings, canary exclusion, restrictive CSP and double click",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 825
+        }
+      ]
+    },
+    {
+      "title": "autosave restores on reload, second tab conflicts and manual backup stays available",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 4105
+        }
+      ]
+    },
+    {
+      "title": "unavailable/quota storage stays visibly unsaved with working download",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1226
+        }
+      ]
+    },
+    {
+      "title": "EXIF-oriented JPEG displays identically in editor and exported player",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 812
+        }
+      ]
+    },
+    {
+      "title": "standalone image region clicks align at 1440, 1024 and 390 including letterboxing",
+      "project": "firefox",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2140
+        }
+      ]
+    },
+    {
+      "title": "empty state, batch of 20 same-name/Unicode images, order, dedup and atomic errors",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1250
+        }
+      ]
+    },
+    {
+      "title": "save, close, import preserves graph and IDs; deletion and move undo in one action",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2040
+        }
+      ]
+    },
+    {
+      "title": "numeric region editing, keyboard arrows and real contain geometry at 1440/1024/390 with zoom",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 990
+        }
+      ]
+    },
+    {
+      "title": "preview and independent file HTML share exact transitions, two errors, retry and finish",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 3151
+        }
+      ]
+    },
+    {
+      "title": "safe strings, canary exclusion, restrictive CSP and double click",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 945
+        }
+      ]
+    },
+    {
+      "title": "autosave restores on reload, second tab conflicts and manual backup stays available",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 4464
+        }
+      ]
+    },
+    {
+      "title": "unavailable/quota storage stays visibly unsaved with working download",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1536
+        }
+      ]
+    },
+    {
+      "title": "EXIF-oriented JPEG displays identically in editor and exported player",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 854
+        }
+      ]
+    },
+    {
+      "title": "standalone image region clicks align at 1440, 1024 and 390 including letterboxing",
+      "project": "webkit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2446
+        }
+      ]
+    }
+  ]
+}

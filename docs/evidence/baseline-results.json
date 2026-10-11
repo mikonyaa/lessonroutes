@@ -1,0 +1,23 @@
+{
+  "browser": "156.0.8078.4",
+  "sourceCommit": "874cd038f65baf3991dde979dae3a297f7ba65f9",
+  "steps": [
+    "Opened original app.html in an isolated Chromium context.",
+    "Upload input multiple attribute: absent.",
+    "Screen 1: selected a file, placed the single hotspot, typed its caption.",
+    "Screen 2: selected a file, placed the single hotspot, typed its caption.",
+    "Screen 3: selected a file, placed the single hotspot, typed its caption.",
+    "Inspected resulting step records (image, caption, hotspot x/y); no target/feedback branch fields were present.",
+    "Downloaded the actual standalone HTML for the achievable three-step linear subset."
+  ],
+  "stateKeys": [
+    "id",
+    "image",
+    "caption",
+    "hotspot"
+  ],
+  "sourceHasTargetNodeId": false,
+  "attemptedOfflineRequests": 2,
+  "pageErrors": [],
+  "limitation": "Requested first-screen incorrect branch + retry could not be authored in the exposed single-hotspot linear model. No completion-time comparison is valid."
+}

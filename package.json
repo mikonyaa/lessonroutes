@@ -1,0 +1,42 @@
+{
+  "name": "lessonroutes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests scripts --max-warnings 0",
+    "test:unit": "vitest run",
+    "build": "node scripts/build-player.mjs && vite build && node scripts/copy-public.mjs",
+    "test:e2e": "node scripts/run-e2e.mjs",
+    "package:web": "node scripts/package-web.mjs",
+    "test:production": "node scripts/test-production.mjs",
+    "demo:record": "node scripts/demo-record.mjs",
+    "examples:generate": "node scripts/generate-examples.mjs",
+    "test:vertical": "node scripts/vertical-check.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.64.0",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "axe-core": "4.14.0",
+    "esbuild": "0.28.2",
+    "eslint": "10.12.0",
+    "fake-indexeddb": "6.2.5",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.1",
+    "vite": "8.3.4",
+    "vitest": "5.0.3"
+  }
+}

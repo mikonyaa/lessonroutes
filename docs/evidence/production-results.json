@@ -1,0 +1,14 @@
+{
+  "zip": "lessonroutes-0.1.0-web.zip",
+  "sha256": "1664ecf1e8fd8bca82a30574113f1cfe6cb3c8fa24cb248834547afc48eabeda",
+  "node": "v24.21.0",
+  "browser": "156.0.8078.4",
+  "outsideSourceWorkspace": true,
+  "nodeModulesRequired": false,
+  "outcomes": [
+    "Path traversal, directory listing and out-of-app files rejected.",
+    "Occupied port exits cleanly without affecting the existing server.",
+    "Consumer root: author, backup/import, hard refresh, export, isolated offline keyboard completion at 390px.",
+    "Consumer arbitrary subpath: author, backup/import, hard refresh, export, isolated offline keyboard completion at 390px."
+  ]
+}

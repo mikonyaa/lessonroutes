@@ -1,0 +1,17 @@
+{
+  "format": "MP4 / H.264",
+  "durationSeconds": 21.84,
+  "browser": "156.0.8078.4",
+  "recording": "Real Playwright viewport capture; two real clips joined, no fabricated states.",
+  "steps": [
+    "Import editable example",
+    "Move a region and undo",
+    "Set destination",
+    "Preview incorrect choice and retry",
+    "Export actual HTML",
+    "Close author context",
+    "Open downloaded file in a separate offline learner context",
+    "Incorrect choice, retry and correct transition"
+  ],
+  "htmlBytes": 438865
+}

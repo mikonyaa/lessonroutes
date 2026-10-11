@@ -1,0 +1,18 @@
+{
+  "browser": "155.0.8059.39",
+  "zoom": "125% native browser default zoom",
+  "metrics": {
+    "innerWidth": 1152,
+    "outerWidth": 1440,
+    "devicePixelRatio": 1.25,
+    "cssZoom": "1",
+    "visualScale": 1,
+    "clientWidth": 1152,
+    "scrollWidth": 1152,
+    "toolsRight": 1126.0000305175781
+  },
+  "editorRegionClick": "correct inspector selection",
+  "filePlayerMousePath": "wrong feedback, retry, correct path to finish",
+  "outgoingRequests": 0,
+  "profile": "new isolated temporary profile"
+}

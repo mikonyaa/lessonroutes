@@ -1,0 +1,65 @@
+name: Deploy verified editor to Pages
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Successful Verify LessonRoutes push/main run ID
+        required: true
+        type: string
+      source_sha:
+        description: Exact 40-character head SHA of that verified run
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: lessonroutes-pages
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Verify the selected CI run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          [[ "$RUN_ID" =~ ^[0-9]+$ ]]
+          [[ "$SOURCE_SHA" =~ ^[a-f0-9]{40}$ ]]
+          gh api "repos/$REPOSITORY/actions/runs/$RUN_ID" > run.json
+          jq -e --arg sha "$SOURCE_SHA" '.name == "Verify LessonRoutes" and .event == "push" and .head_branch == "main" and .head_sha == $sha and .conclusion == "success"' run.json
+      - uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6
+        with:
+          name: verified-web
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+          path: verified
+      - name: Extract the verified app tree
+        env:
+          SOURCE_SHA: ${{ inputs.source_sha }}
+        run: |
+          jq -e --arg sha "$SOURCE_SHA" '.sourceCommit == $sha' verified/ci-build.json
+          (cd verified && sha256sum -c <(jq -r '.zip.sha256 + "  " + .zip.name' ci-build.json))
+          unzip -q verified/lessonroutes-0.1.0-web.zip -d unpacked
+          test -f unpacked/lessonroutes-0.1.0-web/app/index.html
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: unpacked/lessonroutes-0.1.0-web/app
+  deploy:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the verified editor tree
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

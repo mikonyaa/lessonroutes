@@ -1,0 +1,162 @@
+[
+  {
+    "browser": "Chromium",
+    "version": "156.0.8078.4",
+    "width": 1440,
+    "mode": "mouse",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Chromium",
+    "version": "156.0.8078.4",
+    "width": 1440,
+    "mode": "keyboard",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Chromium",
+    "version": "156.0.8078.4",
+    "width": 390,
+    "mode": "mouse",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Chromium",
+    "version": "156.0.8078.4",
+    "width": 390,
+    "mode": "keyboard",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Firefox",
+    "version": "157.0",
+    "width": 1440,
+    "mode": "mouse",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Firefox",
+    "version": "157.0",
+    "width": 1440,
+    "mode": "keyboard",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Firefox",
+    "version": "157.0",
+    "width": 390,
+    "mode": "mouse",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Firefox",
+    "version": "157.0",
+    "width": 390,
+    "mode": "keyboard",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Playwright WebKit",
+    "version": "27.2",
+    "width": 1440,
+    "mode": "mouse",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Playwright WebKit",
+    "version": "27.2",
+    "width": 1440,
+    "mode": "keyboard",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Playwright WebKit",
+    "version": "27.2",
+    "width": 390,
+    "mode": "mouse",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Playwright WebKit",
+    "version": "27.2",
+    "width": 390,
+    "mode": "keyboard",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Installed Google Chrome",
+    "version": "155.0.8059.39",
+    "width": 1440,
+    "mode": "mouse",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Installed Google Chrome",
+    "version": "155.0.8059.39",
+    "width": 1440,
+    "mode": "keyboard",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Installed Google Chrome",
+    "version": "155.0.8059.39",
+    "width": 390,
+    "mode": "mouse",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  },
+  {
+    "browser": "Installed Google Chrome",
+    "version": "155.0.8059.39",
+    "width": 390,
+    "mode": "keyboard",
+    "phase": "finished",
+    "outgoingRequests": 0,
+    "storage": "disabled",
+    "filePath": "Unicode and spaces"
+  }
+]

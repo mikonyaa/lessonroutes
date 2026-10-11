@@ -1,0 +1,11 @@
+import {mkdir,cp,copyFile,readFile,rm} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import path from 'node:path';
+const version=JSON.parse(await readFile('package.json','utf8')).version;
+const root=path.resolve('artifacts'),stage=path.join(root,`lessonroutes-${version}-web`),zip=path.join(root,`lessonroutes-${version}-web.zip`);
+await mkdir(root,{recursive:true});await rm(stage,{recursive:true,force:true});await mkdir(stage);
+await cp('dist',path.join(stage,'app'),{recursive:true});
+for(const f of ['README-OFFLINE.md','LICENSE','THIRD-PARTY-NOTICES.txt'])await copyFile(f,path.join(stage,f));
+await copyFile('scripts/serve.mjs',path.join(stage,'serve.mjs'));await cp('examples',path.join(stage,'examples'),{recursive:true});
+await rm(zip,{force:true});const result=spawnSync('zip',['-q','-r',zip,path.basename(stage)],{cwd:root,encoding:'utf8'});if(result.status!==0)throw new Error(result.stderr);
+console.log(zip);
