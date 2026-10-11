@@ -1,0 +1,157 @@
+{
+  "conclusion": "success",
+  "event": "push",
+  "headBranch": "main",
+  "headSha": "9e32fabecdec94fc4841a53bf6530d0dc132cd38",
+  "jobs": [
+    {
+      "completedAt": "2026-10-11T21:23:35Z",
+      "conclusion": "success",
+      "databaseId": 114578159271,
+      "name": "Tests, standalone player and final ZIP",
+      "startedAt": "2026-10-11T21:19:58Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-11T21:20:00Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-11T21:19:59Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:20:02Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "number": 2,
+          "startedAt": "2026-10-11T21:20:00Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:20:05Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "number": 3,
+          "startedAt": "2026-10-11T21:20:02Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:20:08Z",
+          "conclusion": "success",
+          "name": "Clean install",
+          "number": 4,
+          "startedAt": "2026-10-11T21:20:05Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:21:11Z",
+          "conclusion": "success",
+          "name": "Install real browser binaries and OS prerequisites",
+          "number": 5,
+          "startedAt": "2026-10-11T21:20:08Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:21:15Z",
+          "conclusion": "success",
+          "name": "Typecheck and lint",
+          "number": 6,
+          "startedAt": "2026-10-11T21:21:11Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:21:21Z",
+          "conclusion": "success",
+          "name": "Graph, import, geometry, runtime and atomic storage tests",
+          "number": 7,
+          "startedAt": "2026-10-11T21:21:15Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:21:21Z",
+          "conclusion": "success",
+          "name": "Production build",
+          "number": 8,
+          "startedAt": "2026-10-11T21:21:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:25Z",
+          "conclusion": "success",
+          "name": "Real browser authoring and file URL offline export tests",
+          "number": 9,
+          "startedAt": "2026-10-11T21:21:21Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:25Z",
+          "conclusion": "success",
+          "name": "Package final web ZIP",
+          "number": 10,
+          "startedAt": "2026-10-11T21:23:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:28Z",
+          "conclusion": "success",
+          "name": "Extract and verify the final consumer ZIP",
+          "number": 11,
+          "startedAt": "2026-10-11T21:23:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:28Z",
+          "conclusion": "success",
+          "name": "Record build origin and tool versions",
+          "number": 12,
+          "startedAt": "2026-10-11T21:23:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:29Z",
+          "conclusion": "success",
+          "name": "Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f",
+          "number": 13,
+          "startedAt": "2026-10-11T21:23:28Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:31Z",
+          "conclusion": "success",
+          "name": "Upload only synthetic verification evidence",
+          "number": 14,
+          "startedAt": "2026-10-11T21:23:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:33Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "number": 27,
+          "startedAt": "2026-10-11T21:23:31Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:33Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "number": 28,
+          "startedAt": "2026-10-11T21:23:33Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-11T21:23:33Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 29,
+          "startedAt": "2026-10-11T21:23:33Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38175915561/job/114578159271"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38175915561"
+}

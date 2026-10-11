@@ -4,7 +4,7 @@
 
 [![A real recording of importing, authoring, retrying and opening an exported lesson](examples/demo-poster.png)](examples/demo.mp4)
 
-[Watch the real demo (MP4)](examples/demo.mp4) · [Try editor](#try-editor) · [Download example project](examples/workspace.lessonroutes.project.json) · [Standalone example HTML](examples/lesson.html) · [Release builds](#offline-editor)
+[Watch the real demo (MP4)](https://mikonyaa.github.io/lessonroutes/examples/demo.mp4) · [Try editor](https://mikonyaa.github.io/lessonroutes/) · [Download example project](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/workspace.lessonroutes.project.json) · [Standalone example HTML](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/lesson.html) · [Releases](https://github.com/mikonyaa/lessonroutes/releases/tag/v0.1.0)
 
 An experimental local web editor for teachers making a small practice exercise
 from application screens. Add screenshots in a batch, mark rectangular choices,
@@ -18,7 +18,8 @@ There are no teacher pilot results or measured authoring-time advantage yet.
 
 ## Try editor
 
-The full editor is available in the offline web ZIP. Start with **Open example**,
+Open the [complete editor on GitHub Pages](https://mikonyaa.github.io/lessonroutes/),
+or use the offline web ZIP. Start with **Open example**,
 or **New lesson → Add screenshots**. Name each step and give it an instruction and
 image description. **Add action** creates a keyboard-editable rectangle; **Draw
 region** lets you drag one. Set the action's label, outcome, feedback and destination.
@@ -36,7 +37,7 @@ account or personal information is shown. [Example license](examples/LICENSE).
 
 ## Offline editor
 
-Download and extract `lessonroutes-0.1.0-web.zip` from the project's release.
+Download and extract [lessonroutes-0.1.0-web.zip](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/lessonroutes-0.1.0-web.zip).
 Install **Node.js 24 LTS** first, then run in the extracted folder:
 
 ```sh
@@ -186,6 +187,14 @@ allowlisted synthetic screenshots/reports and the verified build are uploaded.
 Actions are pinned to full commit SHAs. Pages is a separate manually dispatched
 workflow that deploys `app/` from a successful push/main CI artifact at the chosen
 commit; it does not rebuild a different tree or deploy the whole repository.
+
+The [v0.1.0 publication record](docs/publication.md) includes the exact source
+commit, successful CI/Pages runs, checksums and public verification. After installing
+the documented prerequisites, repeat the unauthenticated public checks with:
+
+```sh
+node scripts/public-qa.mjs --repo mikonyaa/lessonroutes --pages https://mikonyaa.github.io/lessonroutes/
+```
 
 ## License, contributions and security
 

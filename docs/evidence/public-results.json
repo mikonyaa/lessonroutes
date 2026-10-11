@@ -1,0 +1,670 @@
+{
+  "version": "0.1.0",
+  "sourceCommit": "9e32fabecdec94fc4841a53bf6530d0dc132cd38",
+  "pages": "https://mikonyaa.github.io/lessonroutes/",
+  "repository": "mikonyaa/lessonroutes",
+  "unauthenticated": true,
+  "browser": "156.0.8078.4",
+  "assets": [
+    {
+      "name": "lesson.html",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/lesson.html",
+      "bytes": 438865,
+      "contentType": "application/octet-stream",
+      "sha256": "01f970e0175a1989dedf7b213295349a5fa9f07a5635d56cceaf9ecba19d0d44"
+    },
+    {
+      "name": "lessonroutes-0.1.0-web.zip",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/lessonroutes-0.1.0-web.zip",
+      "bytes": 3622310,
+      "contentType": "application/octet-stream",
+      "sha256": "1aa7d0b49190d82047bb2a8df707aeb9d1ab4d45c400aea736e7ad3881969d5b"
+    },
+    {
+      "name": "lessonroutes-licenses.txt",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/lessonroutes-licenses.txt",
+      "bytes": 5624,
+      "contentType": "application/octet-stream",
+      "sha256": "43d4b8a38e17acabb134542c4b660462d67118b5b5c91859449d0063be0976f1"
+    },
+    {
+      "name": "release-manifest.json",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/release-manifest.json",
+      "bytes": 1220,
+      "contentType": "application/octet-stream",
+      "sha256": "787f2310685326006f52b99b05188dbc3100301d445c15e1153165eceec5e2f2"
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/SHA256SUMS",
+      "bytes": 453,
+      "contentType": "application/octet-stream",
+      "sha256": "f2b1d122075fcc9c985930ae042f69e74befc5e6caeba83d22071d58a0915de0"
+    },
+    {
+      "name": "workspace.lessonroutes.project.json",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/workspace.lessonroutes.project.json",
+      "bytes": 433304,
+      "contentType": "application/octet-stream",
+      "sha256": "ac5bc329d34a4fd1e3ef776cf690fa3a0a0b56f00ed780ce62be64b104cfebe9"
+    }
+  ],
+  "publishedTree": [
+    "examples/LICENSE",
+    "examples/demo-poster.png",
+    "examples/demo.mp4",
+    "examples/lesson.html",
+    "examples/workspace.lessonroutes.project.json",
+    "assets/index-5cim624m.css",
+    "assets/index-Bo-RcKek.js",
+    "index.html"
+  ],
+  "checks": [
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/blob/main/README.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/blob/main/LICENSE",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/blob/main/src/editor/App.tsx",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/blob/main/examples/demo.mp4",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/tag/v0.1.0",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38175915561",
+      "status": 200
+    },
+    {
+      "pages": "https://mikonyaa.github.io/lessonroutes/",
+      "width": 1440,
+      "authoring": true,
+      "saveImport": true,
+      "hardRefresh": true,
+      "browserCacheDisabled": true,
+      "previewExportIdentical": true,
+      "offline": {
+        "width": 1440,
+        "mode": "keyboard",
+        "outgoing": 0,
+        "phase": "finished",
+        "transitions": [
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "public",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "visibility",
+            "actionId": "public",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "shared",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "visibility",
+            "actionId": "shared",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "private",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "invitations",
+            "actionId": "private",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "invitations",
+            "actionId": "code",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "notifications",
+            "actionId": "code",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "notifications",
+            "actionId": "essential",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "recovery",
+            "actionId": "essential",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "recovery",
+            "actionId": "backup",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "review",
+            "actionId": "backup",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "review",
+            "actionId": "apply",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "complete",
+            "actionId": "apply",
+            "phase": "finished"
+          }
+        ]
+      }
+    },
+    {
+      "pages": "https://mikonyaa.github.io/lessonroutes/",
+      "width": 390,
+      "authoring": true,
+      "saveImport": true,
+      "hardRefresh": true,
+      "browserCacheDisabled": true,
+      "previewExportIdentical": true,
+      "offline": {
+        "width": 390,
+        "mode": "keyboard",
+        "outgoing": 0,
+        "phase": "finished",
+        "transitions": [
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "public",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "visibility",
+            "actionId": "public",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "shared",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "visibility",
+            "actionId": "shared",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "private",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "invitations",
+            "actionId": "private",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "invitations",
+            "actionId": "code",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "notifications",
+            "actionId": "code",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "notifications",
+            "actionId": "essential",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "recovery",
+            "actionId": "essential",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "recovery",
+            "actionId": "backup",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "review",
+            "actionId": "backup",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "review",
+            "actionId": "apply",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "complete",
+            "actionId": "apply",
+            "phase": "finished"
+          }
+        ]
+      }
+    },
+    {
+      "publicReleasePlayer": true,
+      "width": 1440,
+      "mode": "mouse",
+      "outgoing": 0,
+      "phase": "finished",
+      "transitions": [
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "private",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "invitations",
+          "actionId": "private",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "invitations",
+          "actionId": "code",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "notifications",
+          "actionId": "code",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "notifications",
+          "actionId": "essential",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "recovery",
+          "actionId": "essential",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "recovery",
+          "actionId": "backup",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "review",
+          "actionId": "backup",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "review",
+          "actionId": "apply",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "complete",
+          "actionId": "apply",
+          "phase": "finished"
+        }
+      ]
+    },
+    {
+      "publicReleasePlayer": true,
+      "width": 1440,
+      "mode": "keyboard",
+      "outgoing": 0,
+      "phase": "finished",
+      "transitions": [
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "private",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "invitations",
+          "actionId": "private",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "invitations",
+          "actionId": "code",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "notifications",
+          "actionId": "code",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "notifications",
+          "actionId": "essential",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "recovery",
+          "actionId": "essential",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "recovery",
+          "actionId": "backup",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "review",
+          "actionId": "backup",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "review",
+          "actionId": "apply",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "complete",
+          "actionId": "apply",
+          "phase": "finished"
+        }
+      ]
+    },
+    {
+      "publicReleasePlayer": true,
+      "width": 390,
+      "mode": "mouse",
+      "outgoing": 0,
+      "phase": "finished",
+      "transitions": [
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "private",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "invitations",
+          "actionId": "private",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "invitations",
+          "actionId": "code",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "notifications",
+          "actionId": "code",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "notifications",
+          "actionId": "essential",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "recovery",
+          "actionId": "essential",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "recovery",
+          "actionId": "backup",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "review",
+          "actionId": "backup",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "review",
+          "actionId": "apply",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "complete",
+          "actionId": "apply",
+          "phase": "finished"
+        }
+      ]
+    },
+    {
+      "publicReleasePlayer": true,
+      "width": 390,
+      "mode": "keyboard",
+      "outgoing": 0,
+      "phase": "finished",
+      "transitions": [
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "private",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "invitations",
+          "actionId": "private",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "invitations",
+          "actionId": "code",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "notifications",
+          "actionId": "code",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "notifications",
+          "actionId": "essential",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "recovery",
+          "actionId": "essential",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "recovery",
+          "actionId": "backup",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "review",
+          "actionId": "backup",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "review",
+          "actionId": "apply",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "complete",
+          "actionId": "apply",
+          "phase": "finished"
+        }
+      ]
+    }
+  ],
+  "screens": [
+    "output/playwright/public-pages-1440.png",
+    "output/playwright/public-pages-390.png"
+  ]
+}

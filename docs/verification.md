@@ -6,6 +6,11 @@ temporary profiles and loopback servers were created only for this project. Othe
 projects, active Codex sessions and the installed main browser profile were not
 used or changed.
 
+Local results: **46 unit tests and 39 browser tests passed**, with zero skipped,
+unexpected or flaky cases. The release's independent clean Linux CI pass has the
+same counts. See [publication verification](publication.md) for its exact commit,
+run, artifact checksum and unauthenticated post-release checks.
+
 ## Real browser matrix
 
 | Browser | Exact local version | Checked |
@@ -84,6 +89,6 @@ claim or authoring-time improvement is asserted.
 
 Sanitized results are in [evidence/](evidence/). Local commands were executed, not
 merely documented: npm ci, dev on 127.0.0.1, typecheck, lint, test:unit, build,
-test:e2e, package:web, test:production and demo:record. Publication evidence will
-record the exact CI run, source commit, Release and actual Pages URL after those
-independent gates pass.
+test:e2e, package:web, test:production and demo:record. The exact CI run, source
+commit, Release, actual Pages URL and public-delivery checks are recorded in
+[publication.md](publication.md).
