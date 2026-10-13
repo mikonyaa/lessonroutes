@@ -1,0 +1,84 @@
+{
+  "run": 38477846372,
+  "sourceCommit": "c6e3e9bf8c96afbd6a88c2958bc319c1a45da0ca",
+  "stats": {
+    "startTime": "2026-10-13T22:28:01.065Z",
+    "duration": 353762.074,
+    "expected": 107,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  },
+  "failed": [
+    {
+      "file": "persistence.spec.ts",
+      "line": 44,
+      "title": "LR-1: project owns recovery after stale transaction",
+      "project": "webkit",
+      "status": "flaky",
+      "results": [
+        {
+          "workerIndex": 2,
+          "parallelIndex": 0,
+          "status": "failed",
+          "duration": 3344,
+          "error": {
+            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'objectStore' on 'IDBTransaction': The transaction finished.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'objectStore' on 'IDBTransaction': The transaction finished.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/runner/work/lessonroutes/lessonroutes/tests/e2e/persistence.spec.ts:13:170",
+            "location": {
+              "file": "/home/runner/work/lessonroutes/lessonroutes/tests/e2e/persistence.spec.ts",
+              "column": 170,
+              "line": 13
+            },
+            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m \u001b[36mconst\u001b[39m observations\u001b[33m=\u001b[39m\u001b[36mnew\u001b[39m \u001b[33mWeakMap\u001b[39m\u001b[33m<\u001b[39m\u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m{errors\u001b[33m:\u001b[39mstring[]\u001b[33m;\u001b[39mrequests\u001b[33m:\u001b[39mstring[]}\u001b[33m>\u001b[39m()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{page\u001b[33m.\u001b[39mon(\u001b[32m'dialog'\u001b[39m\u001b[33m,\u001b[39md\u001b[33m=>\u001b[39md\u001b[33m.\u001b[39maccept())\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m log\u001b[33m=\u001b[39m{errors\u001b[33m:\u001b[39m[] \u001b[36mas\u001b[39m string[]\u001b[33m,\u001b[39mrequests\u001b[33m:\u001b[39m[] \u001b[36mas\u001b[39m string[]}\u001b[33m;\u001b[39mobservations\u001b[33m.\u001b[39m\u001b[36mset\u001b[39m(page\u001b[33m,\u001b[39mlog)\u001b[33m;\u001b[39mpage\u001b[33m.\u001b[39mon(\u001b[32m'pageerror'\u001b[39m\u001b[33m,\u001b[39me\u001b[33m=>\u001b[39mlog\u001b[33m.\u001b[39merrors\u001b[33m.\u001b[39mpush(e\u001b[33m.\u001b[39mmessage))\u001b[33m;\u001b[39mpage\u001b[33m.\u001b[39mon(\u001b[32m'request'\u001b[39m\u001b[33m,\u001b[39mr\u001b[33m=>\u001b[39mlog\u001b[33m.\u001b[39mrequests\u001b[33m.\u001b[39mpush(r\u001b[33m.\u001b[39murl()))\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m test\u001b[33m.\u001b[39mafterEach(\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m log\u001b[33m=\u001b[39mobservations\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(page)\u001b[33m!\u001b[39m\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m writeFile(info\u001b[33m.\u001b[39moutputPath(\u001b[32m'browser-log.json'\u001b[39m)\u001b[33m,\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(log\u001b[33m,\u001b[39m\u001b[36mnull\u001b[39m\u001b[33m,\u001b[39m\u001b[35m2\u001b[39m))\u001b[33m;\u001b[39mexpect(log\u001b[33m.\u001b[39merrors)\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m test(\u001b[32m'LR-1: delayed A open cannot replace B Saved or durable recovery'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\n \u001b[90m 16 |\u001b[39m   \u001b[36mawait\u001b[39m ready(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m input(page\u001b[33m,\u001b[39mfixtureProject(\u001b[32m'A'\u001b[39m))\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m saved(page)\u001b[33m;\u001b[39m\u001b[0m"
+          },
+          "errors": [
+            {
+              "location": {
+                "file": "/home/runner/work/lessonroutes/lessonroutes/tests/e2e/persistence.spec.ts",
+                "column": 170,
+                "line": 13
+              },
+              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"Failed to execute 'objectStore' on 'IDBTransaction': The transaction finished.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  11 | const observations=new WeakMap<Page,{errors:string[];requests:string[]}>();\n  12 | test.beforeEach(async({page})=>{page.on('dialog',d=>d.accept());const log={errors:[] as string[],requests:[] as string[]};observations.set(page,log);page.on('pageerror',e=>log.errors.push(e.message));page.on('request',r=>log.requests.push(r.url()));});\n> 13 | test.afterEach(async({page},info)=>{const log=observations.get(page)!;await writeFile(info.outputPath('browser-log.json'),JSON.stringify(log,null,2));expect(log.errors).toEqual([]);});\n     |                                                                                                                                                                          ^\n  14 |\n  15 | test('LR-1: delayed A open cannot replace B Saved or durable recovery',async({page},info)=>{\n  16 |   await ready(page);await input(page,fixtureProject('A'));await saved(page);\n    at /home/runner/work/lessonroutes/lessonroutes/tests/e2e/persistence.spec.ts:13:170"
+            }
+          ],
+          "stdout": [],
+          "stderr": [],
+          "retry": 0,
+          "startTime": "2026-10-13T22:32:48.953Z",
+          "annotations": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/home/runner/work/lessonroutes/lessonroutes/test-results/persistence-LR-1-project-o-23647-ery-after-stale-transaction-webkit/test-failed-1.png"
+            },
+            {
+              "name": "error-context",
+              "contentType": "text/markdown",
+              "path": "/home/runner/work/lessonroutes/lessonroutes/test-results/persistence-LR-1-project-o-23647-ery-after-stale-transaction-webkit/error-context.md"
+            }
+          ],
+          "errorLocation": {
+            "file": "/home/runner/work/lessonroutes/lessonroutes/tests/e2e/persistence.spec.ts",
+            "column": 170,
+            "line": 13
+          }
+        },
+        {
+          "workerIndex": 3,
+          "parallelIndex": 0,
+          "status": "passed",
+          "duration": 3430,
+          "errors": [],
+          "stdout": [],
+          "stderr": [],
+          "retry": 1,
+          "startTime": "2026-10-13T22:32:52.680Z",
+          "annotations": [],
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}

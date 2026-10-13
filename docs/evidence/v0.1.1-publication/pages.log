@@ -1,0 +1,222 @@
+prepare	Set up job	﻿2026-10-13T22:50:23.4709558Z Current runner version: '2.337.0'
+prepare	Set up job	2026-10-13T22:50:23.4739377Z ##[group]Runner Image Provisioner
+prepare	Set up job	2026-10-13T22:50:23.4740299Z Hosted Compute Agent
+prepare	Set up job	2026-10-13T22:50:23.4741370Z Version: 20261002.596
+prepare	Set up job	2026-10-13T22:50:23.4742055Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+prepare	Set up job	2026-10-13T22:50:23.4742923Z Build Date: 2026-10-02T22:28:27Z
+prepare	Set up job	2026-10-13T22:50:23.4743678Z Worker ID: {78f39e8b-f00a-4d79-b0d4-eeba96044413}
+prepare	Set up job	2026-10-13T22:50:23.4744416Z Region: westcentralus
+prepare	Set up job	2026-10-13T22:50:23.4745109Z Cloud: Azure
+prepare	Set up job	2026-10-13T22:50:23.4745695Z ##[endgroup]
+prepare	Set up job	2026-10-13T22:50:23.4747379Z ##[group]Operating System
+prepare	Set up job	2026-10-13T22:50:23.4748121Z Ubuntu
+prepare	Set up job	2026-10-13T22:50:23.4748686Z 24.04.5
+prepare	Set up job	2026-10-13T22:50:23.4749276Z LTS
+prepare	Set up job	2026-10-13T22:50:23.4749834Z ##[endgroup]
+prepare	Set up job	2026-10-13T22:50:23.4751721Z ##[group]Runner Image
+prepare	Set up job	2026-10-13T22:50:23.4752911Z Image: ubuntu-24.04
+prepare	Set up job	2026-10-13T22:50:23.4753799Z Version: 20261004.327.1
+prepare	Set up job	2026-10-13T22:50:23.4755655Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+prepare	Set up job	2026-10-13T22:50:23.4758599Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+prepare	Set up job	2026-10-13T22:50:23.4760535Z ##[endgroup]
+prepare	Set up job	2026-10-13T22:50:23.4762886Z ##[group]GITHUB_TOKEN Permissions
+prepare	Set up job	2026-10-13T22:50:23.4765686Z Actions: read
+prepare	Set up job	2026-10-13T22:50:23.4766347Z Contents: read
+prepare	Set up job	2026-10-13T22:50:23.4767084Z Metadata: read
+prepare	Set up job	2026-10-13T22:50:23.4767963Z ##[endgroup]
+prepare	Set up job	2026-10-13T22:50:23.4770669Z Secret source: Actions
+prepare	Set up job	2026-10-13T22:50:23.4771865Z Cache mode: write
+prepare	Set up job	2026-10-13T22:50:23.4772612Z Prepare workflow directory
+prepare	Set up job	2026-10-13T22:50:23.5118589Z Prepare all required actions
+prepare	Set up job	2026-10-13T22:50:23.5166971Z Getting action download info
+prepare	Set up job	2026-10-13T22:50:23.8061829Z Download action repository 'actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53' (SHA:018cc2cf5baa6db3ef3c5f8a56943fffe632ef53)
+prepare	Set up job	2026-10-13T22:50:24.4739943Z Download action repository 'actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9' (SHA:fc324d3547104276b827a68afc52ff2a11cc49c9)
+prepare	Set up job	2026-10-13T22:50:24.7987326Z Getting action download info
+prepare	Set up job	2026-10-13T22:50:24.9209719Z Download action repository 'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f' (SHA:bbbca2ddaa5d8feaa63e36b76fdaad77386f024f)
+prepare	Set up job	2026-10-13T22:50:25.0784187Z Complete job name: prepare
+prepare	Verify the selected CI run	﻿2026-10-13T22:50:25.1575719Z ##[group]Run [[ "$RUN_ID" =~ ^[0-9]+$ ]]
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1576974Z ^[[36;1m[[ "$RUN_ID" =~ ^[0-9]+$ ]]^[[0m
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1578063Z ^[[36;1m[[ "$SOURCE_SHA" =~ ^[a-f0-9]{40}$ ]]^[[0m
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1579501Z ^[[36;1mgh api "repos/$REPOSITORY/actions/runs/$RUN_ID" > run.json^[[0m
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1582454Z ^[[36;1mjq -e --arg sha "$SOURCE_SHA" '.name == "Verify LessonRoutes" and .event == "push" and .head_branch == "main" and .head_sha == $sha and .conclusion == "success"' run.json^[[0m
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1824302Z shell: /usr/bin/bash -e {0}
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1826110Z env:
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1834427Z   GH_TOKEN: ***
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1835267Z   RUN_ID: 38479208321
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1836293Z   SOURCE_SHA: 020c20cc81152130cbaaa274e922bdbd687ec9a0
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1837533Z   REPOSITORY: mikonyaa/lessonroutes
+prepare	Verify the selected CI run	2026-10-13T22:50:25.1838566Z ##[endgroup]
+prepare	Verify the selected CI run	2026-10-13T22:50:25.6859699Z true
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	﻿2026-10-13T22:50:25.7092103Z ##[group]Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.7093847Z with:
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.7094739Z   name: verified-web
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.7095707Z   run-id: 38479208321
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.7104298Z   github-token: ***
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.7105279Z   path: verified
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.7106246Z   merge-multiple: false
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.7107299Z   repository: mikonyaa/lessonroutes
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.7108439Z ##[endgroup]
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.8773793Z Downloading single artifact
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.8777435Z (node:2302) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:25.8779929Z (Use `node --trace-deprecation ...` to show where the warning was created)
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:26.1787511Z Preparing to download the following artifacts:
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:26.1792365Z - verified-web (ID: 11856347774, Size: 3621582, Expected Digest: sha256:32ef4880bd2a40daa5d3d52dda607a124164b28f064c17fd1c496abad15eb185)
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:26.1799822Z Downloading artifact '11856347774' from 'mikonyaa/lessonroutes'
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:26.3875055Z Redirecting to blob download url: https://productionresultssa7.blob.core.windows.net/actions-results/5f0cf707-5be2-8e36-a3bf-ebba1d670d5f/workflow-job-run-fa1d4a7b-5244-51b1-a333-51387e5694e4/artifacts/663f5c8b6767f985803b5ba3c098496600ae05e34714972ba6bfcf74a85e707a.zip
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:26.3877237Z Starting download of artifact to: /home/runner/work/lessonroutes/lessonroutes/verified
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:26.6730621Z (node:2302) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:27.3551989Z SHA256 digest of downloaded artifact is 32ef4880bd2a40daa5d3d52dda607a124164b28f064c17fd1c496abad15eb185
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:27.3553373Z Artifact download completed successfully.
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:27.3553986Z Total of 1 artifact(s) downloaded
+prepare	Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53	2026-10-13T22:50:27.3557315Z Download artifact has finished successfully
+prepare	Extract the verified app tree	﻿2026-10-13T22:50:27.3732905Z ##[group]Run jq -e --arg sha "$SOURCE_SHA" '.sourceCommit == $sha' verified/ci-build.json
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3733625Z ^[[36;1mjq -e --arg sha "$SOURCE_SHA" '.sourceCommit == $sha' verified/ci-build.json^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3734230Z ^[[36;1m(cd verified && sha256sum -c <(jq -r '.zip.sha256 + "  " + .zip.name' ci-build.json))^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3734788Z ^[[36;1mVERSION=$(jq -r '.version' verified/ci-build.json)^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3735203Z ^[[36;1m[[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3735592Z ^[[36;1mZIP_NAME="lessonroutes-$VERSION-web.zip"^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3736062Z ^[[36;1mjq -e --arg name "$ZIP_NAME" '.zip.name == $name' verified/ci-build.json^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3736555Z ^[[36;1munzip -q "verified/$ZIP_NAME" -d unpacked^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3736974Z ^[[36;1mAPP_PATH="unpacked/lessonroutes-$VERSION-web/app"^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3737370Z ^[[36;1mtest -f "$APP_PATH/index.html"^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3737778Z ^[[36;1mprintf 'app_path=%s\n' "$APP_PATH" >> "$GITHUB_OUTPUT"^[[0m
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3811051Z shell: /usr/bin/bash -e {0}
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3811402Z env:
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3811716Z   SOURCE_SHA: 020c20cc81152130cbaaa274e922bdbd687ec9a0
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3812089Z ##[endgroup]
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3932843Z true
+prepare	Extract the verified app tree	2026-10-13T22:50:27.3995226Z lessonroutes-0.1.1-web.zip: OK
+prepare	Extract the verified app tree	2026-10-13T22:50:27.4052721Z true
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	﻿2026-10-13T22:50:27.4556114Z ##[group]Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4556648Z with:
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4556950Z   path: unpacked/lessonroutes-0.1.1-web/app
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4557315Z   name: github-pages
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4557605Z   retention-days: 1
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4557914Z   include-hidden-files: false
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4558238Z ##[endgroup]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4617279Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4762374Z ##[group]Run echo ::group::Archive artifact
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4762837Z ^[[36;1mecho ::group::Archive artifact^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4763169Z ^[[36;1mtar \^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4763591Z ^[[36;1m  --dereference --hard-dereference \^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4764011Z ^[[36;1m  --directory "$INPUT_PATH" \^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4764369Z ^[[36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4764714Z ^[[36;1m  --exclude=.git \^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4765022Z ^[[36;1m  --exclude=.github \^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4765384Z ^[[36;1m  --exclude=.[^/]* \^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4765678Z ^[[36;1m  .^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4765947Z ^[[36;1mecho ::endgroup::^[[0m
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4796096Z shell: /usr/bin/sh -e {0}
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4796435Z env:
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4796749Z   INPUT_PATH: unpacked/lessonroutes-0.1.1-web/app
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4797313Z ##[endgroup]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4842382Z ##[group]Archive artifact
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4855591Z ./
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4856070Z ./examples/
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4856475Z ./examples/LICENSE
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4856918Z ./examples/demo-poster.png
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4859241Z ./examples/demo.mp4
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4865873Z ./examples/lesson.html
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4870007Z ./examples/workspace.lessonroutes.project.json
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4874386Z ./assets/
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4874794Z ./assets/index-CGXAlEC7.js
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4876942Z ./assets/index-5cim624m.css
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4877437Z ./index.html
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4880504Z ##[endgroup]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4893812Z ##[end-action id=__actions_upload-pages-artifact.__run;outcome=success;conclusion=success;duration_ms=27]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4897946Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_2]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4904405Z ##[end-action id=__actions_upload-pages-artifact.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4907624Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_3]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4913857Z ##[end-action id=__actions_upload-pages-artifact.__run_3;outcome=skipped;conclusion=skipped;duration_ms=0]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4916260Z ##[start-action display=Upload artifact;id=__actions_upload-pages-artifact.upload-artifact]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4973496Z ##[group]Run actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4973978Z with:
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4974241Z   name: github-pages
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4974550Z   path: /home/runner/work/_temp/artifact.tar
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4974909Z   retention-days: 1
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4975191Z   if-no-files-found: error
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4975489Z   compression-level: 6
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4975766Z   overwrite: false
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4976039Z   include-hidden-files: false
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4976338Z   archive: true
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.4976614Z ##[endgroup]
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.6345803Z With the provided path, there will be 1 file uploaded
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.6359806Z Artifact name is valid!
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.6360727Z Root directory input is valid!
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.9558085Z Uploading artifact: github-pages.zip
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:27.9603472Z Beginning upload of artifact content to blob storage
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:28.6597839Z Uploaded bytes 1703247
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:28.7168708Z Finished uploading artifact content to blob storage!
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:28.7169763Z SHA256 digest of uploaded artifact is fb4cc499770a00bf76a68054f06f4c53b47ec1d6a887a7e04e3c096bf4938f81
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:28.7170616Z Finalizing artifact upload
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:29.0544096Z Artifact github-pages successfully finalized. Artifact ID 11856778508
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:29.0545257Z Artifact github-pages has been successfully uploaded! Final size is 1703247 bytes. Artifact ID is 11856778508
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:29.0548876Z Artifact download URL: https://github.com/mikonyaa/lessonroutes/actions/runs/38480427253/artifacts/11856778508
+prepare	Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9	2026-10-13T22:50:29.0638565Z ##[end-action id=__actions_upload-pages-artifact.upload-artifact;outcome=success;conclusion=success;duration_ms=1572]
+prepare	Complete job	﻿2026-10-13T22:50:29.0739961Z Cleaning up orphan processes
+prepare	Complete job	2026-10-13T22:50:29.1068621Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Set up job	﻿2026-10-13T22:50:36.2549110Z Current runner version: '2.337.0'
+deploy	Set up job	2026-10-13T22:50:36.2575576Z ##[group]Runner Image Provisioner
+deploy	Set up job	2026-10-13T22:50:36.2576565Z Hosted Compute Agent
+deploy	Set up job	2026-10-13T22:50:36.2577198Z Version: 20261002.596
+deploy	Set up job	2026-10-13T22:50:36.2577900Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+deploy	Set up job	2026-10-13T22:50:36.2578798Z Build Date: 2026-10-02T22:28:27Z
+deploy	Set up job	2026-10-13T22:50:36.2579501Z Worker ID: {6b2d95a4-dd63-4a90-861b-165edab26cdb}
+deploy	Set up job	2026-10-13T22:50:36.2580798Z Region: westus
+deploy	Set up job	2026-10-13T22:50:36.2581422Z Cloud: Azure
+deploy	Set up job	2026-10-13T22:50:36.2581961Z ##[endgroup]
+deploy	Set up job	2026-10-13T22:50:36.2583806Z ##[group]Operating System
+deploy	Set up job	2026-10-13T22:50:36.2584478Z Ubuntu
+deploy	Set up job	2026-10-13T22:50:36.2585067Z 24.04.5
+deploy	Set up job	2026-10-13T22:50:36.2585610Z LTS
+deploy	Set up job	2026-10-13T22:50:36.2586133Z ##[endgroup]
+deploy	Set up job	2026-10-13T22:50:36.2586825Z ##[group]Runner Image
+deploy	Set up job	2026-10-13T22:50:36.2587445Z Image: ubuntu-24.04
+deploy	Set up job	2026-10-13T22:50:36.2588086Z Version: 20261004.327.1
+deploy	Set up job	2026-10-13T22:50:36.2589188Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+deploy	Set up job	2026-10-13T22:50:36.2591284Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+deploy	Set up job	2026-10-13T22:50:36.2592305Z ##[endgroup]
+deploy	Set up job	2026-10-13T22:50:36.2593489Z ##[group]GITHUB_TOKEN Permissions
+deploy	Set up job	2026-10-13T22:50:36.2595404Z Metadata: read
+deploy	Set up job	2026-10-13T22:50:36.2596202Z Pages: write
+deploy	Set up job	2026-10-13T22:50:36.2596809Z ##[endgroup]
+deploy	Set up job	2026-10-13T22:50:36.2598846Z Secret source: Actions
+deploy	Set up job	2026-10-13T22:50:36.2599882Z Cache mode: write
+deploy	Set up job	2026-10-13T22:50:36.2601021Z Prepare workflow directory
+deploy	Set up job	2026-10-13T22:50:36.2955866Z Prepare all required actions
+deploy	Set up job	2026-10-13T22:50:36.3007316Z Getting action download info
+deploy	Set up job	2026-10-13T22:50:36.6484634Z Download action repository 'actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346' (SHA:368f82528645a54fb793d4d04e342629a3f51346)
+deploy	Set up job	2026-10-13T22:50:37.3277530Z Complete job name: deploy
+deploy	Deploy the verified editor tree	﻿2026-10-13T22:50:37.4087941Z ##[group]Run actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.4089078Z with:
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.4092963Z   token: ***
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.4093414Z   timeout: 600000
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.4093873Z   error_count: 10
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.4094340Z   reporting_interval: 5000
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.4094863Z   artifact_name: github-pages
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.4095389Z   preview: false
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.4096086Z ##[endgroup]
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.6036190Z (node:2197) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.6037603Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Deploy the verified editor tree	2026-10-13T22:50:37.9026993Z Fetching artifact metadata for "github-pages" in this workflow run
+deploy	Deploy the verified editor tree	2026-10-13T22:50:38.1731823Z Found 1 artifact(s)
+deploy	Deploy the verified editor tree	2026-10-13T22:50:38.1746396Z Creating Pages deployment with payload:
+deploy	Deploy the verified editor tree	2026-10-13T22:50:38.1747363Z {
+deploy	Deploy the verified editor tree	2026-10-13T22:50:38.1748057Z 	"artifact_id": 11856778508,
+deploy	Deploy the verified editor tree	2026-10-13T22:50:38.1749169Z 	"pages_build_version": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+deploy	Deploy the verified editor tree	2026-10-13T22:50:38.1824333Z 	"oidc_token": "***"
+deploy	Deploy the verified editor tree	2026-10-13T22:50:38.1825191Z }
+deploy	Deploy the verified editor tree	2026-10-13T22:50:39.0481614Z Created deployment for 020c20cc81152130cbaaa274e922bdbd687ec9a0, ID: 020c20cc81152130cbaaa274e922bdbd687ec9a0
+deploy	Deploy the verified editor tree	2026-10-13T22:50:44.1117629Z Getting Pages deployment status...
+deploy	Deploy the verified editor tree	2026-10-13T22:50:44.3800541Z Current status: updating_pages
+deploy	Deploy the verified editor tree	2026-10-13T22:50:52.5757059Z Getting Pages deployment status...
+deploy	Deploy the verified editor tree	2026-10-13T22:50:52.8648577Z Current status: updating_pages
+deploy	Deploy the verified editor tree	2026-10-13T22:51:02.5357642Z Getting Pages deployment status...
+deploy	Deploy the verified editor tree	2026-10-13T22:51:02.7953857Z Current status: updating_pages
+deploy	Deploy the verified editor tree	2026-10-13T22:51:17.8887849Z Getting Pages deployment status...
+deploy	Deploy the verified editor tree	2026-10-13T22:51:18.1455091Z Current status: updating_pages
+deploy	Deploy the verified editor tree	2026-10-13T22:51:41.6663281Z Getting Pages deployment status...
+deploy	Deploy the verified editor tree	2026-10-13T22:51:41.8755315Z Reported success!
+deploy	Complete job	﻿2026-10-13T22:51:41.9076048Z Evaluate and set environment url
+deploy	Complete job	2026-10-13T22:51:41.9081481Z Evaluated environment url: https://mikonyaa.github.io/lessonroutes/
+deploy	Complete job	2026-10-13T22:51:41.9082459Z Cleaning up orphan processes

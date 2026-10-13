@@ -1,0 +1,213 @@
+{
+  "repository": "mikonyaa/lessonroutes",
+  "repositoryId": 1414780852,
+  "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+  "runId": 38479208321,
+  "url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38479208321",
+  "workflow": ".github/workflows/ci.yml",
+  "event": "push",
+  "branch": "main",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "id": 115577371843,
+      "run_id": 38479208321,
+      "workflow_name": "Verify LessonRoutes",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/mikonyaa/lessonroutes/actions/runs/38479208321",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVFPXtM8AAAAa6PK8ww",
+      "head_sha": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+      "url": "https://api.github.com/repos/mikonyaa/lessonroutes/actions/jobs/115577371843",
+      "html_url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38479208321/job/115577371843",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-13T22:39:11Z",
+      "started_at": "2026-10-13T22:39:13Z",
+      "completed_at": "2026-10-13T22:46:37Z",
+      "name": "Tests, standalone player and final ZIP",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-13T22:39:14Z",
+          "completed_at": "2026-10-13T22:39:16Z"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-13T22:39:16Z",
+          "completed_at": "2026-10-13T22:39:17Z"
+        },
+        {
+          "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-13T22:39:17Z",
+          "completed_at": "2026-10-13T22:39:19Z"
+        },
+        {
+          "name": "Clean install",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-13T22:39:19Z",
+          "completed_at": "2026-10-13T22:39:22Z"
+        },
+        {
+          "name": "Install real browser binaries and OS prerequisites",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-13T22:39:22Z",
+          "completed_at": "2026-10-13T22:40:01Z"
+        },
+        {
+          "name": "Typecheck and lint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-13T22:40:01Z",
+          "completed_at": "2026-10-13T22:40:06Z"
+        },
+        {
+          "name": "Graph, import, geometry, runtime and atomic storage tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-13T22:40:06Z",
+          "completed_at": "2026-10-13T22:40:12Z"
+        },
+        {
+          "name": "Production build",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-13T22:40:12Z",
+          "completed_at": "2026-10-13T22:40:12Z"
+        },
+        {
+          "name": "Real browser authoring and file URL offline export tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-13T22:40:12Z",
+          "completed_at": "2026-10-13T22:46:27Z"
+        },
+        {
+          "name": "Package final web ZIP",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-13T22:46:27Z",
+          "completed_at": "2026-10-13T22:46:27Z"
+        },
+        {
+          "name": "Extract and verify the final consumer ZIP",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-13T22:46:27Z",
+          "completed_at": "2026-10-13T22:46:32Z"
+        },
+        {
+          "name": "Record build origin and tool versions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-13T22:46:32Z",
+          "completed_at": "2026-10-13T22:46:32Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-13T22:46:32Z",
+          "completed_at": "2026-10-13T22:46:33Z"
+        },
+        {
+          "name": "Upload only synthetic verification evidence",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-10-13T22:46:33Z",
+          "completed_at": "2026-10-13T22:46:34Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-10-13T22:46:34Z",
+          "completed_at": "2026-10-13T22:46:34Z"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28,
+          "started_at": "2026-10-13T22:46:34Z",
+          "completed_at": "2026-10-13T22:46:35Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 29,
+          "started_at": "2026-10-13T22:46:35Z",
+          "completed_at": "2026-10-13T22:46:35Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/mikonyaa/lessonroutes/check-runs/115577371843",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000749,
+      "runner_name": "GitHub Actions 1000000749",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ],
+  "tools": {
+    "version": "0.1.1",
+    "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+    "origin": "GitHub Actions",
+    "runId": "38479208321",
+    "node": "v24.21.0",
+    "npm": "11.19.0",
+    "playwright": "1.64.0",
+    "zip": {
+      "name": "lessonroutes-0.1.1-web.zip",
+      "sha256": "40d6e3bffb382c9708c2074c6e68f5405ef52106ef2ab069f4980ae59fe8934c",
+      "bytes": 3623650
+    }
+  },
+  "build": {
+    "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+    "sourceDirty": false,
+    "origin": "GitHub Actions",
+    "runId": "38479208321",
+    "builtAt": "2026-10-13T22:46:27.276Z",
+    "node": "v24.21.0"
+  },
+  "unit": 69,
+  "projects": {
+    "chromium": 36,
+    "firefox": 36,
+    "webkit": 36
+  },
+  "stats": {
+    "startTime": "2026-10-13T22:40:13.602Z",
+    "duration": 373464.113,
+    "expected": 108,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

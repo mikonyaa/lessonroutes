@@ -1,0 +1,14 @@
+{
+  "version": "0.1.1",
+  "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+  "origin": "GitHub Actions",
+  "runId": "38479208321",
+  "node": "v24.21.0",
+  "npm": "11.19.0",
+  "playwright": "1.64.0",
+  "zip": {
+    "name": "lessonroutes-0.1.1-web.zip",
+    "sha256": "40d6e3bffb382c9708c2074c6e68f5405ef52106ef2ab069f4980ae59fe8934c",
+    "bytes": 3623650
+  }
+}

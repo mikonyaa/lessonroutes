@@ -1,0 +1,141 @@
+{
+  "runId": 38480427253,
+  "url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38480427253",
+  "workflow": ".github/workflows/pages.yml",
+  "event": "workflow_dispatch",
+  "headSha": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+  "conclusion": "success",
+  "selectedCiRun": 38479208321,
+  "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+  "pageUrl": "https://mikonyaa.github.io/lessonroutes/",
+  "jobs": [
+    {
+      "id": 115581380163,
+      "run_id": 38480427253,
+      "workflow_name": "Deploy verified editor to Pages",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/mikonyaa/lessonroutes/actions/runs/38480427253",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVFPXtM8AAAAa6S_mQw",
+      "head_sha": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+      "url": "https://api.github.com/repos/mikonyaa/lessonroutes/actions/jobs/115581380163",
+      "html_url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38480427253/job/115581380163",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-13T22:50:20Z",
+      "started_at": "2026-10-13T22:50:22Z",
+      "completed_at": "2026-10-13T22:50:30Z",
+      "name": "prepare",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-13T22:50:23Z",
+          "completed_at": "2026-10-13T22:50:25Z"
+        },
+        {
+          "name": "Verify the selected CI run",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-13T22:50:25Z",
+          "completed_at": "2026-10-13T22:50:25Z"
+        },
+        {
+          "name": "Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-13T22:50:25Z",
+          "completed_at": "2026-10-13T22:50:27Z"
+        },
+        {
+          "name": "Extract the verified app tree",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-13T22:50:27Z",
+          "completed_at": "2026-10-13T22:50:27Z"
+        },
+        {
+          "name": "Run actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-13T22:50:27Z",
+          "completed_at": "2026-10-13T22:50:29Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-13T22:50:29Z",
+          "completed_at": "2026-10-13T22:50:29Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/mikonyaa/lessonroutes/check-runs/115581380163",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000750,
+      "runner_name": "GitHub Actions 1000000750",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 115581437662,
+      "run_id": 38480427253,
+      "workflow_name": "Deploy verified editor to Pages",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/mikonyaa/lessonroutes/actions/runs/38480427253",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVFPXtM8AAAAa6TDG3g",
+      "head_sha": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+      "url": "https://api.github.com/repos/mikonyaa/lessonroutes/actions/jobs/115581437662",
+      "html_url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38480427253/job/115581437662",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-13T22:50:30Z",
+      "started_at": "2026-10-13T22:50:35Z",
+      "completed_at": "2026-10-13T22:51:43Z",
+      "name": "deploy",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-13T22:50:36Z",
+          "completed_at": "2026-10-13T22:50:37Z"
+        },
+        {
+          "name": "Deploy the verified editor tree",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-13T22:50:37Z",
+          "completed_at": "2026-10-13T22:51:41Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-13T22:51:41Z",
+          "completed_at": "2026-10-13T22:51:41Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/mikonyaa/lessonroutes/check-runs/115581437662",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000751,
+      "runner_name": "GitHub Actions 1000000751",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

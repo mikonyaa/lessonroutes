@@ -1,0 +1,41 @@
+{
+  "version": "0.1.1",
+  "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+  "build": {
+    "origin": "GitHub Actions",
+    "runId": 38479208321,
+    "runUrl": "https://github.com/mikonyaa/lessonroutes/actions/runs/38479208321",
+    "workflow": "Verify LessonRoutes",
+    "event": "push",
+    "branch": "main",
+    "zipRebuiltAfterDownload": false
+  },
+  "tools": {
+    "node": "v24.21.0",
+    "npm": "11.19.0",
+    "playwright": "1.64.0"
+  },
+  "assets": [
+    {
+      "name": "lessonroutes-0.1.1-web.zip",
+      "bytes": 3623650,
+      "sha256": "40d6e3bffb382c9708c2074c6e68f5405ef52106ef2ab069f4980ae59fe8934c"
+    },
+    {
+      "name": "lesson.html",
+      "bytes": 438919,
+      "sha256": "87167e3401048fde8eafaaf06eeea63289b513e73cf3296a21bbf9bad36b10d8"
+    },
+    {
+      "name": "workspace.lessonroutes.project.json",
+      "bytes": 433304,
+      "sha256": "ac5bc329d34a4fd1e3ef776cf690fa3a0a0b56f00ed780ce62be64b104cfebe9"
+    },
+    {
+      "name": "lessonroutes-licenses.txt",
+      "bytes": 5638,
+      "sha256": "b0d7f7771a576fbedfc5e529d57dae5ed76a37b93e7b9b6a8734db0ace110775"
+    }
+  ],
+  "note": "This manifest records build origin and checksums; it is not a cryptographic attestation."
+}

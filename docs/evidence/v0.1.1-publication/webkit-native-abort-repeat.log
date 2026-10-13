@@ -1,0 +1,40 @@
+
+> lessonroutes@0.1.1 test:e2e
+> node scripts/run-e2e.mjs --project=webkit --grep LR-1: project owns recovery after stale transaction --repeat-each=10 --retries=0
+
+Isolated E2E server: http://127.0.0.1:52883/
+
+Running 10 tests using 1 worker
+
+(node:79072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.8s)
+(node:79103) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.3s)
+(node:79132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.2s)
+(node:79149) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.2s)
+(node:79165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.7s)
+(node:79186) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.2s)
+(node:79201) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.4s)
+(node:79216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.1s)
+(node:79233) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.4s)
+(node:79265) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [webkit] › tests/e2e/persistence.spec.ts:44:3 › LR-1: project owns recovery after stale transaction (3.3s)
+
+  10 passed (38.5s)

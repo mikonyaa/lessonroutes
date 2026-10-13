@@ -1,0 +1,985 @@
+{
+  "version": "0.1.1",
+  "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+  "pages": "https://mikonyaa.github.io/lessonroutes/",
+  "repository": "mikonyaa/lessonroutes",
+  "repositoryId": 1414780852,
+  "consumer": "/var/folders/v7/ty8dwpy94vv8qzjy49934_240000gn/T/lessonroutes-public-ZhoBXw",
+  "ciRun": {
+    "id": 38479208321,
+    "url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38479208321",
+    "event": "push",
+    "branch": "main",
+    "sha": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 115577371843,
+        "run_id": 38479208321,
+        "workflow_name": "Verify LessonRoutes",
+        "head_branch": "main",
+        "run_url": "https://api.github.com/repos/mikonyaa/lessonroutes/actions/runs/38479208321",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOVFPXtM8AAAAa6PK8ww",
+        "head_sha": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+        "url": "https://api.github.com/repos/mikonyaa/lessonroutes/actions/jobs/115577371843",
+        "html_url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38479208321/job/115577371843",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-10-13T22:39:11Z",
+        "started_at": "2026-10-13T22:39:13Z",
+        "completed_at": "2026-10-13T22:46:37Z",
+        "name": "Tests, standalone player and final ZIP",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-13T22:39:14Z",
+            "completed_at": "2026-10-13T22:39:16Z"
+          },
+          {
+            "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-13T22:39:16Z",
+            "completed_at": "2026-10-13T22:39:17Z"
+          },
+          {
+            "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-13T22:39:17Z",
+            "completed_at": "2026-10-13T22:39:19Z"
+          },
+          {
+            "name": "Clean install",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-13T22:39:19Z",
+            "completed_at": "2026-10-13T22:39:22Z"
+          },
+          {
+            "name": "Install real browser binaries and OS prerequisites",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-13T22:39:22Z",
+            "completed_at": "2026-10-13T22:40:01Z"
+          },
+          {
+            "name": "Typecheck and lint",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-10-13T22:40:01Z",
+            "completed_at": "2026-10-13T22:40:06Z"
+          },
+          {
+            "name": "Graph, import, geometry, runtime and atomic storage tests",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-10-13T22:40:06Z",
+            "completed_at": "2026-10-13T22:40:12Z"
+          },
+          {
+            "name": "Production build",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-10-13T22:40:12Z",
+            "completed_at": "2026-10-13T22:40:12Z"
+          },
+          {
+            "name": "Real browser authoring and file URL offline export tests",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-10-13T22:40:12Z",
+            "completed_at": "2026-10-13T22:46:27Z"
+          },
+          {
+            "name": "Package final web ZIP",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10,
+            "started_at": "2026-10-13T22:46:27Z",
+            "completed_at": "2026-10-13T22:46:27Z"
+          },
+          {
+            "name": "Extract and verify the final consumer ZIP",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11,
+            "started_at": "2026-10-13T22:46:27Z",
+            "completed_at": "2026-10-13T22:46:32Z"
+          },
+          {
+            "name": "Record build origin and tool versions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12,
+            "started_at": "2026-10-13T22:46:32Z",
+            "completed_at": "2026-10-13T22:46:32Z"
+          },
+          {
+            "name": "Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13,
+            "started_at": "2026-10-13T22:46:32Z",
+            "completed_at": "2026-10-13T22:46:33Z"
+          },
+          {
+            "name": "Upload only synthetic verification evidence",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14,
+            "started_at": "2026-10-13T22:46:33Z",
+            "completed_at": "2026-10-13T22:46:34Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 27,
+            "started_at": "2026-10-13T22:46:34Z",
+            "completed_at": "2026-10-13T22:46:34Z"
+          },
+          {
+            "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 28,
+            "started_at": "2026-10-13T22:46:34Z",
+            "completed_at": "2026-10-13T22:46:35Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 29,
+            "started_at": "2026-10-13T22:46:35Z",
+            "completed_at": "2026-10-13T22:46:35Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/mikonyaa/lessonroutes/check-runs/115577371843",
+        "labels": [
+          "ubuntu-latest"
+        ],
+        "runner_id": 1000000749,
+        "runner_name": "GitHub Actions 1000000749",
+        "runner_group_id": 0,
+        "runner_group_name": "GitHub Actions"
+      }
+    ]
+  },
+  "unauthenticated": true,
+  "browser": "156.0.8078.4",
+  "assets": [
+    {
+      "name": "lesson.html",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/lesson.html",
+      "bytes": 438919,
+      "contentType": "application/octet-stream",
+      "sha256": "87167e3401048fde8eafaaf06eeea63289b513e73cf3296a21bbf9bad36b10d8"
+    },
+    {
+      "name": "lessonroutes-0.1.1-web.zip",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/lessonroutes-0.1.1-web.zip",
+      "bytes": 3623650,
+      "contentType": "application/octet-stream",
+      "sha256": "40d6e3bffb382c9708c2074c6e68f5405ef52106ef2ab069f4980ae59fe8934c"
+    },
+    {
+      "name": "lessonroutes-licenses.txt",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/lessonroutes-licenses.txt",
+      "bytes": 5638,
+      "contentType": "application/octet-stream",
+      "sha256": "b0d7f7771a576fbedfc5e529d57dae5ed76a37b93e7b9b6a8734db0ace110775"
+    },
+    {
+      "name": "release-manifest.json",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/release-manifest.json",
+      "bytes": 1220,
+      "contentType": "application/octet-stream",
+      "sha256": "7342a191c006a92ea21b890bdefab929c7def30fb29a736a8b4a55f6484211ad"
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/SHA256SUMS",
+      "bytes": 453,
+      "contentType": "application/octet-stream",
+      "sha256": "6f8405483c49dc8a19653819718d02196f9387d2bb5873e8a643648ea0aef803"
+    },
+    {
+      "name": "workspace.lessonroutes.project.json",
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/workspace.lessonroutes.project.json",
+      "bytes": 433304,
+      "contentType": "application/octet-stream",
+      "sha256": "ac5bc329d34a4fd1e3ef776cf690fa3a0a0b56f00ed780ce62be64b104cfebe9"
+    }
+  ],
+  "publishedTree": [
+    "examples/LICENSE",
+    "examples/demo-poster.png",
+    "examples/demo.mp4",
+    "examples/lesson.html",
+    "examples/workspace.lessonroutes.project.json",
+    "assets/index-CGXAlEC7.js",
+    "assets/index-5cim624m.css",
+    "index.html"
+  ],
+  "checks": [
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/blob/main/README.md",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/blob/main/LICENSE",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/blob/main/src/editor/App.tsx",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/blob/main/examples/demo.mp4",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/releases/tag/v0.1.1",
+      "status": 200
+    },
+    {
+      "repositoryId": 1414780852,
+      "ciRun": 38479208321,
+      "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+      "event": "push",
+      "branch": "main",
+      "allRequiredStepsPassed": true,
+      "tagMatchesSource": true
+    },
+    {
+      "url": "https://github.com/mikonyaa/lessonroutes/actions/runs/38479208321",
+      "status": 200
+    },
+    {
+      "pages": "https://mikonyaa.github.io/lessonroutes/",
+      "width": 1440,
+      "lateAutosaveCurrentOwnership": true,
+      "durableCurrent": {
+        "kind": "lessonroutes-project",
+        "schemaVersion": 1,
+        "projectId": "f14855e7-9c50-4b57-bcea-1ee7454be9b5",
+        "revision": 1,
+        "metadata": {
+          "title": "Public B saved 1440",
+          "description": "",
+          "locale": "en"
+        },
+        "startNodeId": null,
+        "orderedNodeIds": [],
+        "nodes": [],
+        "assetIds": []
+      },
+      "reloadTitle": "Public B saved 1440"
+    },
+    {
+      "pages": "https://mikonyaa.github.io/lessonroutes/",
+      "width": 1440,
+      "authoring": true,
+      "saveImport": true,
+      "hardRefresh": true,
+      "browserCacheDisabled": true,
+      "previewExportIdentical": true,
+      "offline": {
+        "width": 1440,
+        "mode": "keyboard",
+        "outgoing": 0,
+        "phase": "finished",
+        "transitions": [
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "public",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "visibility",
+            "actionId": "public",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "shared",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "visibility",
+            "actionId": "shared",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "private",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "invitations",
+            "actionId": "private",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "invitations",
+            "actionId": "code",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "notifications",
+            "actionId": "code",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "notifications",
+            "actionId": "essential",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "recovery",
+            "actionId": "essential",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "recovery",
+            "actionId": "backup",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "review",
+            "actionId": "backup",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "review",
+            "actionId": "apply",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "complete",
+            "actionId": "apply",
+            "phase": "finished"
+          }
+        ]
+      }
+    },
+    {
+      "pages": "https://mikonyaa.github.io/lessonroutes/",
+      "width": 390,
+      "lateAutosaveCurrentOwnership": true,
+      "durableCurrent": {
+        "kind": "lessonroutes-project",
+        "schemaVersion": 1,
+        "projectId": "d34ce9bc-bd25-44e4-8ecc-1824ec5a4caa",
+        "revision": 1,
+        "metadata": {
+          "title": "Public B saved 390",
+          "description": "",
+          "locale": "en"
+        },
+        "startNodeId": null,
+        "orderedNodeIds": [],
+        "nodes": [],
+        "assetIds": []
+      },
+      "reloadTitle": "Public B saved 390"
+    },
+    {
+      "pages": "https://mikonyaa.github.io/lessonroutes/",
+      "width": 390,
+      "authoring": true,
+      "saveImport": true,
+      "hardRefresh": true,
+      "browserCacheDisabled": true,
+      "previewExportIdentical": true,
+      "offline": {
+        "width": 390,
+        "mode": "keyboard",
+        "outgoing": 0,
+        "phase": "finished",
+        "transitions": [
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "public",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "visibility",
+            "actionId": "public",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "shared",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "visibility",
+            "actionId": "shared",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "visibility",
+            "actionId": "private",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "invitations",
+            "actionId": "private",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "invitations",
+            "actionId": "code",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "notifications",
+            "actionId": "code",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "notifications",
+            "actionId": "essential",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "recovery",
+            "actionId": "essential",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "recovery",
+            "actionId": "backup",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "review",
+            "actionId": "backup",
+            "phase": "showingNode"
+          },
+          {
+            "input": "choose",
+            "nodeId": "review",
+            "actionId": "apply",
+            "phase": "showingFeedback"
+          },
+          {
+            "input": "continue",
+            "nodeId": "complete",
+            "actionId": "apply",
+            "phase": "finished"
+          }
+        ]
+      }
+    },
+    {
+      "publicReleasePlayer": true,
+      "width": 1440,
+      "mode": "mouse",
+      "outgoing": 0,
+      "phase": "finished",
+      "transitions": [
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "private",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "invitations",
+          "actionId": "private",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "invitations",
+          "actionId": "code",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "notifications",
+          "actionId": "code",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "notifications",
+          "actionId": "essential",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "recovery",
+          "actionId": "essential",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "recovery",
+          "actionId": "backup",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "review",
+          "actionId": "backup",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "review",
+          "actionId": "apply",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "complete",
+          "actionId": "apply",
+          "phase": "finished"
+        }
+      ]
+    },
+    {
+      "publicReleasePlayer": true,
+      "width": 1440,
+      "mode": "keyboard",
+      "outgoing": 0,
+      "phase": "finished",
+      "transitions": [
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "private",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "invitations",
+          "actionId": "private",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "invitations",
+          "actionId": "code",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "notifications",
+          "actionId": "code",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "notifications",
+          "actionId": "essential",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "recovery",
+          "actionId": "essential",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "recovery",
+          "actionId": "backup",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "review",
+          "actionId": "backup",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "review",
+          "actionId": "apply",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "complete",
+          "actionId": "apply",
+          "phase": "finished"
+        }
+      ]
+    },
+    {
+      "publicReleasePlayer": true,
+      "width": 390,
+      "mode": "mouse",
+      "outgoing": 0,
+      "phase": "finished",
+      "transitions": [
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "private",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "invitations",
+          "actionId": "private",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "invitations",
+          "actionId": "code",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "notifications",
+          "actionId": "code",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "notifications",
+          "actionId": "essential",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "recovery",
+          "actionId": "essential",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "recovery",
+          "actionId": "backup",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "review",
+          "actionId": "backup",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "review",
+          "actionId": "apply",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "complete",
+          "actionId": "apply",
+          "phase": "finished"
+        }
+      ]
+    },
+    {
+      "publicReleasePlayer": true,
+      "width": 390,
+      "mode": "keyboard",
+      "outgoing": 0,
+      "phase": "finished",
+      "transitions": [
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "public",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "visibility",
+          "actionId": "shared",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "visibility",
+          "actionId": "private",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "invitations",
+          "actionId": "private",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "invitations",
+          "actionId": "code",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "notifications",
+          "actionId": "code",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "notifications",
+          "actionId": "essential",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "recovery",
+          "actionId": "essential",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "recovery",
+          "actionId": "backup",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "review",
+          "actionId": "backup",
+          "phase": "showingNode"
+        },
+        {
+          "input": "choose",
+          "nodeId": "review",
+          "actionId": "apply",
+          "phase": "showingFeedback"
+        },
+        {
+          "input": "continue",
+          "nodeId": "complete",
+          "actionId": "apply",
+          "phase": "finished"
+        }
+      ]
+    }
+  ],
+  "screens": [
+    "output/playwright/public-pages-1440.png",
+    "output/playwright/public-B-saved-1440.png",
+    "output/playwright/public-reload-B-1440.png",
+    "output/playwright/public-pages-390.png",
+    "output/playwright/public-B-saved-390.png",
+    "output/playwright/public-reload-B-390.png"
+  ],
+  "pageLogs": [
+    {
+      "width": 1440,
+      "pageErrors": [],
+      "requests": [
+        "https://mikonyaa.github.io/lessonroutes/",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-CGXAlEC7.js",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-5cim624m.css",
+        "https://mikonyaa.github.io/lessonroutes/examples/workspace.lessonroutes.project.json",
+        "blob:https://mikonyaa.github.io/f936dc65-e67d-449b-a76c-b2809edf0e08",
+        "blob:https://mikonyaa.github.io/8c406309-8081-4cd9-b292-d469ebea8127",
+        "blob:https://mikonyaa.github.io/ffb0194e-2222-48c7-8997-cdc919e4b9ab",
+        "blob:https://mikonyaa.github.io/6357643c-7598-454c-bc98-6fe8fe567298",
+        "blob:https://mikonyaa.github.io/c07dc2c9-3745-4cc7-89ae-bb567c7dd200",
+        "https://mikonyaa.github.io/lessonroutes/",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-CGXAlEC7.js",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-5cim624m.css",
+        "blob:https://mikonyaa.github.io/16cbd806-65a4-4f8f-9e70-47f98489ee79",
+        "blob:https://mikonyaa.github.io/34e68fec-2683-49a5-83cb-7f5d41f313ac",
+        "blob:https://mikonyaa.github.io/2dfa48de-83ac-474a-933e-9203a1fdac12",
+        "blob:https://mikonyaa.github.io/2487e2bb-7553-4a39-b26c-735b31d3303a",
+        "blob:https://mikonyaa.github.io/61963c28-cedf-425d-a2b7-2b96d6543bb8",
+        "blob:https://mikonyaa.github.io/75382ecf-18a8-4cdf-9b4a-cc0cd48ea779",
+        "blob:https://mikonyaa.github.io/0e59e8b4-9874-41f7-bbdf-608638744249",
+        "blob:https://mikonyaa.github.io/f90ba93c-b324-4bb7-ab67-7af8c17aa90e",
+        "blob:https://mikonyaa.github.io/23d4c07c-f919-4a36-8239-1ef6ac3e7a18",
+        "blob:https://mikonyaa.github.io/43c97cad-60bc-4c54-9f8b-1abf0dfeafae",
+        "blob:https://mikonyaa.github.io/73e2a936-adae-4036-b8b0-d92b3f848279",
+        "blob:https://mikonyaa.github.io/aca25e1a-db31-436b-92c7-e959989943ab",
+        "blob:https://mikonyaa.github.io/e8870356-aeab-4dc3-831e-e4d434d014a8",
+        "blob:https://mikonyaa.github.io/e789178a-d787-4b65-8333-9e32f7dbd857",
+        "blob:https://mikonyaa.github.io/c0a0a5fb-1d11-494d-910a-cd55755c96f3",
+        "blob:https://mikonyaa.github.io/f70e41c5-4d91-44df-827b-726d72929837",
+        "blob:https://mikonyaa.github.io/47974b35-61d5-499c-b221-6bdafadecd0d",
+        "blob:https://mikonyaa.github.io/db478316-0a5d-4112-bfcb-ef376175692d",
+        "blob:https://mikonyaa.github.io/806b7dc1-69a2-4b38-b099-ead67977ff54",
+        "blob:https://mikonyaa.github.io/12e2220d-e108-45ee-8ba9-d75d4812df96",
+        "https://mikonyaa.github.io/lessonroutes/",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-CGXAlEC7.js",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-5cim624m.css"
+      ]
+    },
+    {
+      "width": 390,
+      "pageErrors": [],
+      "requests": [
+        "https://mikonyaa.github.io/lessonroutes/",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-CGXAlEC7.js",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-5cim624m.css",
+        "https://mikonyaa.github.io/lessonroutes/examples/workspace.lessonroutes.project.json",
+        "blob:https://mikonyaa.github.io/953363e3-3a79-479b-a2e3-6782e1d02273",
+        "blob:https://mikonyaa.github.io/0525b7f2-34df-44f6-b538-5d862da2a308",
+        "blob:https://mikonyaa.github.io/d68cfec5-f807-4871-8c5e-5723f8de40e3",
+        "blob:https://mikonyaa.github.io/0c22f5a3-cddf-4539-a09f-6d81d701d1cc",
+        "blob:https://mikonyaa.github.io/e850f488-da74-4117-9fc0-df19d8e9a282",
+        "https://mikonyaa.github.io/lessonroutes/",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-CGXAlEC7.js",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-5cim624m.css",
+        "blob:https://mikonyaa.github.io/9004ce82-cfd2-41a0-9265-0ce2d1081d97",
+        "blob:https://mikonyaa.github.io/478e1d23-3620-49f0-a3f4-be92da1d6e70",
+        "blob:https://mikonyaa.github.io/13a9eb33-c6d5-46e2-87e0-a27820924824",
+        "blob:https://mikonyaa.github.io/0af40598-112f-44e8-8909-c0f6abc484ea",
+        "blob:https://mikonyaa.github.io/bbc7e647-6943-47b6-89fb-403d88e39c7e",
+        "blob:https://mikonyaa.github.io/c5312826-ef98-4ab6-bb5c-127cb6aa15ae",
+        "blob:https://mikonyaa.github.io/12fe067c-27f7-4c98-a6ce-ad040c3cb190",
+        "blob:https://mikonyaa.github.io/575d0c27-fc16-45f3-a75a-3ede95c8452a",
+        "blob:https://mikonyaa.github.io/e4028c53-cd6d-48ea-aea0-4cee2ac55af4",
+        "blob:https://mikonyaa.github.io/e3d34ca0-2c1e-4ef6-b344-e9a23b3d7b80",
+        "blob:https://mikonyaa.github.io/5b607e1e-870c-4213-ae38-a8df0b06d661",
+        "blob:https://mikonyaa.github.io/f19df12c-58b9-4e7b-92e8-001377c86583",
+        "blob:https://mikonyaa.github.io/a2597144-602f-4c03-8a68-81b96e89588f",
+        "blob:https://mikonyaa.github.io/07fab589-f00f-4de8-8170-cc3a21494f4a",
+        "blob:https://mikonyaa.github.io/0b8d1a47-ff86-4ff2-b639-459894b93076",
+        "blob:https://mikonyaa.github.io/5f0f5cdc-e783-4cd2-a31c-1e9f895be4f4",
+        "blob:https://mikonyaa.github.io/c3c7c88f-75f3-41eb-9a79-9d1ffdae41c8",
+        "blob:https://mikonyaa.github.io/03e19bf5-5f84-47b7-b666-caf3e65c81a3",
+        "blob:https://mikonyaa.github.io/68a3b006-8054-4f67-83d6-bfc4845249b3",
+        "blob:https://mikonyaa.github.io/94f45820-9ca9-4e03-87eb-7caabcce4a7b",
+        "https://mikonyaa.github.io/lessonroutes/",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-CGXAlEC7.js",
+        "https://mikonyaa.github.io/lessonroutes/assets/index-5cim624m.css"
+      ]
+    }
+  ]
+}

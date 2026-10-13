@@ -203,9 +203,10 @@ Actions are pinned to full commit SHAs. Pages is a separate manually dispatched
 workflow that deploys `app/` from a successful push/main CI artifact at the chosen
 commit; it does not rebuild a different tree or deploy the whole repository.
 
-The [v0.1.0 publication record](docs/publication.md) includes the exact source
-commit, successful CI/Pages runs, checksums and public verification. After installing
-the documented prerequisites, repeat the unauthenticated public checks with:
+The [v0.1.1 publication record](docs/publication-v0.1.1.md) includes the exact source
+commit, successful CI/Pages runs, checksums, Saved/reload evidence and public
+verification. The [v0.1.0 record](docs/publication.md) remains historical evidence.
+After installing the documented prerequisites, repeat the unauthenticated checks with:
 
 ```sh
 node scripts/public-qa.mjs --repo mikonyaa/lessonroutes --pages https://mikonyaa.github.io/lessonroutes/

@@ -1,5 +1,11 @@
 # Local authoring fixes — 2026-10-14
 
+This record describes the completed local-only phase. The user subsequently
+authorized GitHub publication; the new source/tag, CI-built ZIP, Pages deployment
+and anonymous downloaded-consumer checks are in
+[the v0.1.1 publication record](publication-v0.1.1.md). The original local measurements
+and their provenance below remain separate from those publication results.
+
 This work uses an independent clone and local branch `fix/authoring-session-data`.
 The initial public default branch was main, at audited commit
 `49963d4e38c7828d50a4955457c8aa4e2b22f73d`, with no subsequent commits/diff.

@@ -1,0 +1,99 @@
+{
+  "zip": "lessonroutes-0.1.1-web.zip",
+  "sha256": "40d6e3bffb382c9708c2074c6e68f5405ef52106ef2ab069f4980ae59fe8934c",
+  "build": {
+    "sourceCommit": "020c20cc81152130cbaaa274e922bdbd687ec9a0",
+    "sourceDirty": false,
+    "origin": "GitHub Actions",
+    "runId": "38479208321",
+    "builtAt": "2026-10-13T22:46:27.276Z",
+    "node": "v24.21.0"
+  },
+  "node": "v24.21.0",
+  "browser": "156.0.8078.4",
+  "consumer": "/var/folders/v7/ty8dwpy94vv8qzjy49934_240000gn/T/lessonroutes-consumer-awY7pZ",
+  "outsideSourceWorkspace": true,
+  "nodeModulesRequired": false,
+  "outcomes": [
+    "Path traversal, directory listing and out-of-app files rejected.",
+    "Occupied port exits cleanly without affecting the existing server.",
+    "Consumer root: author, atomic save, backup/import, exact saved hard refresh, export, isolated offline keyboard completion and restart at 390px, disabled storage.",
+    "Consumer arbitrary subpath: author, atomic save, backup/import, exact saved hard refresh, export, isolated offline keyboard completion and restart at 390px, disabled storage."
+  ],
+  "logs": [
+    {
+      "subpath": "",
+      "editor": {
+        "pageErrors": [],
+        "requests": [
+          "http://127.0.0.1:53232/",
+          "http://127.0.0.1:53232/assets/index-CGXAlEC7.js",
+          "http://127.0.0.1:53232/assets/index-5cim624m.css",
+          "http://127.0.0.1:53232/examples/workspace.lessonroutes.project.json",
+          "blob:http://127.0.0.1:53232/e4d13cef-913b-406d-a915-9265735d232a",
+          "blob:http://127.0.0.1:53232/0c43fa52-f7df-407b-9796-e77afd66985e",
+          "blob:http://127.0.0.1:53232/85cf1cf6-5bbb-4674-af6f-ca10a104022f",
+          "blob:http://127.0.0.1:53232/643f5782-01a0-4f3e-bf42-a127d0d203fa",
+          "blob:http://127.0.0.1:53232/b7a4a985-be6c-4bcd-bee6-2c28996522c5",
+          "blob:http://127.0.0.1:53232/0ed1fce9-ba90-4cf6-a25d-a0477be8131c",
+          "http://127.0.0.1:53232/",
+          "http://127.0.0.1:53232/assets/index-CGXAlEC7.js",
+          "http://127.0.0.1:53232/assets/index-5cim624m.css",
+          "blob:http://127.0.0.1:53232/9d298bf5-694e-4760-a431-b47aedb832f5",
+          "blob:http://127.0.0.1:53232/b983e781-c423-4296-8dbb-419d00f02bf5",
+          "blob:http://127.0.0.1:53232/989acc10-b844-495d-8347-c285bb8c9f5f",
+          "blob:http://127.0.0.1:53232/0a7e38d0-daa6-4d67-99fc-0fdb2b560d96",
+          "blob:http://127.0.0.1:53232/051a02bc-dc9c-4a0a-9876-d1709be33276",
+          "blob:http://127.0.0.1:53232/34eebc80-aa22-4a98-9f0a-88dde9dfc38d",
+          "blob:http://127.0.0.1:53232/77adf125-5667-4bdc-87ba-2cdc355de467",
+          "blob:http://127.0.0.1:53232/f9ac320e-d463-4dff-bb46-f7298ad2d890",
+          "blob:http://127.0.0.1:53232/a1ab4b74-903f-447a-ac4a-d341e867b1f2",
+          "blob:http://127.0.0.1:53232/d1d98aae-3feb-42c9-a497-317a47e3e156"
+        ]
+      },
+      "learner": {
+        "pageErrors": [],
+        "requests": [
+          "file:///var/folders/v7/ty8dwpy94vv8qzjy49934_240000gn/T/lessonroutes-consumer-awY7pZ/%D0%9E%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%83%D1%80%D0%BE%D0%BA%20%D1%81%20%D0%BF%D1%80%D0%BE%D0%B1%D0%B5%D0%BB%D0%B0%D0%BC%D0%B8/lesson.html"
+        ]
+      }
+    },
+    {
+      "subpath": "courses/lessonroutes arbitrary/",
+      "editor": {
+        "pageErrors": [],
+        "requests": [
+          "http://127.0.0.1:53232/courses/lessonroutes%20arbitrary/",
+          "http://127.0.0.1:53232/courses/lessonroutes%20arbitrary/assets/index-CGXAlEC7.js",
+          "http://127.0.0.1:53232/courses/lessonroutes%20arbitrary/assets/index-5cim624m.css",
+          "http://127.0.0.1:53232/courses/lessonroutes%20arbitrary/examples/workspace.lessonroutes.project.json",
+          "blob:http://127.0.0.1:53232/ebf51032-7459-4b41-9f21-49e341f03455",
+          "blob:http://127.0.0.1:53232/d292feec-6f76-43c8-be26-9845ce922a10",
+          "blob:http://127.0.0.1:53232/74d71809-0b5c-4356-86ef-51473ccf8a00",
+          "blob:http://127.0.0.1:53232/19eb7c46-a4ac-4c57-be55-0e434ea85318",
+          "blob:http://127.0.0.1:53232/6bba5c77-3d1a-43f0-b60f-d1ce680ea70d",
+          "blob:http://127.0.0.1:53232/1a46cee3-14f4-4989-b26b-e3429282eb1d",
+          "http://127.0.0.1:53232/courses/lessonroutes%20arbitrary/",
+          "http://127.0.0.1:53232/courses/lessonroutes%20arbitrary/assets/index-CGXAlEC7.js",
+          "http://127.0.0.1:53232/courses/lessonroutes%20arbitrary/assets/index-5cim624m.css",
+          "blob:http://127.0.0.1:53232/5c13bbbf-fd31-4762-9d62-9a7bca25a2fa",
+          "blob:http://127.0.0.1:53232/30bace84-4374-482c-bc7a-6c195b476032",
+          "blob:http://127.0.0.1:53232/da173afe-4c28-4548-95f0-74c997df1ba0",
+          "blob:http://127.0.0.1:53232/9c946230-e7ca-4bf1-8161-1fb71bf1f102",
+          "blob:http://127.0.0.1:53232/fdd65b47-464e-4edb-aad2-23f688897b84",
+          "blob:http://127.0.0.1:53232/28e49a2d-8e14-4014-94fd-696865017094",
+          "blob:http://127.0.0.1:53232/5e456927-2f1d-4d87-af9e-4ee86c88857d",
+          "blob:http://127.0.0.1:53232/9de112e2-c14d-4b17-858b-e907cfa65919",
+          "blob:http://127.0.0.1:53232/0a13be77-9af5-4d34-ac3d-d19eaefb1406",
+          "blob:http://127.0.0.1:53232/bc8b885c-6ec5-499c-9f1b-9b13fb1697ed"
+        ]
+      },
+      "learner": {
+        "pageErrors": [],
+        "requests": [
+          "file:///var/folders/v7/ty8dwpy94vv8qzjy49934_240000gn/T/lessonroutes-consumer-awY7pZ/%D0%9E%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%83%D1%80%D0%BE%D0%BA%20%D1%81%20%D0%BF%D1%80%D0%BE%D0%B1%D0%B5%D0%BB%D0%B0%D0%BC%D0%B8/nested.html"
+        ]
+      }
+    }
+  ]
+}
