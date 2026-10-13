@@ -6,7 +6,8 @@ import path from 'node:path';
 import os from 'node:os';
 import {performance} from 'node:perf_hooks';
 
-const stage=path.resolve(process.argv[2]??'artifacts/lessonroutes-0.1.0-web'),inputs=path.resolve(process.argv[3]??'output/stress');
+const version=JSON.parse(await readFile('package.json','utf8')).version;
+const stage=path.resolve(process.argv[2]??`artifacts/lessonroutes-${version}-web`),inputs=path.resolve(process.argv[3]??'output/stress');
 const output=path.resolve('output/performance');await mkdir(output,{recursive:true});
 const build=JSON.parse(await readFile(path.join(stage,'BUILD.json'),'utf8')),fixtures=JSON.parse(await readFile(path.join(inputs,'inputs.json'),'utf8'));
 const child=spawn(process.execPath,[path.join(stage,'serve.mjs'),'--port','0'],{cwd:stage,stdio:['ignore','pipe','pipe']});

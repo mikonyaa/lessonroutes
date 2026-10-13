@@ -8,6 +8,6 @@ await cp('dist',path.join(stage,'app'),{recursive:true});
 for(const f of ['README-OFFLINE.md','LICENSE','THIRD-PARTY-NOTICES.txt'])await copyFile(f,path.join(stage,f));
 await copyFile('scripts/serve.mjs',path.join(stage,'serve.mjs'));await cp('examples',path.join(stage,'examples'),{recursive:true});
 const git=(...args)=>{const r=spawnSync('git',args,{encoding:'utf8'});if(r.status!==0)throw new Error(r.stderr);return r.stdout.trim();};
-await writeFile(path.join(stage,'BUILD.json'),JSON.stringify({sourceCommit:git('rev-parse','HEAD'),sourceDirty:!!git('status','--porcelain'),origin:'local build',builtAt:new Date().toISOString(),node:process.version},null,2));
+await writeFile(path.join(stage,'BUILD.json'),JSON.stringify({sourceCommit:git('rev-parse','HEAD'),sourceDirty:!!git('status','--porcelain'),origin:process.env.GITHUB_ACTIONS?'GitHub Actions':'local build',runId:process.env.GITHUB_RUN_ID??null,builtAt:new Date().toISOString(),node:process.version},null,2));
 await rm(zip,{force:true});const result=spawnSync('zip',['-q','-r',zip,path.basename(stage)],{cwd:root,encoding:'utf8'});if(result.status!==0)throw new Error(result.stderr);
 console.log(zip);

@@ -39,16 +39,23 @@ jobs:
           github-token: ${{ github.token }}
           path: verified
       - name: Extract the verified app tree
+        id: unpack
         env:
           SOURCE_SHA: ${{ inputs.source_sha }}
         run: |
           jq -e --arg sha "$SOURCE_SHA" '.sourceCommit == $sha' verified/ci-build.json
           (cd verified && sha256sum -c <(jq -r '.zip.sha256 + "  " + .zip.name' ci-build.json))
-          unzip -q verified/lessonroutes-0.1.0-web.zip -d unpacked
-          test -f unpacked/lessonroutes-0.1.0-web/app/index.html
+          VERSION=$(jq -r '.version' verified/ci-build.json)
+          [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          ZIP_NAME="lessonroutes-$VERSION-web.zip"
+          jq -e --arg name "$ZIP_NAME" '.zip.name == $name' verified/ci-build.json
+          unzip -q "verified/$ZIP_NAME" -d unpacked
+          APP_PATH="unpacked/lessonroutes-$VERSION-web/app"
+          test -f "$APP_PATH/index.html"
+          printf 'app_path=%s\n' "$APP_PATH" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
-          path: unpacked/lessonroutes-0.1.0-web/app
+          path: ${{ steps.unpack.outputs.app_path }}
   deploy:
     needs: prepare
     runs-on: ubuntu-latest

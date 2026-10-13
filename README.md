@@ -4,7 +4,7 @@
 
 [![A real recording of importing, authoring, retrying and opening an exported lesson](examples/demo-poster.png)](examples/demo.mp4)
 
-[Watch the real demo (MP4)](https://mikonyaa.github.io/lessonroutes/examples/demo.mp4) · [Try editor](https://mikonyaa.github.io/lessonroutes/) · [Download example project](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/workspace.lessonroutes.project.json) · [Standalone example HTML](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/lesson.html) · [Releases](https://github.com/mikonyaa/lessonroutes/releases/tag/v0.1.0)
+[Watch the real demo (MP4)](https://mikonyaa.github.io/lessonroutes/examples/demo.mp4) · [Try editor](https://mikonyaa.github.io/lessonroutes/) · [Download example project](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/workspace.lessonroutes.project.json) · [Standalone example HTML](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/lesson.html) · [Releases](https://github.com/mikonyaa/lessonroutes/releases/tag/v0.1.1)
 
 An experimental local web editor for teachers making a small practice exercise
 from application screens. Add screenshots in a batch, mark rectangular choices,
@@ -37,7 +37,7 @@ account or personal information is shown. [Example license](examples/LICENSE).
 
 ## Offline editor
 
-Download and extract [lessonroutes-0.1.0-web.zip](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.0/lessonroutes-0.1.0-web.zip).
+Download and extract [lessonroutes-0.1.1-web.zip](https://github.com/mikonyaa/lessonroutes/releases/download/v0.1.1/lessonroutes-0.1.1-web.zip).
 Install **Node.js 24 LTS** first, then run in the extracted folder:
 
 ```sh

@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased — local authoring fixes
+## 0.1.1 — 2026-10-14
 
 - Retire autosaves when New/Open/Save a new copy replaces the authoring session.
   A retired save cannot start a write or take the recovery pointer; an uncommitted

@@ -45,7 +45,7 @@ jobs:
         with:
           name: verified-web
           path: |
-            artifacts/lessonroutes-0.1.0-web.zip
+            artifacts/lessonroutes-*-web.zip
             artifacts/ci-build.json
           if-no-files-found: error
           retention-days: 14
