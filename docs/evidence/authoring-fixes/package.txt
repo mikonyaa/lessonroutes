@@ -1,0 +1,5 @@
+
+> lessonroutes@0.1.0 package:web
+> node scripts/package-web.mjs
+
+/Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/artifacts/lessonroutes-0.1.0-web.zip

@@ -1,0 +1,98 @@
+{
+  "zip": "lessonroutes-0.1.0-web.zip",
+  "sha256": "aaa2d2cd3497633aa5c1def6888edcb369cbc49429c5591aedb2c30d6459a12e",
+  "build": {
+    "sourceCommit": "4818a5c854054e661ba676fefbccc04538717472",
+    "sourceDirty": false,
+    "origin": "local build",
+    "builtAt": "2026-10-13T20:10:25.268Z",
+    "node": "v24.21.0"
+  },
+  "node": "v24.21.0",
+  "browser": "156.0.8078.4",
+  "consumer": "/var/folders/v7/ty8dwpy94vv8qzjy49934_240000gn/T/lessonroutes-consumer-D3jgHw",
+  "outsideSourceWorkspace": true,
+  "nodeModulesRequired": false,
+  "outcomes": [
+    "Path traversal, directory listing and out-of-app files rejected.",
+    "Occupied port exits cleanly without affecting the existing server.",
+    "Consumer root: author, atomic save, backup/import, exact saved hard refresh, export, isolated offline keyboard completion and restart at 390px, disabled storage.",
+    "Consumer arbitrary subpath: author, atomic save, backup/import, exact saved hard refresh, export, isolated offline keyboard completion and restart at 390px, disabled storage."
+  ],
+  "logs": [
+    {
+      "subpath": "",
+      "editor": {
+        "pageErrors": [],
+        "requests": [
+          "http://127.0.0.1:57669/",
+          "http://127.0.0.1:57669/assets/index-u-LcuF57.js",
+          "http://127.0.0.1:57669/assets/index-5cim624m.css",
+          "http://127.0.0.1:57669/examples/workspace.lessonroutes.project.json",
+          "blob:http://127.0.0.1:57669/ec1ed958-26be-4fb1-8377-e29d384c1850",
+          "blob:http://127.0.0.1:57669/4966ed2a-eae7-4e24-8f4b-d44af32ca314",
+          "blob:http://127.0.0.1:57669/a587e567-7008-4e9a-90a4-6cc8f4708608",
+          "blob:http://127.0.0.1:57669/88153705-4ca1-4f56-84d5-28d7300e96fd",
+          "blob:http://127.0.0.1:57669/17aef925-e909-4fe7-9f26-6ecf4242b457",
+          "blob:http://127.0.0.1:57669/ec8d8920-560a-4dc2-8c39-67560074cacf",
+          "http://127.0.0.1:57669/",
+          "http://127.0.0.1:57669/assets/index-u-LcuF57.js",
+          "http://127.0.0.1:57669/assets/index-5cim624m.css",
+          "blob:http://127.0.0.1:57669/105d484f-2d47-4f66-8ab7-d3b2588da90c",
+          "blob:http://127.0.0.1:57669/e73ea9e9-fc89-4a67-b476-9fc2fbc2c99f",
+          "blob:http://127.0.0.1:57669/fbb5b013-87bc-49aa-bf7e-09ad7a3f4b2e",
+          "blob:http://127.0.0.1:57669/37fca886-93ae-4126-ab9a-c4cd950c2022",
+          "blob:http://127.0.0.1:57669/e6ff902c-8a57-46bf-a83d-0e49d79b5247",
+          "blob:http://127.0.0.1:57669/f4f9ecd7-7f15-4094-8b20-a8818cec96d2",
+          "blob:http://127.0.0.1:57669/618cdfb2-e902-421e-a542-6e6b9c874e34",
+          "blob:http://127.0.0.1:57669/83300b5f-88c7-4cfa-b356-ac076dc3b03c",
+          "blob:http://127.0.0.1:57669/1a2c22b9-6178-40de-be79-fedf10bb0cb9",
+          "blob:http://127.0.0.1:57669/8bf4f8bc-b44b-4a42-ad2f-8bf204cf3f17"
+        ]
+      },
+      "learner": {
+        "pageErrors": [],
+        "requests": [
+          "file:///var/folders/v7/ty8dwpy94vv8qzjy49934_240000gn/T/lessonroutes-consumer-D3jgHw/%D0%9E%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%83%D1%80%D0%BE%D0%BA%20%D1%81%20%D0%BF%D1%80%D0%BE%D0%B1%D0%B5%D0%BB%D0%B0%D0%BC%D0%B8/lesson.html"
+        ]
+      }
+    },
+    {
+      "subpath": "courses/lessonroutes arbitrary/",
+      "editor": {
+        "pageErrors": [],
+        "requests": [
+          "http://127.0.0.1:57669/courses/lessonroutes%20arbitrary/",
+          "http://127.0.0.1:57669/courses/lessonroutes%20arbitrary/assets/index-u-LcuF57.js",
+          "http://127.0.0.1:57669/courses/lessonroutes%20arbitrary/assets/index-5cim624m.css",
+          "http://127.0.0.1:57669/courses/lessonroutes%20arbitrary/examples/workspace.lessonroutes.project.json",
+          "blob:http://127.0.0.1:57669/ba9cffc3-4cf3-4ea4-aa3e-4bcf2591a8af",
+          "blob:http://127.0.0.1:57669/57224c30-eb84-409a-912b-b6f81f92eb8a",
+          "blob:http://127.0.0.1:57669/ae3c6b53-8e17-4435-9315-6ed687c72ba7",
+          "blob:http://127.0.0.1:57669/d902142d-7394-469a-8492-a7200e48b164",
+          "blob:http://127.0.0.1:57669/6df25b91-f595-49a3-a5c2-db5ecd587426",
+          "blob:http://127.0.0.1:57669/bd458f43-6353-4620-859c-77e002790d9f",
+          "http://127.0.0.1:57669/courses/lessonroutes%20arbitrary/",
+          "http://127.0.0.1:57669/courses/lessonroutes%20arbitrary/assets/index-u-LcuF57.js",
+          "http://127.0.0.1:57669/courses/lessonroutes%20arbitrary/assets/index-5cim624m.css",
+          "blob:http://127.0.0.1:57669/5828124b-b134-4dea-951e-d5de89a6e2f5",
+          "blob:http://127.0.0.1:57669/d039ec19-8e6f-4c44-8ba2-bbe5f393f17f",
+          "blob:http://127.0.0.1:57669/66999907-bf67-483b-ad1a-fcd452f2f02d",
+          "blob:http://127.0.0.1:57669/b3577ff8-1781-4287-b5cb-68adf4ae550b",
+          "blob:http://127.0.0.1:57669/e6860faf-1161-4494-8b7c-eda2e49d157d",
+          "blob:http://127.0.0.1:57669/8f954105-61f6-40e9-ab88-caffb948b2b5",
+          "blob:http://127.0.0.1:57669/6a5baf33-00bb-4c3d-b26e-6d88e75ba6fc",
+          "blob:http://127.0.0.1:57669/26915040-cd80-44e7-8ffb-61994a0abba7",
+          "blob:http://127.0.0.1:57669/b587ed65-e933-4c77-92a6-c62112996587",
+          "blob:http://127.0.0.1:57669/ad31c629-3929-4550-a606-7dfd35de27bc"
+        ]
+      },
+      "learner": {
+        "pageErrors": [],
+        "requests": [
+          "file:///var/folders/v7/ty8dwpy94vv8qzjy49934_240000gn/T/lessonroutes-consumer-D3jgHw/%D0%9E%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%83%D1%80%D0%BE%D0%BA%20%D1%81%20%D0%BF%D1%80%D0%BE%D0%B1%D0%B5%D0%BB%D0%B0%D0%BC%D0%B8/nested.html"
+        ]
+      }
+    }
+  ]
+}

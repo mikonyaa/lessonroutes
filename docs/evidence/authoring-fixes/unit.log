@@ -1,0 +1,13 @@
+
+> lessonroutes@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.3 /Users/bahytzanmeiram/lessonroutes-data-fixes-20261014
+
+
+ Test Files  3 passed (3)
+      Tests  69 passed (69)
+   Start at  01:02:48
+   Duration  5.19s (tests 96%, transform 3%, import 1%)
+

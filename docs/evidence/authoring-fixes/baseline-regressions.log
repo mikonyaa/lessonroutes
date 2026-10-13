@@ -1,0 +1,105 @@
+
+> lessonroutes@0.1.0 test:e2e
+> node scripts/run-e2e.mjs --project=chromium tests/e2e/persistence.spec.ts
+
+Isolated E2E server: http://127.0.0.1:53199/
+
+Running 3 tests using 1 worker
+
+(node:96141) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/e2e/persistence.spec.ts:13:1 › LR-1: delayed A open cannot replace B Saved or durable recovery (3.0s)
+(node:96177) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › tests/e2e/persistence.spec.ts:23:1 › LR-2: pending restore rejects early title, chooser, keyboard and drop mutations (11.1s)
+(node:96215) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [chromium] › tests/e2e/persistence.spec.ts:34:1 › LR-3: shuffled valid actions keep logical order through delete, undo, backup and player (345ms)
+
+
+  1) [chromium] › tests/e2e/persistence.spec.ts:13:1 › LR-1: delayed A open cannot replace B Saved or durable recovery 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "B saved"
+    Received: "A pending"
+
+      18 |   await page.screenshot({path:info.outputPath('B-saved.png'),fullPage:true});
+      19 |   await page.evaluate(()=>window.idbGate.release());await expect.poll(()=>page.evaluate(()=>window.idbGate.released)).toBe(1);
+    > 20 |   expect((await durableCurrent(page))?.metadata.title).toBe('B saved');await saved(page);
+         |                                                        ^
+      21 |   await page.reload();await saved(page);await expect(page.getByLabel('Lesson title')).toHaveValue('B saved');await page.screenshot({path:info.outputPath('reload-B.png'),fullPage:true});
+      22 | });
+      23 | test('LR-2: pending restore rejects early title, chooser, keyboard and drop mutations',async({page})=>{
+        at /Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/tests/e2e/persistence.spec.ts:20:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/persistence-LR-1-delayed-A-dda95-B-Saved-or-durable-recovery-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/persistence-LR-1-delayed-A-dda95-B-Saved-or-durable-recovery-chromium/error-context.md
+
+  2) [chromium] › tests/e2e/persistence.spec.ts:23:1 › LR-2: pending restore rejects early title, chooser, keyboard and drop mutations 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator:  getByLabel('Lesson title')
+    Expected: "typed before restore"
+    Received: "Recovered project"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveValue" getByLabel('Lesson title') with timeout 10000ms
+      - waiting for getByLabel('Lesson title')
+        24 × locator resolved to <input maxlength="200" value="Recovered project"/>
+           - unexpected value "Recovered project"
+
+
+      29 |   await page.evaluate(()=>{const transfer=new DataTransfer();transfer.items.add(new File(['bad bytes'],'early.png',{type:'image/png'}));document.querySelector('.canvas-panel')!.dispatchEvent(new DragEvent('drop',{bubbles:true,dataTransfer:transfer}));});
+      30 |   await page.evaluate(()=>window.idbGate.release());await saved(page);
+    > 31 |   await expect(page.getByLabel('Lesson title')).toHaveValue(early?'typed before restore':'Recovered project');
+         |                                                 ^
+      32 |   expect(early).toBe(false);await expect(page.getByRole('alert')).toHaveCount(0);
+      33 | });
+      34 | test('LR-3: shuffled valid actions keep logical order through delete, undo, backup and player',async({page,browser},info)=>{
+        at /Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/tests/e2e/persistence.spec.ts:31:49
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/persistence-LR-2-pending-r-9fe21-keyboard-and-drop-mutations-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/persistence-LR-2-pending-r-9fe21-keyboard-and-drop-mutations-chromium/error-context.md
+
+  3) [chromium] › tests/e2e/persistence.spec.ts:34:1 › LR-3: shuffled valid actions keep logical order through delete, undo, backup and player 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 2
+    + Received  + 2
+
+      Array [
+    -   "1private",
+    -   "2shared",
+    +   "1shared",
+    +   "2private",
+      ]
+
+      36 |   const ids=async()=>page.locator('.action-tabs button').allTextContents();
+      37 |   expect(await ids()).toEqual(['1public','2private','3shared']);
+    > 38 |   await page.locator('.action-tabs button').first().click();await page.getByRole('button',{name:'Delete action',exact:true}).click();expect(await ids()).toEqual(['1private','2shared']);
+         |                                                                                                                                                          ^
+      39 |   await page.getByRole('button',{name:'Undo',exact:true}).click();expect(await ids()).toEqual(['1public','2private','3shared']);await page.getByRole('button',{name:'Redo',exact:true}).click();expect(await ids()).toEqual(['1private','2shared']);
+      40 |   const backupPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Download project',exact:true}).click();const backup=info.outputPath('ordered.project.json');await (await backupPromise).saveAs(backup);
+      41 |   const project=JSON.parse(await readFile(backup,'utf8')) as Project,actions=(project.nodes[0] as ScreenNode).actions;
+        at /Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/tests/e2e/persistence.spec.ts:38:154
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/persistence-LR-3-shuffled--b6993-lete-undo-backup-and-player-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/persistence-LR-3-shuffled--b6993-lete-undo-backup-and-player-chromium/error-context.md
+
+  3 failed
+    [chromium] › tests/e2e/persistence.spec.ts:13:1 › LR-1: delayed A open cannot replace B Saved or durable recovery 
+    [chromium] › tests/e2e/persistence.spec.ts:23:1 › LR-2: pending restore rejects early title, chooser, keyboard and drop mutations 
+    [chromium] › tests/e2e/persistence.spec.ts:34:1 › LR-3: shuffled valid actions keep logical order through delete, undo, backup and player 

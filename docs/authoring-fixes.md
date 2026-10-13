@@ -106,31 +106,109 @@ Own native evidence: [B Saved](evidence/authoring-fixes/B-saved.png),
 [reload B](evidence/authoring-fixes/reload-B.png),
 [page errors and requests](evidence/authoring-fixes/B-browser-log.json).
 These two screenshots use the browser test's 1280 px viewport. The fresh consumer
-will also capture 1440/390 screenshots. Earlier authors' media/CI were not used as
+also captured 1440/390 screenshots. Earlier authors' media/CI were not used as
 evidence of this execution.
 
-## Package and performance follow-up
+## Fresh ZIP and clean consumer
 
-The implementation commit and clean local ZIP provenance are recorded in the
-archive's BUILD.json. The next steps execute `npm run package:web`,
-`npm run test:production`, and an explicit `--zip /absolute/path/...` pass on that
-same fresh archive. The strengthened consumer requires exact committed edits
-after hard refresh, preserving original assets through backup/reimport, root and
-arbitrary subpath delivery, traversal/occupied-port checks, and an isolated file
-player with network/storage disabled at 390 px. Final hashes/results and measured
-performance are appended after execution, without claiming CI or publication.
+The ZIP was packaged once from clean implementation commit
+`4818a5c854054e661ba676fefbccc04538717472`. BUILD.json records sourceDirty false,
+origin local build, Node v24.21.0 and actual build time 2026-10-13T20:10:25.268Z.
+Later evidence-only commits do not change runtime, tests, scripts or dependencies.
 
-Deterministic inputs from `node scripts/generate-stress.mjs`: representative
-8 images / 16 nodes / 4 actions per screen, 4,739,335 bytes JSON and 3,543,640 image
-bytes; near-limit 50 images / 200 nodes / 30 actions per screen, 75,978,586 bytes JSON,
-52,030,316 image bytes and a 10,383,893-byte largest PNG. The near-limit fixture is
-49.62 MiB total images, 9.90 MiB/image and 72.46 MiB JSON. Feedback reaches 4,000
-characters and labels 200. The measured script uses three fresh browser launches
-per fixture against the shipped editor, records latencies/keyboard samples and
-200 ms samples of owned-browser RSS and JS heap. Sum RSS includes shared pages
-and is an observed sampled peak, not an exact allocation maximum or total machine
-memory. No speedup claim is made. Active import/export have no Cancel control in
-v1; Escape is checked where the export dialog offers closing before preparation.
+File: `artifacts/lessonroutes-0.1.0-web.zip`, 3,623,592 bytes.
+SHA-256: `aaa2d2cd3497633aa5c1def6888edcb369cbc49429c5591aedb2c30d6459a12e`.
+This is an unreleased local rebuild with the existing version filename; it does
+not replace the published v0.1.0 archive/tag.
+
+Both `npm run test:production` and the following explicit command passed on that
+same final ZIP, each using its own new extraction outside the checkout:
+
+```sh
+node scripts/test-production.mjs --zip /Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/artifacts/lessonroutes-0.1.0-web.zip
+```
+
+The shipped dependency-free server ran without node_modules. Root and
+`courses/lessonroutes arbitrary/` each passed opening/import, editing, committed
+Saved, backup/reimport and exact saved hard refresh. The consumer checks both the
+edited title and action/feedback after refresh; it no longer reimports to conceal
+an older recovery result. Backup assets equal the original example assets. Export
+then completes wrong feedback/retry, correct path, finish and restart in a new
+390 px file-URL context, offline with localStorage/IndexedDB getters disabled.
+Both editor and learner record zero page errors; learner HTTP(S) requests are zero.
+Traversal, directory listing, out-of-app files and occupied port safety passed.
+The returned consumer directory and all request/error logs are in the actual
+[consumer results](evidence/authoring-fixes/production-results.json).
+
+Own screenshots from the final ZIP were visually inspected:
+[editor 1440](evidence/authoring-fixes/consumer-1440.png),
+[editor 390](evidence/authoring-fixes/consumer-390.png),
+[learner finish 390](evidence/authoring-fixes/consumer-finish-390.png).
+`artifacts/consumer-lesson.html` and `artifacts/consumer.lessonroutes.project.json`
+are copied from that verified consumer for local review.
+
+## Measured performance and limits
+
+Commands executed on the same macOS/toolchain and shipped editor:
+
+```sh
+node scripts/generate-stress.mjs
+node scripts/measure-authoring.mjs
+node scripts/check-large-learner.mjs
+```
+
+Each fixture used three fresh browser launches (Chromium 156.0.8078.4). Inputs
+are independent, deterministic static RGB PNGs with valid CRCs and unique bytes.
+The project physically reverses actions but has a valid order permutation.
+Every node remains reachable; export checks node count and exact original image
+bytes. Backup checks nodes/assets; reload checks the same committed project.
+
+| Input | Representative | Near-limit |
+| --- | --- | --- |
+| Images / nodes / actions per screen | 8 / 16 / 4 | 50 / 200 / 30 |
+| Original image bytes | 3,543,640 (3.38 MiB) | 52,030,316 (49.62 MiB) |
+| Largest PNG | 442,955 bytes | 10,383,893 (9.90 MiB) |
+| Compact project JSON | 4,739,335 (4.52 MiB) | 75,978,586 (72.46 MiB) |
+| Project SHA-256 | 4dcdb8b091a5529ed5055b5e6201c1cc8f2d13b14881feaab5d9fb3f3920fae9 | 027a690a0613a5b7d3e07531654117c91f9d9054d00460fcd11882d3b2900b85 |
+
+Near-limit feedback reaches 4,000 characters and labels 200. Limits were not
+changed. Timing values below are median [min–max] of three runs, in milliseconds:
+
+| Operation / observation | Representative | Near-limit |
+| --- | --- | --- |
+| Batch image import | 420 [397–558] | 3,470 [3,146–3,655] |
+| Autosave after image import | 785 [785–819] | 799 [794–799] |
+| Editable project import | 680 [437–1,029] | 6,171 [5,813–6,918] |
+| Autosave after project import | 782 [781–798] | 798 [784–855] |
+| Editable backup download | 264 [248–429] | 2,734 [2,702–2,817] |
+| Learner HTML export | 684 [415–757] | 6,458 [6,136–6,558] |
+| Restore/reload | 406 [324–490] | 4,071 [3,791–4,276] |
+| Sampled peak browser-tree RSS, MiB | 516.6 [490.2–558.9] | 1,376.6 [1,257.0–1,518.6] |
+| Sampled peak JS heap, MiB | 59.5 [47.2–67.9] | 516.1 [466.6–540.6] |
+
+Autosave timings start after the imported snapshot is visible and include debounce
+and browser-driver polling. Import/export timings include native file delivery,
+UI operation, one keyboard probe and download where relevant. Keyboard Tab probes
+ran while Working locally was visible: representative 16–142 ms, near-limit 1.7–60
+ms. They are sampled interaction checks, not a worst-case jank guarantee. Escape
+closes the export dialog before preparation. Active image/project import and HTML
+preparation have no Cancel control in v1; no cancellation claim is made for them.
+
+Memory is sampled every 200 ms using RSS summed for the owned browser process tree
+and CDP JSHeapUsedSize. RSS includes shared pages, excludes Node/server, and is an
+observed sampled peak rather than an exact allocation maximum or machine memory.
+These are current-build performance baselines, not evidence of a speedup. The
+near-limit input uses substantial desktop memory; physical mobile behavior remains
+an external gate. Full input sizes, per-run latencies, keyboard probes and all
+memory samples are in [raw results](evidence/authoring-fixes/performance-results.json)
+and [input metadata](evidence/authoring-fixes/performance-inputs.json).
+
+The separate [large learner run](evidence/authoring-fixes/large-learner-results.json)
+opened the 200-node/50-image HTML through file in a clean 390 px context, with
+network/storage disabled. Load to the first 30 actions was 449 ms. It verified
+Tab order, an incorrect retry, all 50 screen transitions by keyboard, finish and
+restart, without horizontal overflow, page errors or HTTP(S) requests. Its
+[finish screenshot](evidence/authoring-fixes/large-finish-390.png) is from that run.
 
 ## External limits
 

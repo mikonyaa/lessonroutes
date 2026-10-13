@@ -1,0 +1,10 @@
+
+> lessonroutes@0.1.0 test:production
+> node scripts/test-production.mjs
+
+[
+  'Path traversal, directory listing and out-of-app files rejected.',
+  'Occupied port exits cleanly without affecting the existing server.',
+  'Consumer root: author, atomic save, backup/import, exact saved hard refresh, export, isolated offline keyboard completion and restart at 390px, disabled storage.',
+  'Consumer arbitrary subpath: author, atomic save, backup/import, exact saved hard refresh, export, isolated offline keyboard completion and restart at 390px, disabled storage.'
+]

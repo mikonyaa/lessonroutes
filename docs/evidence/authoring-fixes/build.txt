@@ -1,0 +1,14 @@
+
+> lessonroutes@0.1.0 build
+> node scripts/build-player.mjs && vite build && node scripts/copy-public.mjs
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 36 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.31 kB
+dist/assets/index-5cim624m.css   14.32 kB │ gzip:  3.67 kB
+dist/assets/index-u-LcuF57.js   279.04 kB │ gzip: 87.99 kB
+
+✓ built in 80ms

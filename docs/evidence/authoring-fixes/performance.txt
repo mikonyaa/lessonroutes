@@ -1,0 +1,6 @@
+{"fixture":"representative","repeat":1,"imageImportMs":397.0401670000001,"projectImportMs":1029.4332090000003,"autosaveMs":797.6826249999999,"exportMs":757.3212080000003,"peakRSSMiB":490.203125}
+{"fixture":"representative","repeat":2,"imageImportMs":557.6756669999995,"projectImportMs":680.3323340000006,"autosaveMs":781.6009579999991,"exportMs":684.059041999999,"peakRSSMiB":516.625}
+{"fixture":"representative","repeat":3,"imageImportMs":419.64991700000064,"projectImportMs":436.5670000000009,"autosaveMs":781.3767090000001,"exportMs":414.71937499999876,"peakRSSMiB":558.875}
+{"fixture":"near-limit","repeat":1,"imageImportMs":3654.6657080000004,"projectImportMs":6917.587416999999,"autosaveMs":784.4452090000013,"exportMs":6135.9911250000005,"peakRSSMiB":1518.640625}
+{"fixture":"near-limit","repeat":2,"imageImportMs":3146.2754579999964,"projectImportMs":5812.984042000004,"autosaveMs":798.2962079999998,"exportMs":6457.556625000005,"peakRSSMiB":1376.625}
+{"fixture":"near-limit","repeat":3,"imageImportMs":3469.571416999999,"projectImportMs":6171.1554999999935,"autosaveMs":854.796915999992,"exportMs":6557.618582999989,"peakRSSMiB":1256.953125}

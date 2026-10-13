@@ -1,0 +1,55 @@
+
+> lessonroutes@0.1.0 test:e2e
+> node scripts/run-e2e.mjs
+
+Isolated E2E server: http://127.0.0.1:52783/
+
+Running 39 tests using 1 worker
+
+(node:93345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/e2e/acceptance.spec.ts:7:1 › graph problems block ready export while a draft backup remains available (1.3s)
+  ✓   2 [chromium] › tests/e2e/acceptance.spec.ts:22:1 › quota after a write request and a stalled commit cannot show saved; download still works (8.2s)
+  ✓   3 [chromium] › tests/e2e/acceptance.spec.ts:38:1 › keyboard draw alternative, finish linking, live feedback, focus and outside click (630ms)
+  ✓   4 [chromium] › tests/e2e/acceptance.spec.ts:41:1 › long labels and accessible controls remain usable on desktop and mobile (980ms)
+  ✓   5 [chromium] › tests/e2e/editor.spec.ts:14:1 › empty state, batch of 20 same-name/Unicode images, order, dedup and atomic errors (653ms)
+  ✓   6 [chromium] › tests/e2e/editor.spec.ts:24:1 › save, close, import preserves graph and IDs; deletion and move undo in one action (1.8s)
+  ✓   7 [chromium] › tests/e2e/editor.spec.ts:30:1 › numeric region editing, keyboard arrows and real contain geometry at 1440/1024/390 with zoom (744ms)
+  ✓   8 [chromium] › tests/e2e/editor.spec.ts:46:1 › preview and independent file HTML share exact transitions, two errors, retry and finish (3.2s)
+  ✓   9 [chromium] › tests/e2e/editor.spec.ts:58:1 › safe strings, canary exclusion, restrictive CSP and double click (725ms)
+  ✓  10 [chromium] › tests/e2e/editor.spec.ts:67:1 › autosave restores on reload, second tab conflicts and manual backup stays available (3.9s)
+  ✓  11 [chromium] › tests/e2e/editor.spec.ts:74:1 › unavailable/quota storage stays visibly unsaved with working download (1.2s)
+  ✓  12 [chromium] › tests/e2e/editor.spec.ts:77:1 › EXIF-oriented JPEG displays identically in editor and exported player (554ms)
+  ✓  13 [chromium] › tests/e2e/editor.spec.ts:81:1 › standalone image region clicks align at 1440, 1024 and 390 including letterboxing (2.0s)
+(node:94017) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  14 [firefox] › tests/e2e/acceptance.spec.ts:7:1 › graph problems block ready export while a draft backup remains available (3.2s)
+  ✓  15 [firefox] › tests/e2e/acceptance.spec.ts:22:1 › quota after a write request and a stalled commit cannot show saved; download still works (8.6s)
+  ✓  16 [firefox] › tests/e2e/acceptance.spec.ts:38:1 › keyboard draw alternative, finish linking, live feedback, focus and outside click (462ms)
+  ✓  17 [firefox] › tests/e2e/acceptance.spec.ts:41:1 › long labels and accessible controls remain usable on desktop and mobile (999ms)
+  ✓  18 [firefox] › tests/e2e/editor.spec.ts:14:1 › empty state, batch of 20 same-name/Unicode images, order, dedup and atomic errors (587ms)
+  ✓  19 [firefox] › tests/e2e/editor.spec.ts:24:1 › save, close, import preserves graph and IDs; deletion and move undo in one action (1.8s)
+  ✓  20 [firefox] › tests/e2e/editor.spec.ts:30:1 › numeric region editing, keyboard arrows and real contain geometry at 1440/1024/390 with zoom (728ms)
+  ✓  21 [firefox] › tests/e2e/editor.spec.ts:46:1 › preview and independent file HTML share exact transitions, two errors, retry and finish (3.2s)
+  ✓  22 [firefox] › tests/e2e/editor.spec.ts:58:1 › safe strings, canary exclusion, restrictive CSP and double click (803ms)
+  ✓  23 [firefox] › tests/e2e/editor.spec.ts:67:1 › autosave restores on reload, second tab conflicts and manual backup stays available (4.2s)
+  ✓  24 [firefox] › tests/e2e/editor.spec.ts:74:1 › unavailable/quota storage stays visibly unsaved with working download (1.2s)
+  ✓  25 [firefox] › tests/e2e/editor.spec.ts:77:1 › EXIF-oriented JPEG displays identically in editor and exported player (889ms)
+  ✓  26 [firefox] › tests/e2e/editor.spec.ts:81:1 › standalone image region clicks align at 1440, 1024 and 390 including letterboxing (2.5s)
+(node:94254) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  27 [webkit] › tests/e2e/acceptance.spec.ts:7:1 › graph problems block ready export while a draft backup remains available (1.7s)
+  ✓  28 [webkit] › tests/e2e/acceptance.spec.ts:22:1 › quota after a write request and a stalled commit cannot show saved; download still works (8.5s)
+  ✓  29 [webkit] › tests/e2e/acceptance.spec.ts:38:1 › keyboard draw alternative, finish linking, live feedback, focus and outside click (899ms)
+  ✓  30 [webkit] › tests/e2e/acceptance.spec.ts:41:1 › long labels and accessible controls remain usable on desktop and mobile (1.0s)
+  ✓  31 [webkit] › tests/e2e/editor.spec.ts:14:1 › empty state, batch of 20 same-name/Unicode images, order, dedup and atomic errors (963ms)
+  ✓  32 [webkit] › tests/e2e/editor.spec.ts:24:1 › save, close, import preserves graph and IDs; deletion and move undo in one action (2.2s)
+  ✓  33 [webkit] › tests/e2e/editor.spec.ts:30:1 › numeric region editing, keyboard arrows and real contain geometry at 1440/1024/390 with zoom (1.5s)
+  ✓  34 [webkit] › tests/e2e/editor.spec.ts:46:1 › preview and independent file HTML share exact transitions, two errors, retry and finish (4.0s)
+  ✓  35 [webkit] › tests/e2e/editor.spec.ts:58:1 › safe strings, canary exclusion, restrictive CSP and double click (1.1s)
+  ✓  36 [webkit] › tests/e2e/editor.spec.ts:67:1 › autosave restores on reload, second tab conflicts and manual backup stays available (4.3s)
+  ✓  37 [webkit] › tests/e2e/editor.spec.ts:74:1 › unavailable/quota storage stays visibly unsaved with working download (1.3s)
+  ✓  38 [webkit] › tests/e2e/editor.spec.ts:77:1 › EXIF-oriented JPEG displays identically in editor and exported player (803ms)
+  ✓  39 [webkit] › tests/e2e/editor.spec.ts:81:1 › standalone image region clicks align at 1440, 1024 and 390 including letterboxing (2.2s)
+
+  39 passed (1.5m)

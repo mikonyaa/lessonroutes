@@ -1,0 +1,2861 @@
+{
+  "build": {
+    "sourceCommit": "4818a5c854054e661ba676fefbccc04538717472",
+    "sourceDirty": false,
+    "origin": "local build",
+    "builtAt": "2026-10-13T20:10:25.268Z",
+    "node": "v24.21.0"
+  },
+  "node": "v24.21.0",
+  "browser": "156.0.8078.4",
+  "os": {
+    "platform": "darwin",
+    "release": "25.6.0",
+    "arch": "arm64",
+    "totalMemory": 17179869184
+  },
+  "rssMethod": "200 ms samples of the owned browser process tree; sum RSS includes shared pages, excludes Node/server; observed peak, not an allocation maximum",
+  "cancel": "Escape closes the export dialog before preparation. Image/project import and active export have no Cancel control in v1.",
+  "results": [
+    {
+      "fixture": "representative",
+      "repeat": 1,
+      "samples": [
+        {
+          "elapsedMs": 202.80737499999998,
+          "rssBytes": 335396864,
+          "jsHeapBytes": 3104880
+        },
+        {
+          "elapsedMs": 402.8019999999999,
+          "rssBytes": 335724544,
+          "jsHeapBytes": 3190768
+        },
+        {
+          "elapsedMs": 602.7555829999999,
+          "rssBytes": 335806464,
+          "jsHeapBytes": 3269096
+        },
+        {
+          "elapsedMs": 806.3142909999999,
+          "rssBytes": 337477632,
+          "jsHeapBytes": 3352352
+        },
+        {
+          "elapsedMs": 1005.181458,
+          "rssBytes": 337821696,
+          "jsHeapBytes": 3376040
+        },
+        {
+          "elapsedMs": 1221.973333,
+          "rssBytes": 365707264,
+          "jsHeapBytes": 5943268
+        },
+        {
+          "elapsedMs": 1406.0291249999998,
+          "rssBytes": 413351936,
+          "jsHeapBytes": 8469056
+        },
+        {
+          "elapsedMs": 1607.8471659999998,
+          "rssBytes": 413450240,
+          "jsHeapBytes": 8533436
+        },
+        {
+          "elapsedMs": 1808.682541,
+          "rssBytes": 395689984,
+          "jsHeapBytes": 14579540
+        },
+        {
+          "elapsedMs": 2010.3407909999999,
+          "rssBytes": 395673600,
+          "jsHeapBytes": 14579540
+        },
+        {
+          "elapsedMs": 2214.9753330000003,
+          "rssBytes": 386793472,
+          "jsHeapBytes": 14603884
+        },
+        {
+          "elapsedMs": 2413.6256249999997,
+          "rssBytes": 358465536,
+          "jsHeapBytes": 14603884
+        },
+        {
+          "elapsedMs": 2648.7668750000003,
+          "rssBytes": 347799552,
+          "jsHeapBytes": 14603884
+        },
+        {
+          "elapsedMs": 2828.608083,
+          "rssBytes": 414875648,
+          "jsHeapBytes": 16353644
+        },
+        {
+          "elapsedMs": 3028.4982499999996,
+          "rssBytes": 432095232,
+          "jsHeapBytes": 16031364
+        },
+        {
+          "elapsedMs": 3226.8447910000004,
+          "rssBytes": 442400768,
+          "jsHeapBytes": 13303344
+        },
+        {
+          "elapsedMs": 3427.6726659999995,
+          "rssBytes": 412729344,
+          "jsHeapBytes": 13373408
+        },
+        {
+          "elapsedMs": 3629.632291,
+          "rssBytes": 375242752,
+          "jsHeapBytes": 13407920
+        },
+        {
+          "elapsedMs": 3829.547875,
+          "rssBytes": 396984320,
+          "jsHeapBytes": 19519004
+        },
+        {
+          "elapsedMs": 4036.0857079999996,
+          "rssBytes": 413581312,
+          "jsHeapBytes": 24860932
+        },
+        {
+          "elapsedMs": 4235.318333,
+          "rssBytes": 415399936,
+          "jsHeapBytes": 25534284
+        },
+        {
+          "elapsedMs": 4428.992375,
+          "rssBytes": 405536768,
+          "jsHeapBytes": 25534284
+        },
+        {
+          "elapsedMs": 4629.6762499999995,
+          "rssBytes": 448102400,
+          "jsHeapBytes": 62408608
+        },
+        {
+          "elapsedMs": 4831.105708,
+          "rssBytes": 493813760,
+          "jsHeapBytes": 18130356
+        },
+        {
+          "elapsedMs": 5057.548791,
+          "rssBytes": 509968384,
+          "jsHeapBytes": 28932496
+        },
+        {
+          "elapsedMs": 5256.939125,
+          "rssBytes": 467927040,
+          "jsHeapBytes": 28932648
+        },
+        {
+          "elapsedMs": 5434.7535,
+          "rssBytes": 514015232,
+          "jsHeapBytes": 57075088
+        },
+        {
+          "elapsedMs": 5634.657333,
+          "rssBytes": 504774656,
+          "jsHeapBytes": 24790884
+        },
+        {
+          "elapsedMs": 5815.96975,
+          "rssBytes": 483934208,
+          "jsHeapBytes": 21183184
+        },
+        {
+          "elapsedMs": 5849.054625,
+          "rssBytes": 479985664,
+          "jsHeapBytes": 21183184
+        }
+      ],
+      "keyboard": [
+        {
+          "phase": "image import",
+          "working": true,
+          "ms": 63.43624999999997
+        },
+        {
+          "phase": "project import",
+          "working": true,
+          "ms": 142.28504200000043
+        },
+        {
+          "phase": "HTML export",
+          "working": true,
+          "ms": 38.31008399999973
+        }
+      ],
+      "input": {
+        "config": {
+          "name": "representative",
+          "images": 8,
+          "finishes": 8,
+          "actions": 4,
+          "side": 384,
+          "feedback": 80
+        },
+        "project": "/Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/output/stress/representative/project.json",
+        "projectBytes": 4739335,
+        "projectSHA256": "4dcdb8b091a5529ed5055b5e6201c1cc8f2d13b14881feaab5d9fb3f3920fae9",
+        "nodes": 16,
+        "images": 8,
+        "actionsPerScreen": 4,
+        "imageBytes": 3543640,
+        "largestImageBytes": 442955,
+        "imageSizes": [
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955
+        ]
+      },
+      "imageImportMs": 397.0401670000001,
+      "imageAutosaveAfterImportMs": 819.0958339999997,
+      "projectImportMs": 1029.4332090000003,
+      "projectAutosaveAfterImportMs": 797.6826249999999,
+      "backupMs": 429.1093329999994,
+      "dialogEscapeMs": 6.6027500000000146,
+      "exportMs": 757.3212080000003,
+      "exportBytes": 4747141,
+      "exportSHA256": "10b90537e06a857f982a9b7a545fd6ce0dbb272cd768ee31c5dffe06f9f055c3",
+      "reloadMs": 489.78441699999985,
+      "peakBrowserTreeRSSBytes": 514015232,
+      "peakJSHeapBytes": 62408608,
+      "errors": []
+    },
+    {
+      "fixture": "representative",
+      "repeat": 2,
+      "samples": [
+        {
+          "elapsedMs": 202.80066699999952,
+          "rssBytes": 327614464,
+          "jsHeapBytes": 3147100
+        },
+        {
+          "elapsedMs": 403.2534999999998,
+          "rssBytes": 289226752,
+          "jsHeapBytes": 3183816
+        },
+        {
+          "elapsedMs": 604.302334,
+          "rssBytes": 292421632,
+          "jsHeapBytes": 3262144
+        },
+        {
+          "elapsedMs": 806.164667,
+          "rssBytes": 292388864,
+          "jsHeapBytes": 3345236
+        },
+        {
+          "elapsedMs": 1009.9081249999999,
+          "rssBytes": 293797888,
+          "jsHeapBytes": 3369052
+        },
+        {
+          "elapsedMs": 1208.3772089999993,
+          "rssBytes": 293634048,
+          "jsHeapBytes": 3369052
+        },
+        {
+          "elapsedMs": 1406.4060419999996,
+          "rssBytes": 331055104,
+          "jsHeapBytes": 7801140
+        },
+        {
+          "elapsedMs": 1606.1977500000003,
+          "rssBytes": 372621312,
+          "jsHeapBytes": 13936876
+        },
+        {
+          "elapsedMs": 1806.7184589999988,
+          "rssBytes": 323305472,
+          "jsHeapBytes": 14002016
+        },
+        {
+          "elapsedMs": 2008.4293339999995,
+          "rssBytes": 342294528,
+          "jsHeapBytes": 7957596
+        },
+        {
+          "elapsedMs": 2208.685333999999,
+          "rssBytes": 342327296,
+          "jsHeapBytes": 7957596
+        },
+        {
+          "elapsedMs": 2464.774042,
+          "rssBytes": 342409216,
+          "jsHeapBytes": 7982268
+        },
+        {
+          "elapsedMs": 2624.648791999999,
+          "rssBytes": 342409216,
+          "jsHeapBytes": 7982268
+        },
+        {
+          "elapsedMs": 2825.455084,
+          "rssBytes": 440434688,
+          "jsHeapBytes": 18152548
+        },
+        {
+          "elapsedMs": 3024.6647920000005,
+          "rssBytes": 461455360,
+          "jsHeapBytes": 18035884
+        },
+        {
+          "elapsedMs": 3226.5093339999994,
+          "rssBytes": 461488128,
+          "jsHeapBytes": 18106032
+        },
+        {
+          "elapsedMs": 3427.7365419999996,
+          "rssBytes": 461488128,
+          "jsHeapBytes": 18140460
+        },
+        {
+          "elapsedMs": 3628.7014169999993,
+          "rssBytes": 473448448,
+          "jsHeapBytes": 24264752
+        },
+        {
+          "elapsedMs": 3846.7990419999996,
+          "rssBytes": 493617152,
+          "jsHeapBytes": 30277112
+        },
+        {
+          "elapsedMs": 4030.0181669999993,
+          "rssBytes": 493764608,
+          "jsHeapBytes": 30302000
+        },
+        {
+          "elapsedMs": 4231.338084,
+          "rssBytes": 510033920,
+          "jsHeapBytes": 43078900
+        },
+        {
+          "elapsedMs": 4431.002708999999,
+          "rssBytes": 516947968,
+          "jsHeapBytes": 42905852
+        },
+        {
+          "elapsedMs": 4637.459625,
+          "rssBytes": 516636672,
+          "jsHeapBytes": 29527912
+        },
+        {
+          "elapsedMs": 4831.241959,
+          "rssBytes": 494551040,
+          "jsHeapBytes": 29528064
+        },
+        {
+          "elapsedMs": 5032.987875,
+          "rssBytes": 537526272,
+          "jsHeapBytes": 71226316
+        },
+        {
+          "elapsedMs": 5235.3081250000005,
+          "rssBytes": 541720576,
+          "jsHeapBytes": 17762832
+        },
+        {
+          "elapsedMs": 5293.307709,
+          "rssBytes": 527368192,
+          "jsHeapBytes": 17932464
+        }
+      ],
+      "keyboard": [
+        {
+          "phase": "image import",
+          "working": true,
+          "ms": 20.061500000001615
+        },
+        {
+          "phase": "project import",
+          "working": true,
+          "ms": 30.1825000000008
+        },
+        {
+          "phase": "HTML export",
+          "working": true,
+          "ms": 38.13008300000001
+        }
+      ],
+      "input": {
+        "config": {
+          "name": "representative",
+          "images": 8,
+          "finishes": 8,
+          "actions": 4,
+          "side": 384,
+          "feedback": 80
+        },
+        "project": "/Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/output/stress/representative/project.json",
+        "projectBytes": 4739335,
+        "projectSHA256": "4dcdb8b091a5529ed5055b5e6201c1cc8f2d13b14881feaab5d9fb3f3920fae9",
+        "nodes": 16,
+        "images": 8,
+        "actionsPerScreen": 4,
+        "imageBytes": 3543640,
+        "largestImageBytes": 442955,
+        "imageSizes": [
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955
+        ]
+      },
+      "imageImportMs": 557.6756669999995,
+      "imageAutosaveAfterImportMs": 785.4980409999989,
+      "projectImportMs": 680.3323340000006,
+      "projectAutosaveAfterImportMs": 781.6009579999991,
+      "backupMs": 248.13979199999994,
+      "dialogEscapeMs": 5.363707999998951,
+      "exportMs": 684.059041999999,
+      "exportBytes": 4747141,
+      "exportSHA256": "10b90537e06a857f982a9b7a545fd6ce0dbb272cd768ee31c5dffe06f9f055c3",
+      "reloadMs": 405.91150000000016,
+      "peakBrowserTreeRSSBytes": 541720576,
+      "peakJSHeapBytes": 71226316,
+      "errors": []
+    },
+    {
+      "fixture": "representative",
+      "repeat": 3,
+      "samples": [
+        {
+          "elapsedMs": 202.135542,
+          "rssBytes": 335921152,
+          "jsHeapBytes": 3152048
+        },
+        {
+          "elapsedMs": 404.2117500000004,
+          "rssBytes": 298729472,
+          "jsHeapBytes": 3267088
+        },
+        {
+          "elapsedMs": 604.4352500000005,
+          "rssBytes": 291340288,
+          "jsHeapBytes": 3350260
+        },
+        {
+          "elapsedMs": 804.0030000000006,
+          "rssBytes": 291143680,
+          "jsHeapBytes": 3350260
+        },
+        {
+          "elapsedMs": 1006.1012500000015,
+          "rssBytes": 292945920,
+          "jsHeapBytes": 3373948
+        },
+        {
+          "elapsedMs": 1209.6419170000008,
+          "rssBytes": 342261760,
+          "jsHeapBytes": 8763468
+        },
+        {
+          "elapsedMs": 1404.7069580000007,
+          "rssBytes": 383205376,
+          "jsHeapBytes": 8861812
+        },
+        {
+          "elapsedMs": 1605.9157080000004,
+          "rssBytes": 377667584,
+          "jsHeapBytes": 8925772
+        },
+        {
+          "elapsedMs": 1806.3358750000007,
+          "rssBytes": 392036352,
+          "jsHeapBytes": 14938604
+        },
+        {
+          "elapsedMs": 2006.6695830000008,
+          "rssBytes": 392036352,
+          "jsHeapBytes": 14938604
+        },
+        {
+          "elapsedMs": 2206.429250000001,
+          "rssBytes": 392069120,
+          "jsHeapBytes": 14962948
+        },
+        {
+          "elapsedMs": 2406.757458,
+          "rssBytes": 468729856,
+          "jsHeapBytes": 25211408
+        },
+        {
+          "elapsedMs": 2606.9552920000006,
+          "rssBytes": 483000320,
+          "jsHeapBytes": 18666916
+        },
+        {
+          "elapsedMs": 2807.6886670000004,
+          "rssBytes": 483000320,
+          "jsHeapBytes": 18737172
+        },
+        {
+          "elapsedMs": 3009.9346250000017,
+          "rssBytes": 483000320,
+          "jsHeapBytes": 18737172
+        },
+        {
+          "elapsedMs": 3209.7731250000015,
+          "rssBytes": 491864064,
+          "jsHeapBytes": 24848536
+        },
+        {
+          "elapsedMs": 3439.535167,
+          "rssBytes": 511918080,
+          "jsHeapBytes": 30856252
+        },
+        {
+          "elapsedMs": 3610.2824580000015,
+          "rssBytes": 512032768,
+          "jsHeapBytes": 31243908
+        },
+        {
+          "elapsedMs": 3809.988083,
+          "rssBytes": 559382528,
+          "jsHeapBytes": 49523468
+        },
+        {
+          "elapsedMs": 4037.0726250000007,
+          "rssBytes": 560250880,
+          "jsHeapBytes": 18136016
+        },
+        {
+          "elapsedMs": 4289.632458,
+          "rssBytes": 568688640,
+          "jsHeapBytes": 34686468
+        },
+        {
+          "elapsedMs": 4411.822749999999,
+          "rssBytes": 586022912,
+          "jsHeapBytes": 19629528
+        },
+        {
+          "elapsedMs": 4431.134582999999,
+          "rssBytes": 586022912,
+          "jsHeapBytes": 19798856
+        }
+      ],
+      "keyboard": [
+        {
+          "phase": "image import",
+          "working": true,
+          "ms": 16.362999999999374
+        },
+        {
+          "phase": "project import",
+          "working": true,
+          "ms": 30.36608399999932
+        },
+        {
+          "phase": "HTML export",
+          "working": true,
+          "ms": 52.64704100000017
+        }
+      ],
+      "input": {
+        "config": {
+          "name": "representative",
+          "images": 8,
+          "finishes": 8,
+          "actions": 4,
+          "side": 384,
+          "feedback": 80
+        },
+        "project": "/Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/output/stress/representative/project.json",
+        "projectBytes": 4739335,
+        "projectSHA256": "4dcdb8b091a5529ed5055b5e6201c1cc8f2d13b14881feaab5d9fb3f3920fae9",
+        "nodes": 16,
+        "images": 8,
+        "actionsPerScreen": 4,
+        "imageBytes": 3543640,
+        "largestImageBytes": 442955,
+        "imageSizes": [
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955,
+          442955
+        ]
+      },
+      "imageImportMs": 419.64991700000064,
+      "imageAutosaveAfterImportMs": 785.2733329999992,
+      "projectImportMs": 436.5670000000009,
+      "projectAutosaveAfterImportMs": 781.3767090000001,
+      "backupMs": 264.4535420000011,
+      "dialogEscapeMs": 2.407499999999345,
+      "exportMs": 414.71937499999876,
+      "exportBytes": 4747141,
+      "exportSHA256": "10b90537e06a857f982a9b7a545fd6ce0dbb272cd768ee31c5dffe06f9f055c3",
+      "reloadMs": 323.8537920000017,
+      "peakBrowserTreeRSSBytes": 586022912,
+      "peakJSHeapBytes": 49523468,
+      "errors": []
+    },
+    {
+      "fixture": "near-limit",
+      "repeat": 1,
+      "samples": [
+        {
+          "elapsedMs": 202.04791699999987,
+          "rssBytes": 335593472,
+          "jsHeapBytes": 3105688
+        },
+        {
+          "elapsedMs": 403.98812499999985,
+          "rssBytes": 335904768,
+          "jsHeapBytes": 3192296
+        },
+        {
+          "elapsedMs": 604.458666999999,
+          "rssBytes": 337510400,
+          "jsHeapBytes": 3274248
+        },
+        {
+          "elapsedMs": 805.2275420000005,
+          "rssBytes": 337510400,
+          "jsHeapBytes": 3274248
+        },
+        {
+          "elapsedMs": 1004.7155419999981,
+          "rssBytes": 338165760,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 1207.2496250000004,
+          "rssBytes": 338198528,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 1408.6352499999994,
+          "rssBytes": 338198528,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 1607.4480000000003,
+          "rssBytes": 338214912,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 1808.5027919999993,
+          "rssBytes": 338214912,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 2004.8607499999998,
+          "rssBytes": 338214912,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 2207.9403329999986,
+          "rssBytes": 338214912,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 2406.506541999999,
+          "rssBytes": 338231296,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 2606.477833000001,
+          "rssBytes": 338231296,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 2804.3979169999984,
+          "rssBytes": 338231296,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 3006.6517079999976,
+          "rssBytes": 338231296,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 3204.009374999998,
+          "rssBytes": 338247680,
+          "jsHeapBytes": 3331736
+        },
+        {
+          "elapsedMs": 3406.1039579999997,
+          "rssBytes": 442073088,
+          "jsHeapBytes": 10356300
+        },
+        {
+          "elapsedMs": 3607.5726670000004,
+          "rssBytes": 480755712,
+          "jsHeapBytes": 9014344
+        },
+        {
+          "elapsedMs": 3808.389457999998,
+          "rssBytes": 558039040,
+          "jsHeapBytes": 3853180
+        },
+        {
+          "elapsedMs": 4007.9492919999975,
+          "rssBytes": 603439104,
+          "jsHeapBytes": 33471424
+        },
+        {
+          "elapsedMs": 4208.077582999998,
+          "rssBytes": 652623872,
+          "jsHeapBytes": 29852120
+        },
+        {
+          "elapsedMs": 4504.997707999999,
+          "rssBytes": 754319360,
+          "jsHeapBytes": 33950372
+        },
+        {
+          "elapsedMs": 4614.770292000001,
+          "rssBytes": 754417664,
+          "jsHeapBytes": 34132608
+        },
+        {
+          "elapsedMs": 4811.484541999998,
+          "rssBytes": 745291776,
+          "jsHeapBytes": 34215196
+        },
+        {
+          "elapsedMs": 5010.768625000001,
+          "rssBytes": 756678656,
+          "jsHeapBytes": 114634356
+        },
+        {
+          "elapsedMs": 5212.386666999999,
+          "rssBytes": 750583808,
+          "jsHeapBytes": 114634356
+        },
+        {
+          "elapsedMs": 5414.549082999998,
+          "rssBytes": 741785600,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 5612.095417,
+          "rssBytes": 739082240,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 5811.6937499999985,
+          "rssBytes": 715685888,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 6012.610207999998,
+          "rssBytes": 715718656,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 6212.419999999998,
+          "rssBytes": 715735040,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 6412.2932919999985,
+          "rssBytes": 698466304,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 6613.57375,
+          "rssBytes": 689455104,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 6812.315999999999,
+          "rssBytes": 686538752,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 7011.649042000001,
+          "rssBytes": 647659520,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 7215.020708,
+          "rssBytes": 610091008,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 7412.258417000001,
+          "rssBytes": 610091008,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 7612.492707999998,
+          "rssBytes": 610091008,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 7812.5785,
+          "rssBytes": 610091008,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 8011.460124999998,
+          "rssBytes": 610091008,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 8212.018958,
+          "rssBytes": 609714176,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 8412.561582999999,
+          "rssBytes": 608075776,
+          "jsHeapBytes": 114674088
+        },
+        {
+          "elapsedMs": 8668.230042,
+          "rssBytes": 839991296,
+          "jsHeapBytes": 129238024
+        },
+        {
+          "elapsedMs": 8825.036832999998,
+          "rssBytes": 932708352,
+          "jsHeapBytes": 174286656
+        },
+        {
+          "elapsedMs": 9021.014,
+          "rssBytes": 1063157760,
+          "jsHeapBytes": 295800812
+        },
+        {
+          "elapsedMs": 9220.340042,
+          "rssBytes": 919404544,
+          "jsHeapBytes": 313957684
+        },
+        {
+          "elapsedMs": 9420.695791999999,
+          "rssBytes": 975437824,
+          "jsHeapBytes": 270064580
+        },
+        {
+          "elapsedMs": 9621.223374999998,
+          "rssBytes": 965623808,
+          "jsHeapBytes": 284598020
+        },
+        {
+          "elapsedMs": 9821.49225,
+          "rssBytes": 938901504,
+          "jsHeapBytes": 271326160
+        },
+        {
+          "elapsedMs": 10026.456291999999,
+          "rssBytes": 860323840,
+          "jsHeapBytes": 287371708
+        },
+        {
+          "elapsedMs": 10225.679874999998,
+          "rssBytes": 714653696,
+          "jsHeapBytes": 117347540
+        },
+        {
+          "elapsedMs": 10666.291417,
+          "rssBytes": 656736256,
+          "jsHeapBytes": 133993484
+        },
+        {
+          "elapsedMs": 10849.536832999998,
+          "rssBytes": 577454080,
+          "jsHeapBytes": 108150240
+        },
+        {
+          "elapsedMs": 11044.981791999999,
+          "rssBytes": 542932992,
+          "jsHeapBytes": 112275200
+        },
+        {
+          "elapsedMs": 11245.112083,
+          "rssBytes": 539246592,
+          "jsHeapBytes": 127518868
+        },
+        {
+          "elapsedMs": 11445.858250000001,
+          "rssBytes": 530366464,
+          "jsHeapBytes": 141091212
+        },
+        {
+          "elapsedMs": 11646.447042,
+          "rssBytes": 556531712,
+          "jsHeapBytes": 159267132
+        },
+        {
+          "elapsedMs": 11846.967667,
+          "rssBytes": 604012544,
+          "jsHeapBytes": 126453224
+        },
+        {
+          "elapsedMs": 12047.936542,
+          "rssBytes": 655769600,
+          "jsHeapBytes": 162599772
+        },
+        {
+          "elapsedMs": 12247.244208,
+          "rssBytes": 755318784,
+          "jsHeapBytes": 166623096
+        },
+        {
+          "elapsedMs": 12449.610832999999,
+          "rssBytes": 755433472,
+          "jsHeapBytes": 166785784
+        },
+        {
+          "elapsedMs": 12651.295416999998,
+          "rssBytes": 877887488,
+          "jsHeapBytes": 170746140
+        },
+        {
+          "elapsedMs": 12851.613249999999,
+          "rssBytes": 1023983616,
+          "jsHeapBytes": 215923868
+        },
+        {
+          "elapsedMs": 13054.385917,
+          "rssBytes": 1036451840,
+          "jsHeapBytes": 221685460
+        },
+        {
+          "elapsedMs": 13254.311458,
+          "rssBytes": 1038155776,
+          "jsHeapBytes": 187741424
+        },
+        {
+          "elapsedMs": 13485.113916999999,
+          "rssBytes": 1034321920,
+          "jsHeapBytes": 187741424
+        },
+        {
+          "elapsedMs": 13673.931708,
+          "rssBytes": 1032798208,
+          "jsHeapBytes": 187741424
+        },
+        {
+          "elapsedMs": 13878.340457999999,
+          "rssBytes": 1032798208,
+          "jsHeapBytes": 187741424
+        },
+        {
+          "elapsedMs": 14055.895708,
+          "rssBytes": 1025884160,
+          "jsHeapBytes": 187741424
+        },
+        {
+          "elapsedMs": 14271.455125,
+          "rssBytes": 1025884160,
+          "jsHeapBytes": 187741576
+        },
+        {
+          "elapsedMs": 14475.394,
+          "rssBytes": 1022050304,
+          "jsHeapBytes": 187741576
+        },
+        {
+          "elapsedMs": 14663.648916999999,
+          "rssBytes": 1015906304,
+          "jsHeapBytes": 187741576
+        },
+        {
+          "elapsedMs": 14868.413625000001,
+          "rssBytes": 1016086528,
+          "jsHeapBytes": 187741576
+        },
+        {
+          "elapsedMs": 15072.477082999998,
+          "rssBytes": 1016086528,
+          "jsHeapBytes": 187741576
+        },
+        {
+          "elapsedMs": 15284.117291999999,
+          "rssBytes": 1004830720,
+          "jsHeapBytes": 187741576
+        },
+        {
+          "elapsedMs": 15463.439875,
+          "rssBytes": 1004830720,
+          "jsHeapBytes": 187741576
+        },
+        {
+          "elapsedMs": 15657.766667,
+          "rssBytes": 1004830720,
+          "jsHeapBytes": 187741576
+        },
+        {
+          "elapsedMs": 16092.332916999996,
+          "rssBytes": 721731584,
+          "jsHeapBytes": 187741644
+        },
+        {
+          "elapsedMs": 16301.124542000001,
+          "rssBytes": 816070656,
+          "jsHeapBytes": 246050472
+        },
+        {
+          "elapsedMs": 16548.797083,
+          "rssBytes": 882589696,
+          "jsHeapBytes": 355261368
+        },
+        {
+          "elapsedMs": 16691.910332999996,
+          "rssBytes": 1104920576,
+          "jsHeapBytes": 310339632
+        },
+        {
+          "elapsedMs": 16893.998333,
+          "rssBytes": 1210286080,
+          "jsHeapBytes": 393684132
+        },
+        {
+          "elapsedMs": 17095.95075,
+          "rssBytes": 1176944640,
+          "jsHeapBytes": 376918988
+        },
+        {
+          "elapsedMs": 17295.665082999996,
+          "rssBytes": 1156333568,
+          "jsHeapBytes": 385208232
+        },
+        {
+          "elapsedMs": 17500.243458,
+          "rssBytes": 1197228032,
+          "jsHeapBytes": 394033468
+        },
+        {
+          "elapsedMs": 17695.609916999998,
+          "rssBytes": 1249214464,
+          "jsHeapBytes": 432210820
+        },
+        {
+          "elapsedMs": 17900.182208000002,
+          "rssBytes": 983252992,
+          "jsHeapBytes": 221642740
+        },
+        {
+          "elapsedMs": 18096.132457999996,
+          "rssBytes": 1004240896,
+          "jsHeapBytes": 241377380
+        },
+        {
+          "elapsedMs": 18298.007332999998,
+          "rssBytes": 1027588096,
+          "jsHeapBytes": 227185980
+        },
+        {
+          "elapsedMs": 18504.720624999998,
+          "rssBytes": 1072136192,
+          "jsHeapBytes": 228525016
+        },
+        {
+          "elapsedMs": 18707.0315,
+          "rssBytes": 1049018368,
+          "jsHeapBytes": 239420344
+        },
+        {
+          "elapsedMs": 18926.987417,
+          "rssBytes": 860504064,
+          "jsHeapBytes": 238468408
+        },
+        {
+          "elapsedMs": 19105.202499999996,
+          "rssBytes": 875970560,
+          "jsHeapBytes": 233963948
+        },
+        {
+          "elapsedMs": 19305.504958,
+          "rssBytes": 914112512,
+          "jsHeapBytes": 261603452
+        },
+        {
+          "elapsedMs": 19507.118333000002,
+          "rssBytes": 765624320,
+          "jsHeapBytes": 239007556
+        },
+        {
+          "elapsedMs": 19737.360542,
+          "rssBytes": 880082944,
+          "jsHeapBytes": 315263088
+        },
+        {
+          "elapsedMs": 19963.499874999998,
+          "rssBytes": 919273472,
+          "jsHeapBytes": 329833488
+        },
+        {
+          "elapsedMs": 20188.601375000002,
+          "rssBytes": 915111936,
+          "jsHeapBytes": 329833488
+        },
+        {
+          "elapsedMs": 20372.052166999998,
+          "rssBytes": 915111936,
+          "jsHeapBytes": 329833488
+        },
+        {
+          "elapsedMs": 20579.768458000002,
+          "rssBytes": 915111936,
+          "jsHeapBytes": 329833488
+        },
+        {
+          "elapsedMs": 20784.082082999998,
+          "rssBytes": 915030016,
+          "jsHeapBytes": 329833488
+        },
+        {
+          "elapsedMs": 20966.212958,
+          "rssBytes": 915013632,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 21178.06275,
+          "rssBytes": 915161088,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 21375.394917,
+          "rssBytes": 915161088,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 21571.123292,
+          "rssBytes": 915161088,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 21759.255542000003,
+          "rssBytes": 909918208,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 21972.902250000003,
+          "rssBytes": 909918208,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 22183.562541999996,
+          "rssBytes": 910344192,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 22357.616874999996,
+          "rssBytes": 910344192,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 22567.43175,
+          "rssBytes": 847659008,
+          "jsHeapBytes": 329833496
+        },
+        {
+          "elapsedMs": 22784.860666999997,
+          "rssBytes": 1060405248,
+          "jsHeapBytes": 155959416
+        },
+        {
+          "elapsedMs": 22960.730042,
+          "rssBytes": 1040662528,
+          "jsHeapBytes": 295577048
+        },
+        {
+          "elapsedMs": 23161.578417,
+          "rssBytes": 1165066240,
+          "jsHeapBytes": 413692652
+        },
+        {
+          "elapsedMs": 23362.851082999998,
+          "rssBytes": 1131249664,
+          "jsHeapBytes": 369371760
+        },
+        {
+          "elapsedMs": 23563.390917,
+          "rssBytes": 1147715584,
+          "jsHeapBytes": 407157400
+        },
+        {
+          "elapsedMs": 23764.671292000003,
+          "rssBytes": 1178746880,
+          "jsHeapBytes": 389358856
+        },
+        {
+          "elapsedMs": 23968.330749999997,
+          "rssBytes": 1222492160,
+          "jsHeapBytes": 398692436
+        },
+        {
+          "elapsedMs": 24164.808833,
+          "rssBytes": 1252507648,
+          "jsHeapBytes": 419375044
+        },
+        {
+          "elapsedMs": 24365.942583,
+          "rssBytes": 1291059200,
+          "jsHeapBytes": 393796956
+        },
+        {
+          "elapsedMs": 24566.915666999997,
+          "rssBytes": 1333084160,
+          "jsHeapBytes": 411937580
+        },
+        {
+          "elapsedMs": 24768.117708,
+          "rssBytes": 1364115456,
+          "jsHeapBytes": 420070272
+        },
+        {
+          "elapsedMs": 24969.737583,
+          "rssBytes": 1403928576,
+          "jsHeapBytes": 443278676
+        },
+        {
+          "elapsedMs": 25169.781625,
+          "rssBytes": 1437466624,
+          "jsHeapBytes": 449223788
+        },
+        {
+          "elapsedMs": 25370.719957999998,
+          "rssBytes": 1486405632,
+          "jsHeapBytes": 454724128
+        },
+        {
+          "elapsedMs": 25571.666917,
+          "rssBytes": 1524580352,
+          "jsHeapBytes": 436767748
+        },
+        {
+          "elapsedMs": 25827.772708,
+          "rssBytes": 1592410112,
+          "jsHeapBytes": 489267916
+        },
+        {
+          "elapsedMs": 25974.2165,
+          "rssBytes": 1592410112,
+          "jsHeapBytes": 489267916
+        },
+        {
+          "elapsedMs": 26176.021125000003,
+          "rssBytes": 1338261504,
+          "jsHeapBytes": 489267916
+        },
+        {
+          "elapsedMs": 26348.24075,
+          "rssBytes": 1317683200,
+          "jsHeapBytes": 449403108
+        }
+      ],
+      "keyboard": [
+        {
+          "phase": "image import",
+          "working": true,
+          "ms": 15.080832999999984
+        },
+        {
+          "phase": "project import",
+          "working": true,
+          "ms": 1.6654159999998228
+        },
+        {
+          "phase": "HTML export",
+          "working": true,
+          "ms": 52.7957499999975
+        }
+      ],
+      "input": {
+        "config": {
+          "name": "near-limit",
+          "images": 50,
+          "finishes": 150,
+          "actions": 30,
+          "side": 532,
+          "feedback": 4000
+        },
+        "project": "/Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/output/stress/near-limit/project.json",
+        "projectBytes": 75978586,
+        "projectSHA256": "027a690a0613a5b7d3e07531654117c91f9d9054d00460fcd11882d3b2900b85",
+        "nodes": 200,
+        "images": 50,
+        "actionsPerScreen": 30,
+        "imageBytes": 52030316,
+        "largestImageBytes": 10383893,
+        "imageSizes": [
+          10383893,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927
+        ]
+      },
+      "imageImportMs": 3654.6657080000004,
+      "imageAutosaveAfterImportMs": 799.2198329999992,
+      "projectImportMs": 6917.587416999999,
+      "projectAutosaveAfterImportMs": 784.4452090000013,
+      "backupMs": 2701.8158750000002,
+      "dialogEscapeMs": 25.439375000001746,
+      "exportMs": 6135.9911250000005,
+      "exportBytes": 75979980,
+      "exportSHA256": "b5af3b9f34f47260fec7c25530983a88b22873a8913411c2a91b3a9502cac237",
+      "reloadMs": 3791.1948330000014,
+      "peakBrowserTreeRSSBytes": 1592410112,
+      "peakJSHeapBytes": 489267916,
+      "errors": []
+    },
+    {
+      "fixture": "near-limit",
+      "repeat": 2,
+      "samples": [
+        {
+          "elapsedMs": 201.57533400000102,
+          "rssBytes": 336248832,
+          "jsHeapBytes": 3152312
+        },
+        {
+          "elapsedMs": 403.73504200000025,
+          "rssBytes": 336363520,
+          "jsHeapBytes": 3267412
+        },
+        {
+          "elapsedMs": 604.9104589999988,
+          "rssBytes": 337985536,
+          "jsHeapBytes": 3350620
+        },
+        {
+          "elapsedMs": 805.1369589999958,
+          "rssBytes": 337985536,
+          "jsHeapBytes": 3350620
+        },
+        {
+          "elapsedMs": 1005.6572499999966,
+          "rssBytes": 338640896,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 1204.9619999999995,
+          "rssBytes": 338690048,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 1408.3786249999976,
+          "rssBytes": 338690048,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 1607.196041999996,
+          "rssBytes": 338690048,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 1807.6997090000004,
+          "rssBytes": 338690048,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 2006.504958999998,
+          "rssBytes": 338690048,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 2206.3496670000022,
+          "rssBytes": 338706432,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 2405.254374999997,
+          "rssBytes": 338706432,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 2606.8562089999978,
+          "rssBytes": 338722816,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 2807.262999999999,
+          "rssBytes": 338722816,
+          "jsHeapBytes": 3374308
+        },
+        {
+          "elapsedMs": 3007.4823749999996,
+          "rssBytes": 439042048,
+          "jsHeapBytes": 10552788
+        },
+        {
+          "elapsedMs": 3207.4097089999996,
+          "rssBytes": 496910336,
+          "jsHeapBytes": 4295944
+        },
+        {
+          "elapsedMs": 3407.397334000001,
+          "rssBytes": 559071232,
+          "jsHeapBytes": 26980636
+        },
+        {
+          "elapsedMs": 3609.3877090000024,
+          "rssBytes": 616742912,
+          "jsHeapBytes": 2927064
+        },
+        {
+          "elapsedMs": 3809.4553339999984,
+          "rssBytes": 670875648,
+          "jsHeapBytes": 22716236
+        },
+        {
+          "elapsedMs": 4014.8216669999965,
+          "rssBytes": 761118720,
+          "jsHeapBytes": 36668248
+        },
+        {
+          "elapsedMs": 4215.2274590000015,
+          "rssBytes": 761167872,
+          "jsHeapBytes": 36892640
+        },
+        {
+          "elapsedMs": 4418.510792000001,
+          "rssBytes": 832913408,
+          "jsHeapBytes": 55562080
+        },
+        {
+          "elapsedMs": 4617.837667,
+          "rssBytes": 929054720,
+          "jsHeapBytes": 114625472
+        },
+        {
+          "elapsedMs": 4820.540833999999,
+          "rssBytes": 929054720,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 5018.229667,
+          "rssBytes": 929136640,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 5216.818249999997,
+          "rssBytes": 929005568,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 5445.759124999997,
+          "rssBytes": 929005568,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 5633.2667500000025,
+          "rssBytes": 928923648,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 5833.866958999999,
+          "rssBytes": 928333824,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 6032.350542,
+          "rssBytes": 928219136,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 6233.93475,
+          "rssBytes": 928219136,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 6433.055084,
+          "rssBytes": 928219136,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 6633.234041999996,
+          "rssBytes": 928219136,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 6833.6028339999975,
+          "rssBytes": 928219136,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 7032.826291999998,
+          "rssBytes": 928219136,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 7233.305542000002,
+          "rssBytes": 928219136,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 7433.570500000002,
+          "rssBytes": 928219136,
+          "jsHeapBytes": 114667008
+        },
+        {
+          "elapsedMs": 7690.620583999997,
+          "rssBytes": 878051328,
+          "jsHeapBytes": 129402944
+        },
+        {
+          "elapsedMs": 7835.283583999997,
+          "rssBytes": 986251264,
+          "jsHeapBytes": 161104480
+        },
+        {
+          "elapsedMs": 8035.911749999999,
+          "rssBytes": 1034633216,
+          "jsHeapBytes": 271886056
+        },
+        {
+          "elapsedMs": 8237.897250000002,
+          "rssBytes": 967983104,
+          "jsHeapBytes": 264933300
+        },
+        {
+          "elapsedMs": 8437.32125,
+          "rssBytes": 978567168,
+          "jsHeapBytes": 258399152
+        },
+        {
+          "elapsedMs": 8637.647459,
+          "rssBytes": 1015857152,
+          "jsHeapBytes": 270198664
+        },
+        {
+          "elapsedMs": 8839.496459000002,
+          "rssBytes": 1059831808,
+          "jsHeapBytes": 256882896
+        },
+        {
+          "elapsedMs": 9041.359292000001,
+          "rssBytes": 1099251712,
+          "jsHeapBytes": 297797468
+        },
+        {
+          "elapsedMs": 9243.275042000001,
+          "rssBytes": 1147535360,
+          "jsHeapBytes": 257140032
+        },
+        {
+          "elapsedMs": 9441.226416999998,
+          "rssBytes": 1187201024,
+          "jsHeapBytes": 307181300
+        },
+        {
+          "elapsedMs": 9641.858833999999,
+          "rssBytes": 1239138304,
+          "jsHeapBytes": 324365284
+        },
+        {
+          "elapsedMs": 9841.063499999997,
+          "rssBytes": 1023754240,
+          "jsHeapBytes": 67900768
+        },
+        {
+          "elapsedMs": 10042.198834000003,
+          "rssBytes": 1046446080,
+          "jsHeapBytes": 89135120
+        },
+        {
+          "elapsedMs": 10242.744666999999,
+          "rssBytes": 1066303488,
+          "jsHeapBytes": 86199888
+        },
+        {
+          "elapsedMs": 10443.314249999996,
+          "rssBytes": 1091584000,
+          "jsHeapBytes": 108315240
+        },
+        {
+          "elapsedMs": 10643.160292,
+          "rssBytes": 1148239872,
+          "jsHeapBytes": 122327808
+        },
+        {
+          "elapsedMs": 10845.089999999997,
+          "rssBytes": 1117323264,
+          "jsHeapBytes": 122571880
+        },
+        {
+          "elapsedMs": 11047.934374999997,
+          "rssBytes": 1137442816,
+          "jsHeapBytes": 137207440
+        },
+        {
+          "elapsedMs": 11245.628334,
+          "rssBytes": 1208123392,
+          "jsHeapBytes": 124418840
+        },
+        {
+          "elapsedMs": 11447.552917,
+          "rssBytes": 1172242432,
+          "jsHeapBytes": 128489308
+        },
+        {
+          "elapsedMs": 11670.050167000001,
+          "rssBytes": 1323417600,
+          "jsHeapBytes": 200986096
+        },
+        {
+          "elapsedMs": 11852.654792000001,
+          "rssBytes": 1288355840,
+          "jsHeapBytes": 138800612
+        },
+        {
+          "elapsedMs": 12077.504249999998,
+          "rssBytes": 1288372224,
+          "jsHeapBytes": 138800612
+        },
+        {
+          "elapsedMs": 12273.131875,
+          "rssBytes": 1288372224,
+          "jsHeapBytes": 138800612
+        },
+        {
+          "elapsedMs": 12470.150458999997,
+          "rssBytes": 1288421376,
+          "jsHeapBytes": 138800612
+        },
+        {
+          "elapsedMs": 12668.364416999997,
+          "rssBytes": 1288437760,
+          "jsHeapBytes": 138800612
+        },
+        {
+          "elapsedMs": 12861.153542,
+          "rssBytes": 1288437760,
+          "jsHeapBytes": 138800764
+        },
+        {
+          "elapsedMs": 13076.150374999997,
+          "rssBytes": 1288437760,
+          "jsHeapBytes": 138800764
+        },
+        {
+          "elapsedMs": 13277.831542,
+          "rssBytes": 1288437760,
+          "jsHeapBytes": 138800764
+        },
+        {
+          "elapsedMs": 13451.396625000001,
+          "rssBytes": 1288437760,
+          "jsHeapBytes": 138800764
+        },
+        {
+          "elapsedMs": 13682.664209000002,
+          "rssBytes": 1285816320,
+          "jsHeapBytes": 138800764
+        },
+        {
+          "elapsedMs": 13851.237999999998,
+          "rssBytes": 1285816320,
+          "jsHeapBytes": 138800764
+        },
+        {
+          "elapsedMs": 14073.458375000002,
+          "rssBytes": 1285816320,
+          "jsHeapBytes": 138800764
+        },
+        {
+          "elapsedMs": 14249.031209,
+          "rssBytes": 1285816320,
+          "jsHeapBytes": 138800764
+        },
+        {
+          "elapsedMs": 14449.854500000001,
+          "rssBytes": 1190920192,
+          "jsHeapBytes": 138800832
+        },
+        {
+          "elapsedMs": 14811.006709000001,
+          "rssBytes": 1182318592,
+          "jsHeapBytes": 229477748
+        },
+        {
+          "elapsedMs": 14882.479874999997,
+          "rssBytes": 1212530688,
+          "jsHeapBytes": 306359812
+        },
+        {
+          "elapsedMs": 15057.494375000002,
+          "rssBytes": 1347108864,
+          "jsHeapBytes": 331557320
+        },
+        {
+          "elapsedMs": 15253.503041999997,
+          "rssBytes": 1378369536,
+          "jsHeapBytes": 379816068
+        },
+        {
+          "elapsedMs": 15453.101709000002,
+          "rssBytes": 1164001280,
+          "jsHeapBytes": 344322296
+        },
+        {
+          "elapsedMs": 15654.180625,
+          "rssBytes": 738377728,
+          "jsHeapBytes": 206041912
+        },
+        {
+          "elapsedMs": 15854.312584,
+          "rssBytes": 779862016,
+          "jsHeapBytes": 218121300
+        },
+        {
+          "elapsedMs": 16055.493125,
+          "rssBytes": 818970624,
+          "jsHeapBytes": 237332180
+        },
+        {
+          "elapsedMs": 16256.797584,
+          "rssBytes": 860635136,
+          "jsHeapBytes": 256755180
+        },
+        {
+          "elapsedMs": 16458.886417,
+          "rssBytes": 906510336,
+          "jsHeapBytes": 222830412
+        },
+        {
+          "elapsedMs": 16666.811084,
+          "rssBytes": 961249280,
+          "jsHeapBytes": 251498532
+        },
+        {
+          "elapsedMs": 16859.391959,
+          "rssBytes": 976928768,
+          "jsHeapBytes": 232857444
+        },
+        {
+          "elapsedMs": 17059.813499999997,
+          "rssBytes": 1017610240,
+          "jsHeapBytes": 237195380
+        },
+        {
+          "elapsedMs": 17260.637084,
+          "rssBytes": 1061027840,
+          "jsHeapBytes": 252567944
+        },
+        {
+          "elapsedMs": 17490.95575,
+          "rssBytes": 944996352,
+          "jsHeapBytes": 279305936
+        },
+        {
+          "elapsedMs": 17668.238624999998,
+          "rssBytes": 896860160,
+          "jsHeapBytes": 259919288
+        },
+        {
+          "elapsedMs": 17869.609209000002,
+          "rssBytes": 910114816,
+          "jsHeapBytes": 269335928
+        },
+        {
+          "elapsedMs": 18153.880791999996,
+          "rssBytes": 1087422464,
+          "jsHeapBytes": 331699080
+        },
+        {
+          "elapsedMs": 18300.463834000002,
+          "rssBytes": 1071546368,
+          "jsHeapBytes": 346257348
+        },
+        {
+          "elapsedMs": 18481.480292,
+          "rssBytes": 1063927808,
+          "jsHeapBytes": 346257348
+        },
+        {
+          "elapsedMs": 18706.371459,
+          "rssBytes": 1013530624,
+          "jsHeapBytes": 346257348
+        },
+        {
+          "elapsedMs": 18877.418833999996,
+          "rssBytes": 926203904,
+          "jsHeapBytes": 346257348
+        },
+        {
+          "elapsedMs": 19096.03,
+          "rssBytes": 836403200,
+          "jsHeapBytes": 346257348
+        },
+        {
+          "elapsedMs": 19284.981958999997,
+          "rssBytes": 836648960,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 19483.643834000002,
+          "rssBytes": 836648960,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 19694.666209000003,
+          "rssBytes": 797818880,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 19871.956417,
+          "rssBytes": 786415616,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 20089.653667,
+          "rssBytes": 777093120,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 20282.75125,
+          "rssBytes": 763199488,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 20556.902209,
+          "rssBytes": 644169728,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 20697.768917,
+          "rssBytes": 631554048,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 20913.850958999996,
+          "rssBytes": 433373184,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 21211.366583999996,
+          "rssBytes": 298467328,
+          "jsHeapBytes": 346257356
+        },
+        {
+          "elapsedMs": 21559.350334000002,
+          "rssBytes": 741851136,
+          "jsHeapBytes": 489312592
+        },
+        {
+          "elapsedMs": 21632.940875,
+          "rssBytes": 808304640,
+          "jsHeapBytes": 566861332
+        },
+        {
+          "elapsedMs": 21812.09975,
+          "rssBytes": 1032404992,
+          "jsHeapBytes": 388286396
+        },
+        {
+          "elapsedMs": 22009.220749999993,
+          "rssBytes": 1084489728,
+          "jsHeapBytes": 420222968
+        },
+        {
+          "elapsedMs": 22218.77725,
+          "rssBytes": 1125482496,
+          "jsHeapBytes": 394545332
+        },
+        {
+          "elapsedMs": 22410.933625000005,
+          "rssBytes": 1132625920,
+          "jsHeapBytes": 396073172
+        },
+        {
+          "elapsedMs": 22611.610583999995,
+          "rssBytes": 1181040640,
+          "jsHeapBytes": 429152664
+        },
+        {
+          "elapsedMs": 22813.018792000003,
+          "rssBytes": 1227177984,
+          "jsHeapBytes": 411715440
+        },
+        {
+          "elapsedMs": 23015.897167000003,
+          "rssBytes": 1207369728,
+          "jsHeapBytes": 424079920
+        },
+        {
+          "elapsedMs": 23214.846042000005,
+          "rssBytes": 1196851200,
+          "jsHeapBytes": 416464528
+        },
+        {
+          "elapsedMs": 23415.730083999995,
+          "rssBytes": 1169276928,
+          "jsHeapBytes": 428736776
+        },
+        {
+          "elapsedMs": 23615.6575,
+          "rssBytes": 1188069376,
+          "jsHeapBytes": 416038752
+        },
+        {
+          "elapsedMs": 23817.642999999996,
+          "rssBytes": 1228603392,
+          "jsHeapBytes": 433145456
+        },
+        {
+          "elapsedMs": 24018.667625000002,
+          "rssBytes": 1280622592,
+          "jsHeapBytes": 461366264
+        },
+        {
+          "elapsedMs": 24218.964875000005,
+          "rssBytes": 1322631168,
+          "jsHeapBytes": 465106036
+        },
+        {
+          "elapsedMs": 24420.457249999992,
+          "rssBytes": 1371602944,
+          "jsHeapBytes": 438585352
+        },
+        {
+          "elapsedMs": 24764.843374999997,
+          "rssBytes": 1443495936,
+          "jsHeapBytes": 463913568
+        },
+        {
+          "elapsedMs": 24821.961958999993,
+          "rssBytes": 1442152448,
+          "jsHeapBytes": 463913568
+        },
+        {
+          "elapsedMs": 25028.141042000003,
+          "rssBytes": 1261961216,
+          "jsHeapBytes": 463913568
+        },
+        {
+          "elapsedMs": 25224.222999999998,
+          "rssBytes": 1253801984,
+          "jsHeapBytes": 463913568
+        },
+        {
+          "elapsedMs": 25276.493166999993,
+          "rssBytes": 1254162432,
+          "jsHeapBytes": 464788768
+        }
+      ],
+      "keyboard": [
+        {
+          "phase": "image import",
+          "working": true,
+          "ms": 10.323875000001863
+        },
+        {
+          "phase": "project import",
+          "working": true,
+          "ms": 2.1165000000037253
+        },
+        {
+          "phase": "HTML export",
+          "working": true,
+          "ms": 44.26050000000396
+        }
+      ],
+      "input": {
+        "config": {
+          "name": "near-limit",
+          "images": 50,
+          "finishes": 150,
+          "actions": 30,
+          "side": 532,
+          "feedback": 4000
+        },
+        "project": "/Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/output/stress/near-limit/project.json",
+        "projectBytes": 75978586,
+        "projectSHA256": "027a690a0613a5b7d3e07531654117c91f9d9054d00460fcd11882d3b2900b85",
+        "nodes": 200,
+        "images": 50,
+        "actionsPerScreen": 30,
+        "imageBytes": 52030316,
+        "largestImageBytes": 10383893,
+        "imageSizes": [
+          10383893,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927
+        ]
+      },
+      "imageImportMs": 3146.2754579999964,
+      "imageAutosaveAfterImportMs": 794.2502499999973,
+      "projectImportMs": 5812.984042000004,
+      "projectAutosaveAfterImportMs": 798.2962079999998,
+      "backupMs": 2817.0854580000014,
+      "dialogEscapeMs": 8.52400000000489,
+      "exportMs": 6457.556625000005,
+      "exportBytes": 75979980,
+      "exportSHA256": "b5af3b9f34f47260fec7c25530983a88b22873a8913411c2a91b3a9502cac237",
+      "reloadMs": 4070.8079589999907,
+      "peakBrowserTreeRSSBytes": 1443495936,
+      "peakJSHeapBytes": 566861332,
+      "errors": []
+    },
+    {
+      "fixture": "near-limit",
+      "repeat": 3,
+      "samples": [
+        {
+          "elapsedMs": 201.9783749999915,
+          "rssBytes": 335953920,
+          "jsHeapBytes": 3151232
+        },
+        {
+          "elapsedMs": 403.6293750000041,
+          "rssBytes": 336068608,
+          "jsHeapBytes": 3266332
+        },
+        {
+          "elapsedMs": 604.6841669999994,
+          "rssBytes": 337608704,
+          "jsHeapBytes": 3349588
+        },
+        {
+          "elapsedMs": 806.145749999996,
+          "rssBytes": 337608704,
+          "jsHeapBytes": 3349588
+        },
+        {
+          "elapsedMs": 1005.8917499999952,
+          "rssBytes": 338280448,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 1206.7470420000027,
+          "rssBytes": 338313216,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 1405.8134169999976,
+          "rssBytes": 338313216,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 1609.9920839999977,
+          "rssBytes": 338313216,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 1805.5581669999956,
+          "rssBytes": 338313216,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 2005.6407089999993,
+          "rssBytes": 338345984,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 2204.4378750000033,
+          "rssBytes": 338345984,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 2406.3992089999956,
+          "rssBytes": 338345984,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 2605.315917,
+          "rssBytes": 338362368,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 2806.3782090000022,
+          "rssBytes": 338378752,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 3005.8359590000036,
+          "rssBytes": 338378752,
+          "jsHeapBytes": 3373276
+        },
+        {
+          "elapsedMs": 3207.422749999998,
+          "rssBytes": 425787392,
+          "jsHeapBytes": 4330088
+        },
+        {
+          "elapsedMs": 3406.9254169999913,
+          "rssBytes": 477626368,
+          "jsHeapBytes": 5419904
+        },
+        {
+          "elapsedMs": 3607.7695419999945,
+          "rssBytes": 556826624,
+          "jsHeapBytes": 18957676
+        },
+        {
+          "elapsedMs": 3808.331999999995,
+          "rssBytes": 611827712,
+          "jsHeapBytes": 23420688
+        },
+        {
+          "elapsedMs": 4008.630959000002,
+          "rssBytes": 661110784,
+          "jsHeapBytes": 16326424
+        },
+        {
+          "elapsedMs": 4348.019417000003,
+          "rssBytes": 773750784,
+          "jsHeapBytes": 31143380
+        },
+        {
+          "elapsedMs": 4409.809083999993,
+          "rssBytes": 773767168,
+          "jsHeapBytes": 31287436
+        },
+        {
+          "elapsedMs": 4611.649709000005,
+          "rssBytes": 773799936,
+          "jsHeapBytes": 31375028
+        },
+        {
+          "elapsedMs": 4812.239958999999,
+          "rssBytes": 902201344,
+          "jsHeapBytes": 76184540
+        },
+        {
+          "elapsedMs": 5014.708417000002,
+          "rssBytes": 902283264,
+          "jsHeapBytes": 76184540
+        },
+        {
+          "elapsedMs": 5212.709416999991,
+          "rssBytes": 902299648,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 5413.314916999996,
+          "rssBytes": 895713280,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 5611.649292000002,
+          "rssBytes": 895696896,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 5813.730666999996,
+          "rssBytes": 895696896,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 6013.538084,
+          "rssBytes": 842645504,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 6212.014333999992,
+          "rssBytes": 842645504,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 6415.155209000004,
+          "rssBytes": 743374848,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 6612.287792000003,
+          "rssBytes": 743374848,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 6816.499209000001,
+          "rssBytes": 743374848,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 7012.825209000002,
+          "rssBytes": 724402176,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 7212.202999999994,
+          "rssBytes": 650067968,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 7412.856166999991,
+          "rssBytes": 585990144,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 7612.326833999992,
+          "rssBytes": 584613888,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 7812.518083999996,
+          "rssBytes": 584613888,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 8011.496333999996,
+          "rssBytes": 584613888,
+          "jsHeapBytes": 76220048
+        },
+        {
+          "elapsedMs": 8213.599333999999,
+          "rssBytes": 625983488,
+          "jsHeapBytes": 73484264
+        },
+        {
+          "elapsedMs": 8452.473125000004,
+          "rssBytes": 824377344,
+          "jsHeapBytes": 151354068
+        },
+        {
+          "elapsedMs": 8615.098958999995,
+          "rssBytes": 1003765760,
+          "jsHeapBytes": 246439964
+        },
+        {
+          "elapsedMs": 8816.325167000003,
+          "rssBytes": 969408512,
+          "jsHeapBytes": 228571304
+        },
+        {
+          "elapsedMs": 9016.780583999993,
+          "rssBytes": 968802304,
+          "jsHeapBytes": 216045508
+        },
+        {
+          "elapsedMs": 9216.873374999996,
+          "rssBytes": 1005813760,
+          "jsHeapBytes": 222024356
+        },
+        {
+          "elapsedMs": 9418.102249999996,
+          "rssBytes": 1051541504,
+          "jsHeapBytes": 264053528
+        },
+        {
+          "elapsedMs": 9619.804541999998,
+          "rssBytes": 1089257472,
+          "jsHeapBytes": 234479544
+        },
+        {
+          "elapsedMs": 9820.788541999995,
+          "rssBytes": 1077116928,
+          "jsHeapBytes": 249569944
+        },
+        {
+          "elapsedMs": 10024.535292,
+          "rssBytes": 1127809024,
+          "jsHeapBytes": 257657208
+        },
+        {
+          "elapsedMs": 10221.126499999998,
+          "rssBytes": 1133363200,
+          "jsHeapBytes": 278820500
+        },
+        {
+          "elapsedMs": 10424.741083999994,
+          "rssBytes": 1174863872,
+          "jsHeapBytes": 249234792
+        },
+        {
+          "elapsedMs": 10621.686749999993,
+          "rssBytes": 1217331200,
+          "jsHeapBytes": 268922884
+        },
+        {
+          "elapsedMs": 10822.582041999995,
+          "rssBytes": 1246478336,
+          "jsHeapBytes": 288687776
+        },
+        {
+          "elapsedMs": 11024.988291999995,
+          "rssBytes": 1269972992,
+          "jsHeapBytes": 276748348
+        },
+        {
+          "elapsedMs": 11225.27175,
+          "rssBytes": 1272250368,
+          "jsHeapBytes": 315269536
+        },
+        {
+          "elapsedMs": 11425.596709000005,
+          "rssBytes": 941637632,
+          "jsHeapBytes": 53188852
+        },
+        {
+          "elapsedMs": 11627.411708999993,
+          "rssBytes": 941752320,
+          "jsHeapBytes": 53349080
+        },
+        {
+          "elapsedMs": 11827.521041999993,
+          "rssBytes": 1070235648,
+          "jsHeapBytes": 81371948
+        },
+        {
+          "elapsedMs": 12030.089875000005,
+          "rssBytes": 1070235648,
+          "jsHeapBytes": 81371948
+        },
+        {
+          "elapsedMs": 12229.218208999999,
+          "rssBytes": 1129988096,
+          "jsHeapBytes": 87144144
+        },
+        {
+          "elapsedMs": 12428.667124999993,
+          "rssBytes": 1170604032,
+          "jsHeapBytes": 95814672
+        },
+        {
+          "elapsedMs": 12641.924792000005,
+          "rssBytes": 1166540800,
+          "jsHeapBytes": 95814672
+        },
+        {
+          "elapsedMs": 12831.105167000002,
+          "rssBytes": 1117126656,
+          "jsHeapBytes": 95814672
+        },
+        {
+          "elapsedMs": 13039.313916999992,
+          "rssBytes": 864288768,
+          "jsHeapBytes": 95814672
+        },
+        {
+          "elapsedMs": 13255.308042000004,
+          "rssBytes": 854081536,
+          "jsHeapBytes": 95814672
+        },
+        {
+          "elapsedMs": 13446.581999999995,
+          "rssBytes": 854081536,
+          "jsHeapBytes": 95814824
+        },
+        {
+          "elapsedMs": 13634.035166999995,
+          "rssBytes": 834093056,
+          "jsHeapBytes": 95814824
+        },
+        {
+          "elapsedMs": 13830.920708999998,
+          "rssBytes": 749715456,
+          "jsHeapBytes": 95814824
+        },
+        {
+          "elapsedMs": 14057.537624999997,
+          "rssBytes": 721436672,
+          "jsHeapBytes": 95814824
+        },
+        {
+          "elapsedMs": 14252.835208999997,
+          "rssBytes": 661389312,
+          "jsHeapBytes": 95814824
+        },
+        {
+          "elapsedMs": 14436.166125000003,
+          "rssBytes": 638140416,
+          "jsHeapBytes": 95814824
+        },
+        {
+          "elapsedMs": 14633.336874999994,
+          "rssBytes": 638189568,
+          "jsHeapBytes": 95814824
+        },
+        {
+          "elapsedMs": 14854.654916999993,
+          "rssBytes": 638189568,
+          "jsHeapBytes": 95814824
+        },
+        {
+          "elapsedMs": 15088.098083999997,
+          "rssBytes": 566067200,
+          "jsHeapBytes": 95814892
+        },
+        {
+          "elapsedMs": 15303.433042000004,
+          "rssBytes": 818987008,
+          "jsHeapBytes": 186905816
+        },
+        {
+          "elapsedMs": 15549.837667,
+          "rssBytes": 869597184,
+          "jsHeapBytes": 263823808
+        },
+        {
+          "elapsedMs": 15689.023459000004,
+          "rssBytes": 979746816,
+          "jsHeapBytes": 291052848
+        },
+        {
+          "elapsedMs": 15890.278875000004,
+          "rssBytes": 976601088,
+          "jsHeapBytes": 363225544
+        },
+        {
+          "elapsedMs": 16097.109624999997,
+          "rssBytes": 882442240,
+          "jsHeapBytes": 352696868
+        },
+        {
+          "elapsedMs": 16317.703708999994,
+          "rssBytes": 885260288,
+          "jsHeapBytes": 366484256
+        },
+        {
+          "elapsedMs": 16520.282166999998,
+          "rssBytes": 884555776,
+          "jsHeapBytes": 396854688
+        },
+        {
+          "elapsedMs": 16716.763542,
+          "rssBytes": 917045248,
+          "jsHeapBytes": 376427776
+        },
+        {
+          "elapsedMs": 16917.773042,
+          "rssBytes": 965246976,
+          "jsHeapBytes": 385069648
+        },
+        {
+          "elapsedMs": 17118.651583999992,
+          "rssBytes": 1001816064,
+          "jsHeapBytes": 394806832
+        },
+        {
+          "elapsedMs": 17318.939834000004,
+          "rssBytes": 1043136512,
+          "jsHeapBytes": 409312352
+        },
+        {
+          "elapsedMs": 17519.745500000005,
+          "rssBytes": 1091534848,
+          "jsHeapBytes": 388061156
+        },
+        {
+          "elapsedMs": 17720.973333999995,
+          "rssBytes": 1141145600,
+          "jsHeapBytes": 400108224
+        },
+        {
+          "elapsedMs": 17921.553541999994,
+          "rssBytes": 1183481856,
+          "jsHeapBytes": 430587664
+        },
+        {
+          "elapsedMs": 18122.7105,
+          "rssBytes": 1238269952,
+          "jsHeapBytes": 424811572
+        },
+        {
+          "elapsedMs": 18323.562124999997,
+          "rssBytes": 1289977856,
+          "jsHeapBytes": 418390092
+        },
+        {
+          "elapsedMs": 18602.167625000002,
+          "rssBytes": 1285734400,
+          "jsHeapBytes": 491468456
+        },
+        {
+          "elapsedMs": 18726.209084000002,
+          "rssBytes": 1235075072,
+          "jsHeapBytes": 485402044
+        },
+        {
+          "elapsedMs": 18947.993875,
+          "rssBytes": 1147305984,
+          "jsHeapBytes": 485402044
+        },
+        {
+          "elapsedMs": 19141.908750000002,
+          "rssBytes": 1085816832,
+          "jsHeapBytes": 485402044
+        },
+        {
+          "elapsedMs": 19329.41254199999,
+          "rssBytes": 865304576,
+          "jsHeapBytes": 485402044
+        },
+        {
+          "elapsedMs": 19543.006374999997,
+          "rssBytes": 843923456,
+          "jsHeapBytes": 485402044
+        },
+        {
+          "elapsedMs": 19760.975166999997,
+          "rssBytes": 841728000,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 19954.451,
+          "rssBytes": 820609024,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 20133.548167,
+          "rssBytes": 813760512,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 20369.186499999996,
+          "rssBytes": 715636736,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 20575.192458999998,
+          "rssBytes": 701038592,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 20752.228749999995,
+          "rssBytes": 701251584,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 20942.781208999993,
+          "rssBytes": 701251584,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 21140.811917,
+          "rssBytes": 667189248,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 21331.104250000004,
+          "rssBytes": 626573312,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 21540.171791999994,
+          "rssBytes": 584171520,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 21727.924249999996,
+          "rssBytes": 539066368,
+          "jsHeapBytes": 485402052
+        },
+        {
+          "elapsedMs": 21927.238375,
+          "rssBytes": 586514432,
+          "jsHeapBytes": 493335404
+        },
+        {
+          "elapsedMs": 22264.049125000005,
+          "rssBytes": 837337088,
+          "jsHeapBytes": 206491396
+        },
+        {
+          "elapsedMs": 22348.396792,
+          "rssBytes": 952811520,
+          "jsHeapBytes": 284067808
+        },
+        {
+          "elapsedMs": 22531.123458999995,
+          "rssBytes": 956530688,
+          "jsHeapBytes": 391360920
+        },
+        {
+          "elapsedMs": 22730.145791999996,
+          "rssBytes": 983154688,
+          "jsHeapBytes": 470799028
+        },
+        {
+          "elapsedMs": 22930.926875000005,
+          "rssBytes": 961773568,
+          "jsHeapBytes": 466046748
+        },
+        {
+          "elapsedMs": 23131.331791999997,
+          "rssBytes": 1066287104,
+          "jsHeapBytes": 441272496
+        },
+        {
+          "elapsedMs": 23331.961167,
+          "rssBytes": 1106591744,
+          "jsHeapBytes": 463177044
+        },
+        {
+          "elapsedMs": 23533.916375,
+          "rssBytes": 1147142144,
+          "jsHeapBytes": 470676612
+        },
+        {
+          "elapsedMs": 23734.067041999995,
+          "rssBytes": 1187381248,
+          "jsHeapBytes": 495086304
+        },
+        {
+          "elapsedMs": 23934.355792000002,
+          "rssBytes": 1227833344,
+          "jsHeapBytes": 496114500
+        },
+        {
+          "elapsedMs": 24138.955875,
+          "rssBytes": 1264730112,
+          "jsHeapBytes": 482245320
+        },
+        {
+          "elapsedMs": 24334.494833999997,
+          "rssBytes": 1272758272,
+          "jsHeapBytes": 502917516
+        },
+        {
+          "elapsedMs": 24535.139333999992,
+          "rssBytes": 1318010880,
+          "jsHeapBytes": 489951456
+        },
+        {
+          "elapsedMs": 24737.581833999997,
+          "rssBytes": 1211629568,
+          "jsHeapBytes": 497597024
+        },
+        {
+          "elapsedMs": 24937.926917000004,
+          "rssBytes": 1106755584,
+          "jsHeapBytes": 493240996
+        },
+        {
+          "elapsedMs": 25138.543250000002,
+          "rssBytes": 1110179840,
+          "jsHeapBytes": 523040276
+        },
+        {
+          "elapsedMs": 25339.575624999998,
+          "rssBytes": 1055768576,
+          "jsHeapBytes": 500125672
+        },
+        {
+          "elapsedMs": 25635.550875,
+          "rssBytes": 928186368,
+          "jsHeapBytes": 540289648
+        },
+        {
+          "elapsedMs": 25742.090874999994,
+          "rssBytes": 878559232,
+          "jsHeapBytes": 540289648
+        },
+        {
+          "elapsedMs": 25943.038583999994,
+          "rssBytes": 785580032,
+          "jsHeapBytes": 540289648
+        },
+        {
+          "elapsedMs": 26143.052459,
+          "rssBytes": 768049152,
+          "jsHeapBytes": 540493184
+        },
+        {
+          "elapsedMs": 26175.60679199999,
+          "rssBytes": 766132224,
+          "jsHeapBytes": 541123248
+        }
+      ],
+      "keyboard": [
+        {
+          "phase": "image import",
+          "working": true,
+          "ms": 11.467374999992899
+        },
+        {
+          "phase": "project import",
+          "working": true,
+          "ms": 3.2205419999954756
+        },
+        {
+          "phase": "HTML export",
+          "working": true,
+          "ms": 60.141499999997905
+        }
+      ],
+      "input": {
+        "config": {
+          "name": "near-limit",
+          "images": 50,
+          "finishes": 150,
+          "actions": 30,
+          "side": 532,
+          "feedback": 4000
+        },
+        "project": "/Users/bahytzanmeiram/lessonroutes-data-fixes-20261014/output/stress/near-limit/project.json",
+        "projectBytes": 75978586,
+        "projectSHA256": "027a690a0613a5b7d3e07531654117c91f9d9054d00460fcd11882d3b2900b85",
+        "nodes": 200,
+        "images": 50,
+        "actionsPerScreen": 30,
+        "imageBytes": 52030316,
+        "largestImageBytes": 10383893,
+        "imageSizes": [
+          10383893,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927,
+          849927
+        ]
+      },
+      "imageImportMs": 3469.571416999999,
+      "imageAutosaveAfterImportMs": 798.6072500000009,
+      "projectImportMs": 6171.1554999999935,
+      "projectAutosaveAfterImportMs": 854.796915999992,
+      "backupMs": 2734.4783330000064,
+      "dialogEscapeMs": 8.021208999998635,
+      "exportMs": 6557.618582999989,
+      "exportBytes": 75979980,
+      "exportSHA256": "b5af3b9f34f47260fec7c25530983a88b22873a8913411c2a91b3a9502cac237",
+      "reloadMs": 4276.2505840000085,
+      "peakBrowserTreeRSSBytes": 1318010880,
+      "peakJSHeapBytes": 541123248,
+      "errors": []
+    }
+  ]
+}
