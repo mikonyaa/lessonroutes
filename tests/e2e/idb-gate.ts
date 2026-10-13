@@ -29,15 +29,20 @@ export function installIDBGate(initial:Phase|null=null) {
     if(next==='commit'){
       next=null;tx.addEventListener('complete',event=>{event.stopImmediatePropagation();hold(()=>tx.oncomplete?.call(tx,event));},{once:true});
     }else if(next==='transaction'){
-      next=null;const store=tx.objectStore('projects'),get=store.get.bind(store);
+      next=null;let aborted=false;const abort=tx.abort.bind(tx);
+      // Native abort invalidates queued keepalive callbacks before its event arrives.
+      tx.abort=()=>{abort();aborted=true;};
+      tx.addEventListener('abort',()=>{aborted=true;},{once:true});
+      const store=tx.objectStore('projects'),get=store.get.bind(store);
       store.get=(...values)=>{
         const request=get(...values);
         request.addEventListener('success',event=>{
           event.stopImmediatePropagation();let release=false;
           hold(()=>{release=true;});
           const pulse=()=>{
+            if(aborted)return;
             const keep=tx.objectStore('meta').get('current');
-            keep.onsuccess=()=>{if(release)request.onsuccess?.call(request,event);else pulse();};
+            keep.onsuccess=()=>{if(aborted)return;if(release)request.onsuccess?.call(request,event);else pulse();};
           };
           pulse();
         },{once:true});return request;

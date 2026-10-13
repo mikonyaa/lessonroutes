@@ -34,7 +34,8 @@ jobs:
       - name: Production build
         run: npm run build
       - name: Real browser authoring and file URL offline export tests
-        run: npm run test:e2e
+        # Release evidence must pass on the first attempt.
+        run: npm run test:e2e -- --retries=0
       - name: Package final web ZIP
         run: npm run package:web
       - name: Extract and verify the final consumer ZIP
