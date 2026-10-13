@@ -1,3 +1,4 @@
+import { orderedActions } from '../model/actions';
 import { useEffect, useRef, useState, type KeyboardEvent, type PointerEvent } from 'react';
 import type { Asset, Rect, ScreenNode } from '../model/types';
 import { containRect, hitTest, moveRect, normalizePoint } from '../graph/geometry';
@@ -41,7 +42,7 @@ export function Canvas({node,asset,selected,select,add,move,blocked}:Props) {
     <div className="canvas-stage" ref={stage}>
       <div className={`canvas-image ${drawMode?'drawing':''}`} ref={imageWrap} style={{width:size.width,height:size.height}} onPointerDown={down} onPointerMove={motion} onPointerUp={up} onPointerCancel={()=>{drag.current=null;setDraft(null);}}>
         <img src={`data:${asset.mime};base64,${asset.base64}`} alt={node.imageDescription||'Screenshot to annotate'} draggable={false}/>
-        {node.actions.map(a=>{const r=drag.current?.id===a.id&&draft?draft:a.rect;return <button key={a.id} type="button" className={`region ${a.id===selected?'selected':''} ${blocked.has(a.id)?'blocked':''}`} aria-label={`Region ${a.order+1}: ${a.label}`} aria-pressed={a.id===selected} onClick={e=>{if(e.detail===0)select(a.id);}} onKeyDown={e=>key(e,a.id,a.rect)} style={{left:`${r.x*100}%`,top:`${r.y*100}%`,width:`${r.width*100}%`,height:`${r.height*100}%`}}><span>{a.order+1}</span></button>;})}
+        {orderedActions(node.actions).map(a=>{const r=drag.current?.id===a.id&&draft?draft:a.rect;return <button key={a.id} type="button" tabIndex={0} className={`region ${a.id===selected?'selected':''} ${blocked.has(a.id)?'blocked':''}`} aria-label={`Region ${a.order+1}: ${a.label}`} aria-pressed={a.id===selected} onClick={e=>{if(e.detail===0)select(a.id);}} onKeyDown={e=>key(e,a.id,a.rect)} style={{left:`${r.x*100}%`,top:`${r.y*100}%`,width:`${r.width*100}%`,height:`${r.height*100}%`}}><span>{a.order+1}</span></button>;})}
         {draft&&drag.current?.mode==='draw'&&<div className="region draft" style={{left:`${draft.x*100}%`,top:`${draft.y*100}%`,width:`${draft.width*100}%`,height:`${draft.height*100}%`}}/>}
       </div>
     </div>

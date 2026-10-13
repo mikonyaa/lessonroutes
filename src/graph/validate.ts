@@ -1,3 +1,4 @@
+import { orderedActions } from '../model/actions';
 import type { Project, Payload } from '../model/types';
 import { validRect, overlap } from './geometry';
 export type Issue = { level: 'error' | 'warning'; code: string; message: string; nodeId?: string; actionIds?: string[] };
@@ -54,7 +55,7 @@ export function buildPayload(p: Project): { payload: Payload; report: GraphRepor
   const nodes = p.orderedNodeIds.filter(id => report.reachable.has(id)).map(id => p.nodes.find(n => n.id === id)!).map(n => n.kind === 'finish'
     ? { id:n.id,kind:n.kind,title:n.title,completionText:n.completionText }
     : { id:n.id,kind:n.kind,assetId:n.assetId,title:n.title,instruction:n.instruction,imageDescription:n.imageDescription,
-        actions:[...n.actions].sort((a,b)=>a.order-b.order).map(a=>({ id:a.id,label:a.label,rect:{...a.rect},targetNodeId:a.targetNodeId,outcome:a.outcome,feedback:a.feedback,order:a.order })) });
+        actions:orderedActions(n.actions).map(a=>({ id:a.id,label:a.label,rect:{...a.rect},targetNodeId:a.targetNodeId,outcome:a.outcome,feedback:a.feedback,order:a.order })) });
   const needed = new Set(nodes.flatMap(n => n.kind === 'screen' ? [n.assetId] : []));
   return { report, payload: { kind:'lessonroutes-lesson',schemaVersion:1,metadata:{...p.metadata},startNodeId:p.startNodeId,nodes,
     assets:p.assets.filter(a=>needed.has(a.id)).map(a=>({id:a.id,mime:a.mime,base64:a.base64,pixelWidth:a.pixelWidth,pixelHeight:a.pixelHeight})) } };

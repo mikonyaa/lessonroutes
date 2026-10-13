@@ -1,9 +1,10 @@
+import { orderedActions } from '../model/actions';
 import type { Payload } from '../model/types';
 import { containRect, hitTest, normalizePoint } from '../graph/geometry';
 import { initialState, transition, type Input, type Transition } from './machine';
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, text = '', className = '') {
-  const element = document.createElement(tag); element.textContent = text; element.className = className; return element;
+  const element = document.createElement(tag); element.textContent = text; element.className = className; if(tag==='button')element.tabIndex=0; return element;
 }
 export function mountPlayer(root: HTMLElement, payload: Payload): () => void {
   let state = initialState(payload), observer: ResizeObserver | null = null;
@@ -37,7 +38,7 @@ export function mountPlayer(root: HTMLElement, payload: Payload): () => void {
       const stage = el('div','','lr-stage'), wrap = el('div','','lr-image-wrap'), image = el('img');
       image.src = `data:${asset.mime};base64,${asset.base64}`; image.alt = node.imageDescription;
       wrap.append(image);
-      const actions = [...node.actions].sort((a,b)=>a.order-b.order);
+      const actions = orderedActions(node.actions);
       for (const action of actions) {
         const region = el('span',String(action.order+1),'lr-hotspot'); region.setAttribute('aria-hidden','true');
         Object.assign(region.style,{left:`${action.rect.x*100}%`,top:`${action.rect.y*100}%`,width:`${action.rect.width*100}%`,height:`${action.rect.height*100}%`}); wrap.append(region);

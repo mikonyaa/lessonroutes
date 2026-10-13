@@ -32,6 +32,23 @@ be evicted or unavailable. A port allocated by `--port 0` may change next time;
 download a project backup before stopping. Use a fixed available port if you
 want the same storage origin. Save conflicts and quota errors remain visible.
 
+Saved means the current authoring session's displayed snapshot has completed its
+atomic browser save. Edits made during a save remain pending until committed.
+Replacing a lesson retires its pending saves, so late callbacks cannot select it
+as the current recovery project. Replaced sessions' uncommitted edits still need
+a downloaded project backup. Existing committed projects are retained.
+
+At startup, editing and imports wait for the recovery decision. A storage open or
+read timeout enables work in memory and reports the error. Download project keeps
+the current draft even when saving fails. Save a new copy uses a new project ID;
+it does not overwrite a conflicting revision.
+
+Action order is defined by each action's order field. Deleting preserves the
+relative order of the remaining actions; Undo/Redo preserve that meaning through
+the editable backup, preview and exported learner file.
+
+BUILD.json records the local ZIP's source commit, dirty state and Node version.
+
 Limits: 50 images, 10 MiB each, 50 MiB total; 24 megapixels, 12,000 pixels per
 side; 200 nodes, 30 actions per screen, 80 MiB project JSON. Static PNG/JPEG/WebP
 only. Animated PNG/WebP, GIF, SVG and remote images are rejected.

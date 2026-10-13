@@ -125,8 +125,13 @@ storage are used by the player. See [format and security notes](docs/project-for
 
 ## Autosave and recovery
 
-The editor saves projects and assets in one IndexedDB transaction. **Saved** appears
-only after transaction completion. Browser storage is not a backup, can be evicted,
+The editor saves projects, assets and the recovery pointer in one IndexedDB
+transaction. **Saved** refers to the current session's displayed snapshot, after
+transaction completion. Edits during a save remain pending until their own commit.
+New/Open/Save a new copy retire the replaced session's saves; a late callback cannot
+take back the current pointer or change the new status. A started uncommitted
+transaction is aborted. Download a backup before replacing uncommitted edits.
+Browser storage is not a backup, can be evicted,
 and may be unavailable. Quota, blocked, interrupted and stalled transactions show
 an unsaved state; authoring in memory and Download project remain available.
 A beforeunload guard is used for unsaved changes, but browsers may not show it.
@@ -136,6 +141,16 @@ silently overwrite a newer revision: keep its changes via Download project or
 Save a new copy. Reload restores only the last completed browser save. Project
 import validates everything before replacing the current lesson; invalid imports
 do not merge partial data. Unknown versions and significant fields are rejected.
+
+Startup editing, undo/redo, file inputs and drops wait for the recovery decision.
+Storage open/read failures and bounded timeouts report an error and enable work
+in memory with Download project. Valid action order is defined by `order`, even
+for a shuffled physical array; delete/reorder and Undo/Redo preserve its meaning
+in the canvas, inspector, preview and learner export.
+
+Local fix verification and its current limits are recorded separately in
+[authoring fixes](docs/authoring-fixes.md). `BUILD.json` in a newly packaged ZIP
+identifies its actual local source commit and dirty state; it is not CI evidence.
 
 ## Verified browsers
 

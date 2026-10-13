@@ -15,7 +15,10 @@ bounded header reader's dimensions. EXIF orientations 5–8 swap dimensions.
 Screens contain id, kind `screen`, assetId, title, instruction, imageDescription
 and actions. Actions have stable id, label, rect `{x,y,width,height}`, nullable
 targetNodeId, outcome `correct|incorrect|neutral`, feedback and contiguous integer
-order. Coordinates are finite normalized image values; x/y ≥ 0, sizes > 0 and
+order. A unique permutation of order values is valid even when the physical
+actions array is shuffled. Displays sort by order; remove/reorder operations sort,
+edit and renumber without changing IDs, targets, feedback or geometry. Undo keeps
+the original snapshot and logical meaning. Coordinates are finite normalized image values; x/y ≥ 0, sizes > 0 and
 x+width/y+height ≤ 1. Finish nodes have id, kind `finish`, title and completionText,
 and cannot carry outgoing actions.
 
@@ -34,6 +37,18 @@ to the expected one. Browser asset keys are scoped to projectId, so opening anot
 project with the same asset ID cannot mutate an existing project's bytes. Completed
 transactions are the commit boundary, not individual request success. Manual JSON
 backups remain necessary.
+
+Autosave has one revocable owner per authoring session. Replacement revokes it
+synchronously before scheduling React updates. Opening a database does not grant
+a retired owner permission to save. A started but uncommitted save subscribes to
+revocation and aborts the entire transaction, including project, assets and current
+pointer. An already committed revision is retained; a later active session commit
+selects the new project. Revision conflicts are still checked inside the write.
+Snapshot, revision and save status belong to the same session. Same-session edits
+queue behind the in-flight save and are committed using its resulting revision.
+
+Startup is read-only until recovery finishes or fails. Native open/read timeouts
+are bounded; failure enables a fresh memory draft with an error and working backup.
 
 The student payload has kind `lessonroutes-lesson` and schemaVersion `1`. Export
 contains only reachable nodes, required assets (id, MIME, dimensions, base64),

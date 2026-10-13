@@ -1,3 +1,4 @@
+import { orderedActions } from '../model/actions';
 import { useEffect, useState } from 'react';
 import { LIMITS, type Action, type Project, type ScreenNode, type Rect } from '../model/types';
 import { validRect } from '../graph/geometry';
@@ -15,7 +16,7 @@ export function Inspector({node,action,project,edit,select,remove,reorder}:Props
     setGeometryError('');edit(a=>({...a,rect}));return true;
   };
   return <aside className="inspector" aria-label="Action inspector"><div className="panel-heading"><h2>Actions</h2><span>{node.actions.length} / 30</span></div>
-    <div className="action-tabs">{[...node.actions].sort((a,b)=>a.order-b.order).map(a=><button key={a.id} aria-pressed={action?.id===a.id} onClick={()=>{select(a.id);setGeometryError('');}}><span className="step-number">{a.order+1}</span><span>{a.label}</span></button>)}</div>
+    <div className="action-tabs">{orderedActions(node.actions).map(a=><button key={a.id} tabIndex={0} aria-pressed={action?.id===a.id} onClick={()=>{select(a.id);setGeometryError('');}}><span className="step-number">{a.order+1}</span><span>{a.label}</span></button>)}</div>
     {!action?<div className="inspector-empty"><p>Add an action to describe a choice on this screenshot.</p><p className="muted">Each action has a region, a text equivalent, feedback and a destination.</p></div>:<div className="inspector-fields" key={action.id}>
       <label>Action label<input value={action.label} maxLength={LIMITS.title} onChange={e=>edit(a=>({...a,label:e.target.value}))}/></label>
       <label>Outcome<select aria-label="Outcome" value={action.outcome} onChange={e=>edit(a=>({...a,outcome:e.target.value as Action['outcome']}))}><option value="neutral">Neutral</option><option value="correct">Correct choice</option><option value="incorrect">Incorrect choice</option></select></label>

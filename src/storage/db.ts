@@ -1,4 +1,5 @@
 import type { Project } from '../model/types';
+import { SaveCancelled, SaveOwner } from './saveOwner';
 export class SaveConflict extends Error { constructor(){super('A newer revision was saved by another tab. Your changes remain in memory. Download a project or save a new copy.');this.name='SaveConflict';} }
 type StoredProject = Omit<Project,'assets'> & { assetIds:string[] };
 export function openDatabase():Promise<IDBDatabase> {
@@ -12,17 +13,22 @@ export function openDatabase():Promise<IDBDatabase> {
     request.onsuccess=()=>{clearTimeout(timer);const db=request.result;if(settled){db.close();return;}settled=true;db.onversionchange=()=>db.close();resolve(db);};
   });
 }
-export function saveRevision(db:IDBDatabase,p:Project,expectedRevision:number):Promise<number> {
+export function saveRevision(db:IDBDatabase,p:Project,expectedRevision:number,owner=new SaveOwner()):Promise<number> {
   return new Promise((resolve,reject)=>{
+    if(!owner.current){reject(new SaveCancelled());return;}
     const tx=db.transaction(['projects','assets','meta'],'readwrite'), store=tx.objectStore('projects');
     let reason:Error|null=null, newRevision=expectedRevision+1;
-    const timer=setTimeout(()=>{reason=new Error('Save transaction did not complete. Download a project backup.');try{tx.abort();}catch{reject(reason);}},5000);
-    tx.oncomplete=()=>{clearTimeout(timer);resolve(newRevision);}; // Commit, never request.onsuccess.
+    const cancel=(error:Error)=>{reason=error;try{tx.abort();}catch{cleanup();reject(reason);}};
+    const unsubscribe=owner.onRevoke(()=>cancel(new SaveCancelled()));
+    const timer=setTimeout(()=>cancel(new Error('Save transaction did not complete. Download a project backup.')),5000);
+    const cleanup=()=>{clearTimeout(timer);unsubscribe();};
+    tx.oncomplete=()=>{cleanup();resolve(newRevision);}; // Commit, never request.onsuccess.
     tx.onerror=()=>{reason??=tx.error??new Error('Save failed. Download a project backup.');};
-    tx.onabort=()=>{clearTimeout(timer);reject(reason??tx.error??new Error('Save was interrupted. Download a project backup.'));};
+    tx.onabort=()=>{cleanup();reject(reason??tx.error??new Error('Save was interrupted. Download a project backup.'));};
     const request=store.get(p.projectId);
     request.onsuccess=()=>{
       try {
+      if(!owner.current){cancel(new SaveCancelled());return;}
       const current=request.result as StoredProject|undefined;
       if(current&&current.revision!==expectedRevision){reason=new SaveConflict();tx.abort();return;}
       newRevision=Math.max(current?.revision??expectedRevision,expectedRevision)+1;
@@ -39,7 +45,8 @@ export function saveRevision(db:IDBDatabase,p:Project,expectedRevision:number):P
 export async function readCurrent(db:IDBDatabase):Promise<Project|null> {
   return new Promise((resolve,reject)=>{
     const tx=db.transaction(['projects','assets','meta'],'readonly');let result:Project|null=null;
-    tx.onabort=()=>reject(tx.error??new Error('Could not read saved project.'));tx.onerror=()=>reject(tx.error??new Error('Could not read saved project.'));tx.oncomplete=()=>resolve(result);
+    const timer=setTimeout(()=>{try{tx.abort();}catch{/* Already closed. */}reject(new Error('Browser recovery did not complete. Work in memory and download a project backup.'));},5000);
+    tx.onabort=()=>{clearTimeout(timer);reject(tx.error??new Error('Could not read saved project.'));};tx.onerror=()=>{clearTimeout(timer);reject(tx.error??new Error('Could not read saved project.'));};tx.oncomplete=()=>{clearTimeout(timer);resolve(result);};
     const pointer=tx.objectStore('meta').get('current');pointer.onsuccess=()=>{
       if(!pointer.result)return;
       const get=tx.objectStore('projects').get(pointer.result);get.onsuccess=()=>{
